@@ -1,0 +1,1 @@
+Filters in iCal4j offer a simple mechanism for isolating Components, Properties or Parameters with specific attributes. More information is available in the [http://ical4j.github.io/docs/ical4j/api/3.0.4/net/fortuna/ical4j/filter/package-summary.html API Documentation] and [https://github.com/ical4j/ical4j/wiki/Examples#Filtering_events examples].

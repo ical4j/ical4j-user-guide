@@ -1,0 +1,7 @@
+site_name: iCal4j User Guide
+theme:
+  name: material
+  favicon: images/favicon.png
+  logo: images/logo-48.png
+repo_url: https://github.com/ical4j/ical4j
+repo_name: ical4j/ical4j
