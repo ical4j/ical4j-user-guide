@@ -1,6 +1,6 @@
 This page provides examples that demonstrate how to use iCal4j effectively.
 
-==Parsing a calendar file==
+# Parsing a calendar file
 
 <pre>
 FileInputStream fin = new FileInputStream("mycalendar.ics");
@@ -10,7 +10,7 @@ CalendarBuilder builder = new CalendarBuilder();
 Calendar calendar = builder.build(fin);
 </pre>
 
-==Parsing a calendar string==
+# Parsing a calendar string
 
 <pre>
 String myCalendarString = ...
@@ -22,7 +22,7 @@ CalendarBuilder builder = new CalendarBuilder();
 Calendar calendar = builder.build(sin);
 </pre>
 
-==Creating a new calendar==
+# Creating a new calendar
 
 <pre>
 Calendar calendar = new Calendar();
@@ -41,7 +41,7 @@ CALSCALE:GREGORIAN
 END:VCALENDAR
 </pre>
 
-==Creating an all day event==
+# Creating an all day event
 
 <pre>
 java.util.Calendar calendar = java.util.Calendar.getInstance();
@@ -68,7 +68,7 @@ UID:20050222T044240Z-1@example.com
 END:VEVENT
 </pre>
 
-==Creating a meeting of four hour duration==
+# Creating a meeting of four hour duration
 <pre>
 // Create a TimeZone
 TimeZoneRegistry registry = TimeZoneRegistryFactory.getInstance().createRegistry();
@@ -131,7 +131,7 @@ icsCalendar.getComponents().add(meeting);
 System.out.println(icsCalendar);
 </pre>
 
-==Generating a calendar file==
+# Generating a calendar file
 
 <pre>
 FileOutputStream fout = new FileOutputStream("mycalendar.ics");
@@ -140,7 +140,7 @@ CalendarOutputter outputter = new CalendarOutputter();
 outputter.output(calendar, fout);
 </pre>
 
-==Attaching binary data==
+# Attaching binary data
 
 <pre>
 FileInputStream fin = new FileInputStream("etc/artwork/logo.png");
@@ -167,9 +167,9 @@ ATTACH;ENCODING=BASE64;VALUE=BINARY:iVBORw0KGgoAAAANSUhEUgAAAUYAAACJCAYAA
 </pre>
 
 
-==Filtering events==
+# Filtering events
 
-The correct way to filter events according to the spec (RFC2445) would be to construct a VFREEBUSY request that represents the properties of events that you are interested in. You would then pass this request as an argument to the constructor of a new VFREEBUSY, along with the list of components (events) you want to inspect to derive a VFREEBUSY instance that represents the consumed/free time based on the specified events (see the [http://m2.modularity.net.au/projects/ical4j/apidocs/net/fortuna/ical4j/model/component/VFreeBusy.html API Documentation] for more information).
+The correct way to filter events according to the spec (RFC2445) would be to construct a VFREEBUSY request that represents the properties of events that you are interested in. You would then pass this request as an argument to the constructor of a new VFREEBUSY, along with the list of components (events) you want to inspect to derive a VFREEBUSY instance that represents the consumed/free time based on the specified events (see the [API Documentation](http://m2.modularity.net.au/projects/ical4j/apidocs/net/fortuna/ical4j/model/component/VFreeBusy.html) for more information).
 
 If instead you would like to identify specific events occurring within a time frame, you can use iCal4j filters to filter components within a specified period. For example, to filter a list of events only occurring today you might do the following:
 
@@ -186,7 +186,7 @@ Filter filter = new Filter(new PeriodRule(period));
 List eventsToday = filter.filter(calendar.getComponents(Component.VEVENT));
 </pre>
 
-==Generating event dates==
+# Generating event dates
 
 <pre>
 // Reading the file and creating the calendar
@@ -218,7 +218,7 @@ for (Object o : cal.getComponents("VEVENT")) {
 }
 </pre>
 
-==Creating a simple vCard==
+# Creating a simple vCard
 
 <pre>
 List<Property> props = new ArrayList<Property>();

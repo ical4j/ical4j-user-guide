@@ -1,6 +1,6 @@
 Date and time types in iCal4j are all extensions of the Iso8601 type. This type uses a date format instance (with an associated timezone) for string parsing and formatting.
 
-==Date==
+# Date
 
 A Date represents a day of the year, with no time component. As time is irrelevant for a Date instance, no timezone information is associated with a Date (*).
 
@@ -8,17 +8,17 @@ A Date represents a day of the year, with no time component. As time is irreleva
 
 <pre>net.fortuna.ical4j.timezone.date.floating=true</pre>
 
-==DateTime==
+# DateTime
 
 A DateTime represents a time of day on a specific day of the year. There are three (3) variants of DateTime representation.
 
-===Date with Local Time===
+## Date with Local Time
 
 A date with local time does not explicitly specify an associated timezone, and is said to be "floating" in the sense that it represents a time in the local timezone of the CUA. For this reason, floating DateTime instances will always use the default timezone for parsing and formatting string representations. An example of a floating DateTime instance is as follows:
 
 <pre>DTSTART:19980118T230000</pre>
 
-===Date with UTC Time===
+## Date with UTC Time
 
 A DateTime may be specified as in UTC time by appending a 'Z' to the string representation as follows:
 
@@ -26,7 +26,7 @@ A DateTime may be specified as in UTC time by appending a 'Z' to the string repr
 
 In iCal4j, a DateTime instance parsed from such a string representation, or explicitly defined as a UTC instance, will use the "Etc/UTC" timezone for parsing and formatting string representations.
 
-===Date with Local Time and a Timezone reference===
+## Date with Local Time and a Timezone reference
 
 A DateTime may also be specified with a timezone reference, meaning that the time is associated with an explicit timezone. For example:
 

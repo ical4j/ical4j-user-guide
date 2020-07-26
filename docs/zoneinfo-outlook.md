@@ -1,8 +1,8 @@
-=ZoneInfo Outlook=
+# ZoneInfo Outlook
 
 iCal4j ZoneInfo Outlook provides alternate timezone definitions that may provide greater compatibility with certain versions of Microsoft Outlook.
 
-===Usage===
+## Usage
 
 To use the alternate timezone definitions you may create a custom TimeZoneRegistry instance using the applicable prefix:
 
@@ -26,16 +26,16 @@ A convenient factory for the Outlook-compatible definitions is also provided, so
 net.fortuna.ical4j.timezone.registry=net.fortuna.ical4j.zoneinfo.outlook.OutlookTimeZoneRegistryFactory
 </pre>
 
-===Minimum requirements===
+## Minimum requirements
 
 None.
 
-===Project Information===
+## Project Information
 
-* [http://github.com/ical4j/ical4j-zoneinfo-outlook/ Project Home]
-* [http://ical4j.github.io/docs/ical4j-zoneinfo-outlook/api/ Javadocs]
+* [Project Home](http://github.com/ical4j/ical4j-zoneinfo-outlook/)
+* [Javadocs](http://ical4j.github.io/docs/ical4j-zoneinfo-outlook/api/)
 
-===Download===
+## Download
 
-* [https://sourceforge.net/projects/ical4j/files/ical4j-zoneinfo-outlook/ Releases]
-* [http://m2.modularity.net.au/snapshots/net/fortuna/ical4j/ical4j-zoneinfo-outlook/ Snapshot Builds]
+* [Releases](https://sourceforge.net/projects/ical4j/files/ical4j-zoneinfo-outlook/)
+* [Snapshot Builds](http://m2.modularity.net.au/snapshots/net/fortuna/ical4j/ical4j-zoneinfo-outlook/)

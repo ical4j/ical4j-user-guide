@@ -1,6 +1,6 @@
 Events that occur more than once are supported in the iCalendar specification, and are defined by either a sequence of dates (RDATE) or a recurrence rule (RRULE).
 
-===Recurrence (RRULE) Examples===
+## Recurrence (RRULE) Examples
 
 Below are some examples of how to represent recurring events using the RRULE format:
 

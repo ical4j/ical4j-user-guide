@@ -1,8 +1,8 @@
-=Extensions=
+# Extensions
 
-iCal4j Extensions is a Java library that provides support for widely used non-standard iCalendar objects (i.e. properties and parameters). These model extensions are implemented via the [[ModelExtensions|custom object registry]] support in iCal4j.
+iCal4j Extensions is a Java library that provides support for widely used non-standard iCalendar objects (i.e. properties and parameters). These model extensions are implemented via the [object registry]]([ModelExtensions|custom) support in iCal4j.
 
-===Usage===
+## Usage
 
 To add support for extensions you may register the required factories with your CalendarBuilder instance:
 
@@ -20,31 +20,31 @@ To add support for extensions you may register the required factories with your 
         builder = new CalendarBuilder(parser, propertyFactoryRegistry, parameterFactoryRegistry, tzRegistry);
 </pre>
 
-===Minimum requirements===
+## Minimum requirements
 
-iCal4j Extensions requires a minimum of Java 5 due to the use of features introduced in this version. If you need to run on an earlier version of Java, consider using [http://retroweaver.sourceforge.net Retroweaver].
+iCal4j Extensions requires a minimum of Java 5 due to the use of features introduced in this version. If you need to run on an earlier version of Java, consider using [Retroweaver](http://retroweaver.sourceforge.net).
 
-===Project Information===
+## Project Information
 
-* [http://github.com/ical4j/ical4j-extensions/ Project Home]
-* [http://ical4j.github.io/docs/ical4j-extensions/api/ Javadocs]
+* [Project Home](http://github.com/ical4j/ical4j-extensions/)
+* [Javadocs](http://ical4j.github.io/docs/ical4j-extensions/api/)
 
-===Download===
+## Download
 
-* [https://sourceforge.net/projects/ical4j/files/ical4j-extensions/ Releases]
-* [http://m2.modularity.net.au/snapshots/net/fortuna/ical4j/ical4j-extensions/ Snapshot Builds]
+* [Releases](https://sourceforge.net/projects/ical4j/files/ical4j-extensions/)
+* [Snapshot Builds](http://m2.modularity.net.au/snapshots/net/fortuna/ical4j/ical4j-extensions/)
 
-Traditionally any components, properties and parameters not defined by [http://www.ietf.org/rfc/rfc2445.txt RFC2445] are classified as <em>non-standard</em> or <em>extension</em> objects. These objects must include the <strong>"X-"</strong> name prefix to be compliant with the specification.
+Traditionally any components, properties and parameters not defined by [RFC2445](http://www.ietf.org/rfc/rfc2445.txt) are classified as <em>non-standard</em> or <em>extension</em> objects. These objects must include the <strong>"X-"</strong> name prefix to be compliant with the specification.
 
 In the iCal4j object model, these objects are represented by the XComponent, XProperty and XParameter classes respectively. Names that do not conform to the <strong>"X-"</strong> name prefix requirement may be supported by enabling the following Compatibility Hint:
 
 <pre>ical4j.parsing.relaxed</pre>
 
-=== Extension Factory Registration ===
+##  Extension Factory Registration 
 
 There are a number of deficiences with above approach, most notably that only <em>String</em> values are supported by X{Component|Property|Parameter}, and there is no option for supporting some well-known non-standard objects.
 
-== PropertyFactoryRegistry ==
+#  PropertyFactoryRegistry 
 
 You can now add support for extension properties by registering custom <em>PropertyFactory</em> implementations:
 
@@ -63,7 +63,7 @@ CalendarBuilder builder = new CalendarBuilder(CalendarParserFactory.getInstance(
 Calendar calendar = builder.build(..);
 </pre>
 
-== ParameterFactoryRegistry ==
+#  ParameterFactoryRegistry 
 
 Extension parameters are also supported:
 
@@ -82,6 +82,6 @@ CalendarBuilder builder = new CalendarBuilder(CalendarParserFactory.getInstance(
 Calendar calendar = builder.build(..);
 </pre>
 
-== Common Extensions ==
+#  Common Extensions 
 
 A collection of commonly used iCalendar extension objects are available in the [[Extensions|ical4j-extensions]] sub-project.

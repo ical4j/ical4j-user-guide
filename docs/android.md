@@ -1,6 +1,6 @@
-You can use iCal4j directly in your Android applications. Instructions for adding third-party libraries in Eclipse available [http://code.google.com/android/kb/commontasks.html#addexternallibrary here].
+You can use iCal4j directly in your Android applications. Instructions for adding third-party libraries in Eclipse available [here](http://code.google.com/android/kb/commontasks.html#addexternallibrary).
 
-==Gradle/AndroidStudio==
+# Gradle/AndroidStudio
 
 You can use iCal4j with your AndroidStudio/gradle buildfile.
 This is a working build.gradle example taken from https://github.com/k3b/CalendarIcsAdapter
@@ -40,9 +40,9 @@ dependencies {
 }
 </pre>
 
-==Eclipse==
+# Eclipse
 
-The [http://developer.android.com/sdk/eclipse-adt.html Android eclipse plugin] is quite useful for creating Android projects, just remember that to make resources visible to the iCal4j library they should be added to the 'src' directory rather than 'res'. For example;
+The [Android eclipse plugin](http://developer.android.com/sdk/eclipse-adt.html) is quite useful for creating Android projects, just remember that to make resources visible to the iCal4j library they should be added to the 'src' directory rather than 'res'. For example;
 
 <pre>
 <project_root>
@@ -60,9 +60,9 @@ The [http://developer.android.com/sdk/eclipse-adt.html Android eclipse plugin] i
 </pre>
 
 
-==Maven==
+# Maven
 
-The [http://code.google.com/p/maven-android-plugin/ Android maven plugin] allows you to configure your dependencies, such as iCal4j in the usual way. The important parts to your pom.xml are as follows:
+The [Android maven plugin](http://code.google.com/p/maven-android-plugin/) allows you to configure your dependencies, such as iCal4j in the usual way. The important parts to your pom.xml are as follows:
 
 <pre>
 <project ..>
@@ -124,9 +124,9 @@ The [http://code.google.com/p/maven-android-plugin/ Android maven plugin] allows
 </project>
 </pre>
 
-A simple Android test project has been created to demonstrate iCal4j usage. You can browse the contents of this project [http://ical4j.cvs.sourceforge.net/viewvc/ical4j/android-test/ here].
+A simple Android test project has been created to demonstrate iCal4j usage. You can browse the contents of this project [here](http://ical4j.cvs.sourceforge.net/viewvc/ical4j/android-test/).
 
-==Caveats==
+# Caveats
 
 Note that there are a couple of library dependencies that are required by iCal4j that are also included in Android (but not exposed in the API docs). These are:
 
@@ -173,7 +173,7 @@ As a result I *believe* (untested) that you won't need to include these dependen
 </project>
 </pre>
 
-==Reducing Android-footprint by using proguard==
+# Reducing Android-footprint by using proguard
 
 ical4j has several groovy classes that are not supported by android
 and fortunately you can live without them under android.
@@ -230,4 +230,4 @@ Note: If you want to use proguard with gradle your build.gradle also needs this:
     }
 </pre>
 
-Further instructions on reducing the size of your APK using Proguard are available [http://code.google.com/p/maven-android-plugin/wiki/ProGuard here].
+Further instructions on reducing the size of your APK using Proguard are available [here](http://code.google.com/p/maven-android-plugin/wiki/ProGuard).

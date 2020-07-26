@@ -1,40 +1,40 @@
-The projects listed on this page use iCal4j to provide support for the [http://www.ietf.org/rfc/rfc2445.txt iCalendar] specification.
+The projects listed on this page use iCal4j to provide support for the [iCalendar](http://www.ietf.org/rfc/rfc2445.txt) specification.
 
 {|style="border: 1px solid silver;"
 !Name!!Description!!License
 |-
-|[http://www.bedework.org/bedework/ Bedework]||A web-based calendar application||[http://www.bedework.org/bedework/update.do?artcenterkey=6 BSD License]
+|[Bedework]||A web-based calendar application||[http://www.bedework.org/bedework/update.do?artcenterkey=6 BSD License](http://www.bedework.org/bedework/)
 |-
-|[http://zimbra.com/ Zimbra]||Web-based collaboration suite||[http://zimbra.com/license/collaboration_suite_collective_license_1.0.html Zimbra Collective License]
+|[Zimbra]||Web-based collaboration suite||[http://zimbra.com/license/collaboration_suite_collective_license_1.0.html Zimbra Collective License](http://zimbra.com/)
 |-
-|[http://wiki.osafoundation.org/bin/view/Projects/CosmoHome Cosmo]||A CalDAV-based Calendar Server||[http://www.apache.org/licenses/LICENSE-2.0.html Apache Software License]
+|[Cosmo]||A CalDAV-based Calendar Server||[http://www.apache.org/licenses/LICENSE-2.0.html Apache Software License](http://wiki.osafoundation.org/bin/view/Projects/CosmoHome)
 |-
-|[http://opencap.sourceforge.net/ Opencap]||A standards-based Internet Calendaring server||[http://www.apache.org/licenses/LICENSE-2.0.html Apache Software License]
+|[Opencap]||A standards-based Internet Calendaring server||[http://www.apache.org/licenses/LICENSE-2.0.html Apache Software License](http://opencap.sourceforge.net/)
 |-
-|[http://confluence.atlassian.com/display/CONFEXT/Calendar Plugin Confluence Calendar Plugin]||Adds Calendar support to Confluence||[http://svn.atlassian.com/fisheye/viewrep/~raw,r=1739/public/contrib/confluence/calendar-plugin/trunk/LICENSE.txt BSD License]
+|[Plugin Confluence Calendar Plugin]||Adds Calendar support to Confluence||[http://svn.atlassian.com/fisheye/viewrep/~raw,r=1739/public/contrib/confluence/calendar-plugin/trunk/LICENSE.txt BSD License](http://confluence.atlassian.com/display/CONFEXT/Calendar)
 |-
-|[http://www.finchsync.com/ FinchSync]||Calendar synchronisation||[http://www.finchsync.com/download.html FinchSync License]
+|[FinchSync]||Calendar synchronisation||[http://www.finchsync.com/download.html FinchSync License](http://www.finchsync.com/)
 |-
-|[http://old.weft.org/icv/ iCalendar Validator||Validation of iCalendar files||N/A]
+|[iCalendar Validator||Validation of iCalendar files||N/A](http://old.weft.org/icv/)
 |-
-|[http://www.webical.org/ Webical]||Web based editing of remote iCalendars ||[http://www.opensource.org/licenses/gpl-license.php GPL]
+|[Webical]||Web based editing of remote iCalendars ||[http://www.opensource.org/licenses/gpl-license.php GPL](http://www.webical.org/)
 |-
-|[http://www.openprojectservices.org/ Open Project Services]||Project collaboration platform ||[http://www.opensource.org/licenses/gpl-license.php GPL]
+|[Open Project Services]||Project collaboration platform ||[http://www.opensource.org/licenses/gpl-license.php GPL](http://www.openprojectservices.org/)
 |-
-|[http://www.twproject.com/ Teamwork]||Project collaboration software||[http://www.opensource.org/licenses/gpl-license.php GPL]/commercial
+|[Teamwork]||Project collaboration software||[http://www.opensource.org/licenses/gpl-license.php GPL](http://www.twproject.com/)/commercial
 |-
-|[http://www.okgo.in/ okgo]||A desktop RSS calendar ||[http://creativecommons.org/licenses/GPL/2.0/ GPL]
+|[okgo]||A desktop RSS calendar ||[http://creativecommons.org/licenses/GPL/2.0/ GPL](http://www.okgo.in/)
 |-
-|[http://www.tate.org.uk/calendar/icalendar/ Tate Online||British and international modern and contemporary art||N/A]
+|[Tate Online||British and international modern and contemporary art||N/A](http://www.tate.org.uk/calendar/icalendar/)
 |-
-|[http://gcaldaemon.sourceforge.net/ GCALDaemon]||A calendar synchroniser||[http://gcaldaemon.sourceforge.net/license.html LGPL]
+|[GCALDaemon]||A calendar synchroniser||[http://gcaldaemon.sourceforge.net/license.html LGPL](http://gcaldaemon.sourceforge.net/)
 |-
-|[http://bionicmessage.net/groupdav/ Funambol GroupDAV Connector]||GroupDAV sync plugin for Funambol||[http://www.fsf.org/licensing/licenses/agpl-3.0.html AGPLv3]
+|[Funambol GroupDAV Connector]||GroupDAV sync plugin for Funambol||[http://www.fsf.org/licensing/licenses/agpl-3.0.html AGPLv3](http://bionicmessage.net/groupdav/)
 |-
-|[http://www.local-guru.net/blog/pages/ical4p/ iCal4p]||A thin wrapper around ical4j for [http://www.processing.org/ processing]||[http://www.opensource.org/licenses/lgpl-license.php GNU LGPL]
+|[iCal4p]||A thin wrapper around ical4j for [http://www.processing.org/ processing]||[http://www.opensource.org/licenses/lgpl-license.php GNU LGPL](http://www.local-guru.net/blog/pages/ical4p/)
 |-
-|[http://www.scalix.com Scalix]||Linux email, calendaring and messaging||[http://www.scalix.com/community/opensource/licensing.php SPL]
+|[Scalix]||Linux email, calendaring and messaging||[http://www.scalix.com/community/opensource/licensing.php SPL](http://www.scalix.com)
 |-
-|[https://github.com/k3b/CalendarIcsAdapter/ Android CalendarIcsAdapter]||Im- and export between ics file and android calendar||[http://www.opensource.org/licenses/gpl-license.php GPL]
+|[Android CalendarIcsAdapter]||Im- and export between ics file and android calendar||[http://www.opensource.org/licenses/gpl-license.php GPL](https://github.com/k3b/CalendarIcsAdapter/)
 |-
 |}

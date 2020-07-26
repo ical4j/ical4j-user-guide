@@ -1,8 +1,8 @@
-A Calendar User Agent (CUA) is software that supports the [http://www.ietf.org/rfc/rfc2445.txt iCalendar] specification. This page provides information regarding the different categories of CUAs.
+A Calendar User Agent (CUA) is software that supports the [iCalendar](http://www.ietf.org/rfc/rfc2445.txt) specification. This page provides information regarding the different categories of CUAs.
 
-==Rich Clients==
+# Rich Clients
 
-===[http://www.microsoft.com/outlook/ Microsoft Outlook]===
+## [Microsoft Outlook](http://www.microsoft.com/outlook/)
 <strong>Language:</strong> C   (?)
 <br/>
 <strong>License:</strong> Proprietary
@@ -26,7 +26,7 @@ A Calendar User Agent (CUA) is software that supports the [http://www.ietf.org/r
 * <em>X-MS-OLK-SENDER;CN=Test:mailto:user@example.com</em>
 <br/>
 
-===[http://www.ibm.com/software/lotus Lotus Notes]===
+## [Lotus Notes](http://www.ibm.com/software/lotus)
 <strong>Language:</strong> C   (?)
 <br/>
 <strong>License:</strong> Proprietary
@@ -45,10 +45,10 @@ A Calendar User Agent (CUA) is software that supports the [http://www.ietf.org/r
 * <em>X-LOTUS-CHILD_UID:9DA9112BB4438073C125750E004B7055 </em>
 <br/>
 
-===[http://www.mozilla.org/projects/calendar/ Mozilla Calendar]===
+## [Mozilla Calendar](http://www.mozilla.org/projects/calendar/)
 <strong>Language:</strong> C   (?)
 <br/>
-<strong>License:</strong> [http://www.mozilla.org/MPL/MPL-1.1.html MPL]
+<strong>License:</strong> [MPL](http://www.mozilla.org/MPL/MPL-1.1.html)
 <br/><br/>
 <strong>RFC2445 Deviations:</strong>
 * long content lines are folded with a single LF character (should be CRLF)
@@ -56,7 +56,7 @@ A Calendar User Agent (CUA) is software that supports the [http://www.ietf.org/r
 * Generates non-standard "X" properties
 <br/>
 
-===[http://www.apple.com/ical/ Apple iCal]===
+## [Apple iCal](http://www.apple.com/ical/)
 <strong>Language:</strong> Unknown
 <br/>
 <strong>License:</strong> Proprietary
@@ -67,52 +67,52 @@ A Calendar User Agent (CUA) is software that supports the [http://www.ietf.org/r
 * iCal 1.0 doesn't appear to include VTIMEZONE definitions where applicable (this appears fixed as of 1.5)
 <br/>
 
-===[http://www.gnome.org/projects/evolution/ Evolution]===
+## [Evolution](http://www.gnome.org/projects/evolution/)
 <strong>Language:</strong> C   (?)
 <br/>
-<strong>License:</strong> [http://www.gnu.org/licenses/gpl.html GPL]
+<strong>License:</strong> [GPL](http://www.gnu.org/licenses/gpl.html)
 <br/>
 
-===[http://korganizer.kde.org/ KOrganizer]===
+## [KOrganizer](http://korganizer.kde.org/)
 <strong>Language:</strong> C   (?)
 <br/>
-<strong>License:</strong> [http://www.gnu.org/licenses/gpl.html GPL]
+<strong>License:</strong> [GPL](http://www.gnu.org/licenses/gpl.html)
 <br/><br/>
 <strong>RFC2445 Deviations:</strong>
 * long content lines are folded with a single LF character (should be CRLF)
 * folds all property parameters and values
 <br/>
 
-===[http://chandler.osafoundation.org/ Chandler]===
+## [Chandler](http://chandler.osafoundation.org/)
 <strong>Language:</strong> Python
 <br/>
-<strong>License:</strong> [http://www.gnu.org/licenses/gpl.html GPL]
+<strong>License:</strong> [GPL](http://www.gnu.org/licenses/gpl.html)
 
 <br/>
 
-===[http://www.k5n.us/k5ncal.php k5n Desktop Calendar (k5nCal)]===
+## [k5n Desktop Calendar (k5nCal)](http://www.k5n.us/k5ncal.php)
 <strong>Language:</strong> Java 1.5
 <br/>
-<strong>License:</strong> [http://www.k5n.us/k5ncal.php?topic=Licensing GPL] (3rd party libraries with other licenses)
+<strong>License:</strong> [GPL](http://www.k5n.us/k5ncal.php?topic=Licensing) (3rd party libraries with other licenses)
 
-==Web Applications==
+# Web Applications
 
-===[http://phpicalendar.net/ PHP iCalendar]===
+## [PHP iCalendar](http://phpicalendar.net/)
 <strong>Language:</strong> PHP
 <br/>
-<strong>License:</strong> [http://www.gnu.org/licenses/gpl.html GPL]
+<strong>License:</strong> [GPL](http://www.gnu.org/licenses/gpl.html)
 <br/><br/>
 <strong>RFC2445 Deviations:</strong>
 * long content lines are folded with a single LF character (should be CRLF)
 <br/>
 
-===[http://www.webical.org/ Webical]===
+## [Webical](http://www.webical.org/)
 <strong>Language:</strong> Java
 <br/>
-<strong>License:</strong> [http://www.gnu.org/licenses/gpl.html GPL]
+<strong>License:</strong> [GPL](http://www.gnu.org/licenses/gpl.html)
 <br/>
 
-===[http://calendar.google.com/ Google Calendar]===
+## [Google Calendar](http://calendar.google.com/)
 <strong>Language:</strong> Unknown
 <br/>
 <strong>License:</strong> N/A
@@ -120,7 +120,7 @@ A Calendar User Agent (CUA) is software that supports the [http://www.ietf.org/r
 <strong>RFC2445 Deviations:</strong>
 * Generates DTSTART properties in DATE format without specifying the required VALUE=DATE parameter
 
-===[http://www.k5n.us/webcalendar.php WebCalendar]===
+## [WebCalendar](http://www.k5n.us/webcalendar.php)
 <strong>Language:</strong> PHP
 <br/>
 <strong>License:</strong> GPL
@@ -128,14 +128,14 @@ A Calendar User Agent (CUA) is software that supports the [http://www.ietf.org/r
 <strong>RFC2445 Deviations:</strong>
 * Generates invalid ATTENDEE lines
 
-==Calendar Servers==
+# Calendar Servers
 
-===[http://www.hula-project.org/ Hula Project]===
+## [Hula Project](http://www.hula-project.org/)
 <strong>Language:</strong> Unknown
 <br/>
-<strong>License:</strong> [http://www.gnu.org/licenses/gpl.html GPL]
+<strong>License:</strong> [GPL](http://www.gnu.org/licenses/gpl.html)
 
-===[http://cosmo.osafoundation.org/ Cosmo]===
+## [Cosmo](http://cosmo.osafoundation.org/)
 <strong>Language:</strong> Java
 <br/>
-<strong>License:</strong> [http://apache.org/licenses/LICENSE-2.0 Apache 2.0]
+<strong>License:</strong> [Apache 2.0](http://apache.org/licenses/LICENSE-2.0)

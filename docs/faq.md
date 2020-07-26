@@ -16,7 +16,7 @@
 
 <strong>Q.</strong> Where does iCal4j get timezone information from?
 
-<strong>A.</strong> Timezone definitions in iCal4j are generated from the [http://www.twinsun.com/tz/tz-link.htm Olson] [http://en.wikipedia.org/wiki/Zoneinfo Zoneinfo] database. Each release of iCal4j is updated with the latest Olson definitions. [http://java.sun.com/developer/technicalArticles/Intl/FAQ_appendix.html This] article from Sun appears to offer some details about the changes introduced in each release of the Olson data.
+<strong>A.</strong> Timezone definitions in iCal4j are generated from the [Olson] [http://en.wikipedia.org/wiki/Zoneinfo Zoneinfo] database. Each release of iCal4j is updated with the latest Olson definitions. [http://java.sun.com/developer/technicalArticles/Intl/FAQ_appendix.html This](http://www.twinsun.com/tz/tz-link.htm) article from Sun appears to offer some details about the changes introduced in each release of the Olson data.
 
 
 <strong>Q.</strong> Why does iCal4j have a minimum requirement of Java 1.4? Is it possible to use iCal4j with a pre-1.4 Java runtime?
@@ -40,7 +40,7 @@ Output:
         GEO:65.349999999999994315658113919198513031005859375;22.01000000000000156
 </pre>
 
-<strong>A.</strong> This problem occurs when the number specified cannot accurately be represented by a double value in Java. More on this effect [http://java.sun.com/j2se/1.5.0/docs/api/java/math/BigDecimal.html#BigDecimal(double) here]. The solution is to use either a string representation of the specified number, or [http://java.sun.com/j2se/1.5.0/docs/api/java/math/BigDecimal.html#valueOf(double) BigDecimal.valueOf(double)] to create your BigDecimal. i.e:
+<strong>A.</strong> This problem occurs when the number specified cannot accurately be represented by a double value in Java. More on this effect [here]. The solution is to use either a string representation of the specified number, or [http://java.sun.com/j2se/1.5.0/docs/api/java/math/BigDecimal.html#valueOf(double) BigDecimal.valueOf(double)](http://java.sun.com/j2se/1.5.0/docs/api/java/math/BigDecimal.html#BigDecimal(double)) to create your BigDecimal. i.e:
 
 <pre>
         BigDecimal latitude = BigDecimal.valueOf(65.35);
@@ -68,9 +68,9 @@ For more details see https://github.com/ical4j/ical4j/wiki/Android.
 
 <strong>Q.</strong> How do I create a meeting request in MS Outlook that can be accepted by the Organizer?
 
-<strong>A.</strong> It appears there is a bug in MS Outlook that can be solved by a hotfix. See [http://stackoverflow.com/questions/4349836/how-can-i-add-an-ics-meeting-automatically-to-the-organizers-calendar here] for details.
+<strong>A.</strong> It appears there is a bug in MS Outlook that can be solved by a hotfix. See [here](http://stackoverflow.com/questions/4349836/how-can-i-add-an-ics-meeting-automatically-to-the-organizers-calendar) for details.
 
 
 <strong>Q.</strong> I cannot find the answer to my question. What should I do now?
 
-<strong>A.</strong> If you cannot find what you need on this Wiki, the next best thing is to post a question in the [http://sourceforge.net/forum/?group_id=107024 forums].
+<strong>A.</strong> If you cannot find what you need on this Wiki, the next best thing is to post a question in the [forums](http://sourceforge.net/forum/?group_id=107024).

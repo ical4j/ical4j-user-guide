@@ -1,38 +1,38 @@
-== Introduction ==
+#  Introduction 
 This page outlines current support for the implemented specifications.
 
 
-== About the iCal RFC ==
+#  About the iCal RFC 
 
 
-== [http://rfc.net/rfc2445.html RFC2445] ==
+#  [RFC2445](http://rfc.net/rfc2445.html) 
 
 {|style="border: 1px solid silver;"
 !Section!!Status!!Exceptions
 |-
-|[http://rfc.net/rfc2445.html#s4.6.1 4.6.1 Event Component]||Implemented||
+|[4.6.1 Event Component](http://rfc.net/rfc2445.html#s4.6.1)||Implemented||
 |-
-|[http://rfc.net/rfc2445.html#s4.6.2 4.6.2 To-do Component]||Implemented||
+|[4.6.2 To-do Component](http://rfc.net/rfc2445.html#s4.6.2)||Implemented||
 |-
-|[http://rfc.net/rfc2445.html#s4.6.3 4.6.3 Journal Component]||Implemented||
+|[4.6.3 Journal Component](http://rfc.net/rfc2445.html#s4.6.3)||Implemented||
 |-
-|[http://rfc.net/rfc2445.html#s4.6.4 4.6.4 Free/Busy Component]||Implemented||
+|[4.6.4 Free/Busy Component](http://rfc.net/rfc2445.html#s4.6.4)||Implemented||
 |-
-|[http://rfc.net/rfc2445.html#s4.6.5 4.6.5 Time Zone Component]||Implemented||
+|[4.6.5 Time Zone Component](http://rfc.net/rfc2445.html#s4.6.5)||Implemented||
 |-
-|[http://rfc.net/rfc2445.html#s4.6.6 4.6.6 Alarm Component]||Implemented||
+|[4.6.6 Alarm Component](http://rfc.net/rfc2445.html#s4.6.6)||Implemented||
 |-
 |}
 
 
-== [http://rfc.net/rfc2446.html RFC2446] ==
+#  [RFC2446](http://rfc.net/rfc2446.html) 
 
 Not implemented.
 
-== [http://rfc.net/rfc2447.html RFC2447] ==
+#  [RFC2447](http://rfc.net/rfc2447.html) 
 
 Not implemented.
 
 
-== External Links == 
-[http://en.wikipedia.org/wiki/ICalendar WikiPedia entry on iCal]
+#  External Links  
+[WikiPedia entry on iCal](http://en.wikipedia.org/wiki/ICalendar)
