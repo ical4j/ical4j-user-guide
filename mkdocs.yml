@@ -1,7 +1,20 @@
 site_name: iCal4j User Guide
+site_url: https://ical4j.github.io/ical4j-user-guide/
 theme:
   name: material
   favicon: images/favicon.png
   logo: images/logo-48.png
 repo_url: https://github.com/ical4j/ical4j
 repo_name: ical4j/ical4j
+google_analytics:
+  - UA-402774-10
+  - auto
+extra:
+  disqus: ical4j
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/benfortuna
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/in/benfortuna
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/micronode
