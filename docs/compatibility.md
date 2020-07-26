@@ -2,7 +2,7 @@ To increase interoperability with other CUAs a number of <em>Compatibility Hints
 
 # Enabling Compatibility Hints programmatically
 
-Compatibility Hints can be enabled and disabled by calling the static method [CompatibilityHints.setHintEnabled()](http://m2.modularity.net.au/projects/ical4j/apidocs/net/fortuna/ical4j/util/CompatibilityHints.html#setHintEnabled(java.lang.String,%20boolean)). For example:
+Compatibility Hints can be enabled and disabled by calling the static method [CompatibilityHints.setHintEnabled()](http://ical4j.github.io/docs/ical4j/api/3.0.19/net/fortuna/ical4j/util/CompatibilityHints.html#setHintEnabled(java.lang.String,%20boolean)). For example:
 
 <pre>CompatibilityHints.setHintEnabled(KEY_RELAXED_UNFOLDING, true);</pre>
 

@@ -1,10 +1,10 @@
 The iCal4j parsing functionality is designed to allow the use of alternate parser and content handler implementations.
 
-# [net.fortuna.ical4j.data.CalendarParser](http://modularity.net.au/projects/ical4j/apidocs/net/fortuna/ical4j/data/CalendarParser.html)
+# [net.fortuna.ical4j.data.CalendarParser](http://ical4j.github.io/docs/ical4j/api/3.0.19/net/fortuna/ical4j/data/CalendarParser.html)
 
 The CalendarParser interface defines two methods that implementors must provide implementations for. The first method parses data from a java.io.InputStream, whilst the second reads from a java.io.Reader. Both methods must notify the specified ContentHandler by calling the appropriate methods on parse events. The default parser implementation used by iCal4j is the [net.fortuna.ical4j.data.CalendarParserImpl](http://modularity.net.au/projects/ical4j/apidocs/net/fortuna/ical4j/data/CalendarParserImpl.html).
 
-# [net.fortuna.ical4j.data.ContentHandler](http://modularity.net.au/projects/ical4j/apidocs/net/fortuna/ical4j/data/ContentHandler.html)
+# [net.fortuna.ical4j.data.ContentHandler](http://ical4j.github.io/docs/ical4j/api/3.0.19/net/fortuna/ical4j/data/ContentHandler.html)
 
 Implementors of the ContentHandler interface typically use the parse event notification methods to build a calendar representation (i.e. an object model). The default ContentHandler implementation for iCal4j is the CalendarBuilder.
 

@@ -169,7 +169,7 @@ ATTACH;ENCODING=BASE64;VALUE=BINARY:iVBORw0KGgoAAAANSUhEUgAAAUYAAACJCAYAA
 
 # Filtering events
 
-The correct way to filter events according to the spec (RFC2445) would be to construct a VFREEBUSY request that represents the properties of events that you are interested in. You would then pass this request as an argument to the constructor of a new VFREEBUSY, along with the list of components (events) you want to inspect to derive a VFREEBUSY instance that represents the consumed/free time based on the specified events (see the [API Documentation](http://m2.modularity.net.au/projects/ical4j/apidocs/net/fortuna/ical4j/model/component/VFreeBusy.html) for more information).
+The correct way to filter events according to the spec (RFC2445) would be to construct a VFREEBUSY request that represents the properties of events that you are interested in. You would then pass this request as an argument to the constructor of a new VFREEBUSY, along with the list of components (events) you want to inspect to derive a VFREEBUSY instance that represents the consumed/free time based on the specified events (see the [API Documentation](http://ical4j.github.io/docs/ical4j/api/3.0.19/net/fortuna/ical4j/model/component/VFreeBusy.html) for more information).
 
 If instead you would like to identify specific events occurring within a time frame, you can use iCal4j filters to filter components within a specified period. For example, to filter a list of events only occurring today you might do the following:
 
