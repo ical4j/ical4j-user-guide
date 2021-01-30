@@ -17,8 +17,7 @@ iCal4j Connector requires a minimum of Java 5 due to the use of features introdu
 
 ## Download
 
-* [Releases](https://sourceforge.net/projects/ical4j/files/iCal4j%20Connector/)
-* [Snapshot Builds](http://m2.modularity.net.au/snapshots/net/fortuna/ical4j/ical4j-connector/)
+* [Releases](https://bintray.com/ical4j/maven/ical4j-connector)
 
 ## Related projects
 

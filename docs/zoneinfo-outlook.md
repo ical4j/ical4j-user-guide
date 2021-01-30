@@ -37,5 +37,4 @@ None.
 
 ## Download
 
-* [Releases](https://sourceforge.net/projects/ical4j/files/ical4j-zoneinfo-outlook/)
-* [Snapshot Builds](http://m2.modularity.net.au/snapshots/net/fortuna/ical4j/ical4j-zoneinfo-outlook/)
+* [Releases](https://bintray.com/ical4j/maven/ical4j-zoneinfo-outlook)

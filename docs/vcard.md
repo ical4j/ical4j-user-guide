@@ -13,8 +13,7 @@ iCal4j vCard requires a minimum of Java 5 due to the use of features introduced 
 
 ## Download
 
-* [Releases](https://sourceforge.net/project/showfiles.php?group_id=107024&package_id=305914)
-* [Snapshot Builds](http://m2.modularity.net.au/snapshots/net/fortuna/ical4j/ical4j-vcard/)
+* [Releases](https://bintray.com/ical4j/maven/ical4j-vcard)
 
 ## Alternative vCard implementations
 

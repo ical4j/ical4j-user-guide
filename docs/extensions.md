@@ -31,8 +31,7 @@ iCal4j Extensions requires a minimum of Java 5 due to the use of features introd
 
 ## Download
 
-* [Releases](https://sourceforge.net/projects/ical4j/files/ical4j-extensions/)
-* [Snapshot Builds](http://m2.modularity.net.au/snapshots/net/fortuna/ical4j/ical4j-extensions/)
+* [Releases](https://bintray.com/ical4j/maven/ical4j-extensions)
 
 Traditionally any components, properties and parameters not defined by [RFC2445](http://www.ietf.org/rfc/rfc2445.txt) are classified as <em>non-standard</em> or <em>extension</em> objects. These objects must include the <strong>"X-"</strong> name prefix to be compliant with the specification.
 

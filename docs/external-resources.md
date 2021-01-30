@@ -4,8 +4,8 @@ Note that much of ical4j is currently managed elsewhere, with GitHub currently u
 
 ### Resources
 
-Source code: https://sourceforge.net/p/ical4j/ical4j
+Source code: https://github.com/ical4j/ical4j
 
-Documentation: http://wiki.modularity.net.au/ical4j
+Documentation: https://ical4j.github.io/docs/ical4j
 
-Releases: https://sourceforge.net/projects/ical4j/files/iCal4j/
+Releases: https://bintray.com/ical4j/maven/ical4j

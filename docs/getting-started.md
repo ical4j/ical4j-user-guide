@@ -15,7 +15,7 @@ If you choose to download the source distribution you will need to build the lib
 
 # Include in your Classpath
 
-Including iCal4j in your classpath depends on how you are developing your software. Typically an IDE such as [Eclipse] is used, in which case you would right-click on your Eclipse project and add the ical4j.jar to the Build Path. Note that you will also need to include all compile-time [http://modularity.net.au/projects/ical4j/dependencies.html dependencies](http://www.eclipse.org/) in your classpath also.
+Including iCal4j in your classpath depends on how you are developing your software. Typically an IDE such as [Eclipse] is used, in which case you would right-click on your Eclipse project and add the ical4j.jar to the Build Path. Note that you will also need to include all compile-time [https://github.com/ical4j/ical4j#system-requirements dependencies](http://www.eclipse.org/) in your classpath also.
 
 # Add Import Statements to Your Classes
 

@@ -178,10 +178,6 @@ You can also use [Grape] to manage your iCal4j dependencies, however you will ne
   <resolvers>
     <chain name="downloadGrapes">
       ...
-      <!-- next two not working any more
-      <ibiblio name="modularity-snapshots" root="http://m2.modularity.net.au/snapshots" m2compatible="true"/>
-      <ibiblio name="modularity-releases" root="http://m2.modularity.net.au/releases" m2compatible="true"/>
-      -->
       <ibiblio name="mvnrepo" root="https://mvnrepository.com/" m2compatible="true" />
     </chain>
   </resolvers>

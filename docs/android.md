@@ -68,16 +68,6 @@ The [Android maven plugin](http://code.google.com/p/maven-android-plugin/) allow
 <project ..>
         ...
 	<packaging>apk</packaging>
-	<repositories>
-		<repository>
-			<releases>
-				<enabled>false</enabled>
-			</releases>
-			<id>modularity-snapshots</id>
-			<name>Modularity Snapshots</name>
-			<url>http://m2.modularity.net.au/snapshots</url>
-		</repository>
-	</repositories>
 	<dependencies>
 		<dependency>
 			<groupId>net.fortuna.ical4j</groupId>
