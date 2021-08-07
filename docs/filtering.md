@@ -1,3 +1,7 @@
+[Unary Expression]: #unary-expression
+[Binary Expression]: #binary-expression
+
+
 In addition to a robust and compliant implementation of the iCalendar specification, it is also important to have
 an expressive and powerful mechanism for accessing calendar data. iCal4j filters provide a framework for calendar
 object retrieval whether it be in-memory object models or some other data source.
@@ -7,7 +11,7 @@ object retrieval whether it be in-memory object models or some other data source
 Filter expressions serve to provide an abstract syntax tree (AST) for modeling an iCalendar filter that can be
 used to filter data from various data sources.
 
-### Unary Expression
+### Unary Expression [&raquo;][Unary Expression]
 
 A unary expression contains a single operand and operator, with the operand being another expression.
 
@@ -15,7 +19,7 @@ Some example unary expressions include:
 
 * 
 
-### Binary Expression
+### Binary Expression [&raquo;][Binary Expression]
 
 A binary expression include a left and right operand and and operator.
 
