@@ -12,8 +12,8 @@
 
 ## Introduction
 
-iCal4j is a Java library used to read and write iCalendar data streams as defined in [RFC2445]. The iCalendar standard
-provides a common data format used to store information about calendar-specific data such as events, appointments, to-do
+iCal4j is a Java library used to manage iCalendar data as defined in [RFC5545]. The iCalendar standard
+provides a common data format used to store scheduling information such as events, appointments, to-do
 lists, etc. All of the popular calendaring tools, such as Lotus Notes, Outlook and Apple's iCal also support the iCalendar
 standard.
 

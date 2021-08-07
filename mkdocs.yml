@@ -23,7 +23,7 @@ nav:
   - Getting Started: getting-started.md
   - Android: android.md
   - Compatibility: compatibility.md
-  - RFC Compliance: compliance.md
+  - RFC Compliance: rfcs.md
   - Connector: connector.md
   - CUAs: cuas.md
   - Date/Time Concepts: datetime.md
