@@ -1,6 +1,3 @@
-[Unary Expression]: #unary-expression
-[Binary Expression]: #binary-expression
-
 
 In addition to a robust and compliant implementation of the iCalendar specification, it is also important to have
 an expressive and powerful mechanism for accessing calendar data. iCal4j filters provide a framework for calendar
@@ -11,17 +8,30 @@ object retrieval whether it be in-memory object models or some other data source
 Filter expressions serve to provide an abstract syntax tree (AST) for modeling an iCalendar filter that can be
 used to filter data from various data sources.
 
-### Unary Expression [&raquo;][Unary Expression]
+### Unary Expression
 
-A unary expression contains a single operand and operator, with the operand being another expression.
+A unary expression contains a single operand and operator, with the operand being another expression. Unary
+expressions may be of prefix or postfix form:
+
+* `<operator> <operand> # prefix unary expression, such as 'not something'`
+* `<operand> <operator> # postfix expression, such as 'something exists'`
 
 Some example unary expressions include:
 
-* 
+* `not attendee = 'joeb@example.com' # events not including joeb` 
+* `not due < startOfDay() # todos that are not overdue`
+* `attendee[partstat:TENTATIVE] exists # events with tentative attendees`
+* `attendee[role:CHAIR] not exists # events without a chair`
 
-### Binary Expression [&raquo;][Binary Expression]
+### Binary Expression
 
 A binary expression include a left and right operand and and operator.
+
+Some example binary expressions include:
+
+* `attendee = 'job@example.com # events including joeb`
+* `due < startOfDay() # todos that are overdue`
+
 
 ### Specification Expression
 
