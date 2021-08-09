@@ -10,8 +10,6 @@
 
 [Java Legacy Date-Time Code]: https://docs.oracle.com/javase/tutorial/datetime/iso/legacy.html
 
-## Introduction
-
 iCal4j is a Java library used to manage iCalendar data as defined in [RFC5545]. The iCalendar standard
 provides a common data format used to store scheduling information such as events, appointments, to-do
 lists, etc. All of the popular calendaring tools, such as Lotus Notes, Outlook and Apple's iCal also support the iCalendar

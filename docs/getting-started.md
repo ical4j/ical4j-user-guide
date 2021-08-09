@@ -1,3 +1,5 @@
+# Getting Started
+
 These instructions are designed to help you get a basic setup, to be able to start coding with iCal4j.
 
 # Download
