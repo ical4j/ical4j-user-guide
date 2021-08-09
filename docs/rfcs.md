@@ -1,11 +1,8 @@
-#  Introduction 
+# Supported Specifications
 This page outlines current support for the implemented specifications.
 
 
-#  About the iCal RFC 
-
-
-#  [RFC2445](http://rfc.net/rfc2445.html) 
+##  [RFC2445](http://rfc.net/rfc2445.html) 
 
 {|style="border: 1px solid silver;"
 !Section!!Status!!Exceptions
@@ -25,14 +22,14 @@ This page outlines current support for the implemented specifications.
 |}
 
 
-#  [RFC2446](http://rfc.net/rfc2446.html) 
+##  [RFC2446](http://rfc.net/rfc2446.html) 
 
 Not implemented.
 
-#  [RFC2447](http://rfc.net/rfc2447.html) 
+##  [RFC2447](http://rfc.net/rfc2447.html) 
 
 Not implemented.
 
 
-#  External Links  
+##  External Links  
 [WikiPedia entry on iCal](http://en.wikipedia.org/wiki/ICalendar)

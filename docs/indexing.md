@@ -2,7 +2,7 @@
 
 Indexing of components and properties provides a mechanism to improve the performance of component and property retrieval from calendar data. Typically you might use indexing in situations where you are repeatedly inspecting a calendar for components with specific property values and/or properties with specific parameter values.
 
-# Example
+## Example
 
 An example scenario might be where you have regular updates to input calendar data and need to identify if events in that calendar already exist in a master calendar. As you would be repeatedly inspecting the master calendar for events, it would make sense to index the components in this calendar as follows:
 

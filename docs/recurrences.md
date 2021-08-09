@@ -1,3 +1,5 @@
+# iCal4j Recurrence Support
+
 Events that occur more than once are supported in the iCalendar specification, and are defined by either a sequence of dates (RDATE) or a recurrence rule (RRULE).
 
 ## Recurrence (RRULE) Examples

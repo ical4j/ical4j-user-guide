@@ -1,4 +1,4 @@
-# ZoneInfo Outlook
+# iCal4j ZoneInfo Outlook
 
 iCal4j ZoneInfo Outlook provides alternate timezone definitions that may provide greater compatibility with certain versions of Microsoft Outlook.
 

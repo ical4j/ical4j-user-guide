@@ -1,3 +1,5 @@
+# Projects using iCal4j
+
 The projects listed on this page use iCal4j to provide support for the [iCalendar](http://www.ietf.org/rfc/rfc2445.txt) specification.
 
 {|style="border: 1px solid silver;"

@@ -1,4 +1,4 @@
-# Resources
+# iCal4j Resources
 
 * [Project Home](http://github.com/ical4j/ical4j/)
 * [API Documentation](http://ical4j.github.io/docs/ical4j/api/)
@@ -10,11 +10,11 @@
 * [Releases](https://sourceforge.net/project/platformdownload.php?group_id=107024)
 * [Snapshot Builds](https://oss.sonatype.org/content/repositories/snapshots/org/mnode/ical4j/)
 
-# Getting Started
+## Getting Started
 
 * [Slides] from a recent presentation at the [http://calconnect.org CalConnect](http://ical4j.cvs.sourceforge.net/viewvc/*checkout*/ical4j/iCal4j/etc/iCal4j_Calconnect.pdf) Roundtable XIV.
 
-# Resources
+## Resources
 
 * Information regarding code coverage and other project reports is available in the [Project Documentation](http://github.com/ical4j/ical4j).
 
