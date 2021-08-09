@@ -19,29 +19,33 @@ extra:
     - icon: fontawesome/brands/twitter
       link: https://twitter.com/micronode
 nav:
-  - Introduction: index.md
-  - Getting Started: getting-started.md
-  - Android: android.md
-  - Compatibility: compatibility.md
-  - RFC Compliance: rfcs.md
-  - Connector: connector.md
-  - CUAs: cuas.md
-  - Date/Time Concepts: datetime.md
-  - Encoding: encoding.md
-  - Examples: examples.md
-  - Extensions: extensions.md
-  - External Resources: external-resources.md
+  - Overview:
+    - Introduction: index.md
+    - Getting Started: getting-started.md
+    - Examples: examples.md
+    - Android: android.md
+    - Maven: maven.md
+  - Features:
+    - Compatibility: compatibility.md
+    - Date/Time Concepts: datetime.md
+    - Encoding: encoding.md
+    - Filtering: filtering.md
+    - Groovy: groovy.md
+    - Indexing: indexing.md
+    - Parsing: parser.md
+    - Recurrences: recurrences.md
+    - Timezones: timezones.md
+  - Additional:
+    - Connector: connector.md
+    - Extensions: extensions.md
+    - Integration: integration.md
+    - vCard: vcard.md
+    - ZoneInfo Outlook: zoneinfo-outlook.md
+  - References:
+    - RFC Compliance: rfcs.md
+    - CUAs: cuas.md
+    - External Resources: external-resources.md
+    - Projects using iCal4j: projects.md
+    - Resources: resources.md
+    - Roadmap: roadmap.md
   - FAQ: faq.md
-  - Filtering: filtering.md
-  - Groovy: groovy.md
-  - Indexing: indexing.md
-  - Integration: integration.md
-  - Maven: maven.md
-  - Parsing: parser.md
-  - Projects using iCal4j: projects.md
-  - Recurrences: recurrences.md
-  - Resources: resources.md
-  - Roadmap: roadmap.md
-  - Timezones: timezones.md
-  - vCard: vcard.md
-  - ZoneInfo Outlook: zoneinfo-outlook.md
