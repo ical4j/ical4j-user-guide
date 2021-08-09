@@ -1,4 +1,4 @@
-# Extensions
+# iCal4j Extensions
 
 iCal4j Extensions is a Java library that provides support for widely used non-standard iCalendar objects (i.e. properties and parameters). These model extensions are implemented via the [object registry]]([ModelExtensions|custom) support in iCal4j.
 
@@ -43,7 +43,7 @@ In the iCal4j object model, these objects are represented by the XComponent, XPr
 
 There are a number of deficiences with above approach, most notably that only <em>String</em> values are supported by X{Component|Property|Parameter}, and there is no option for supporting some well-known non-standard objects.
 
-#  PropertyFactoryRegistry 
+###  PropertyFactoryRegistry 
 
 You can now add support for extension properties by registering custom <em>PropertyFactory</em> implementations:
 
@@ -62,7 +62,7 @@ CalendarBuilder builder = new CalendarBuilder(CalendarParserFactory.getInstance(
 Calendar calendar = builder.build(..);
 </pre>
 
-#  ParameterFactoryRegistry 
+###  ParameterFactoryRegistry 
 
 Extension parameters are also supported:
 
@@ -81,6 +81,6 @@ CalendarBuilder builder = new CalendarBuilder(CalendarParserFactory.getInstance(
 Calendar calendar = builder.build(..);
 </pre>
 
-#  Common Extensions 
+##  Common Extensions 
 
 A collection of commonly used iCalendar extension objects are available in the [[Extensions|ical4j-extensions]] sub-project.

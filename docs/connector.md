@@ -1,4 +1,4 @@
-# Connector
+# iCal4j Connector
 
 iCal4j Connector is an extension library that provides support for connecting to back-end calendar/vCard servers. Initial support includes connecting to CalDAV- and CardDAV-compliant servers, as well as Java Content Repository (JCR) implementations.
 

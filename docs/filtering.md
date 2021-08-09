@@ -1,3 +1,4 @@
+# iCal4j Filters
 
 In addition to a robust and compliant implementation of the iCalendar specification, it is also important to have
 an expressive and powerful mechanism for accessing calendar data. iCal4j filters provide a framework for calendar

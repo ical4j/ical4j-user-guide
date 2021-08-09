@@ -1,6 +1,8 @@
+# iCal4j Examples
+
 This page provides examples that demonstrate how to use iCal4j effectively.
 
-# Parsing a calendar file
+## Parsing a calendar file
 
     FileInputStream fin = new FileInputStream("mycalendar.ics");
 
@@ -8,7 +10,7 @@ This page provides examples that demonstrate how to use iCal4j effectively.
 
     Calendar calendar = builder.build(fin);
 
-# Parsing a calendar string
+## Parsing a calendar string
 
     String myCalendarString = ...
 
@@ -18,7 +20,7 @@ This page provides examples that demonstrate how to use iCal4j effectively.
 
     Calendar calendar = builder.build(sin);
 
-# Creating a new calendar
+## Creating a new calendar
 
     Calendar calendar = new Calendar();
     calendar.getProperties().add(new ProdId("-//Ben Fortuna//iCal4j 1.0//EN"));
@@ -35,7 +37,7 @@ Output:
     CALSCALE:GREGORIAN
     END:VCALENDAR
 
-# Creating an all day event
+## Creating an all day event
 
     java.util.Calendar calendar = java.util.Calendar.getInstance();
     calendar.set(java.util.Calendar.MONTH, java.util.Calendar.DECEMBER);
@@ -60,7 +62,7 @@ Output:
     UID:20050222T044240Z-1@example.com
     END:VEVENT
 
-# Creating a meeting of four hour duration
+## Creating a meeting of four hour duration
 
     // Create a TimeZone
     TimeZoneRegistry registry = TimeZoneRegistryFactory.getInstance().createRegistry();
@@ -122,14 +124,14 @@ Output:
     icsCalendar.getComponents().add(meeting);
     System.out.println(icsCalendar);
 
-# Generating a calendar file
+## Generating a calendar file
 
     FileOutputStream fout = new FileOutputStream("mycalendar.ics");
 
     CalendarOutputter outputter = new CalendarOutputter();
     outputter.output(calendar, fout);
 
-# Attaching binary data
+## Attaching binary data
 
     FileInputStream fin = new FileInputStream("etc/artwork/logo.png");
     ByteArrayOutputStream bout = new ByteArrayOutputStream();
@@ -154,7 +156,7 @@ Output:
      ...
 
 
-# Filtering events
+## Filtering events
 
 The correct way to filter events according to the spec (RFC2445) would be to construct a VFREEBUSY request that represents the properties of events that you are interested in. You would then pass this request as an argument to the constructor of a new VFREEBUSY, along with the list of components (events) you want to inspect to derive a VFREEBUSY instance that represents the consumed/free time based on the specified events (see the [API Documentation](http://ical4j.github.io/docs/ical4j/api/3.0.19/net/fortuna/ical4j/model/component/VFreeBusy.html) for more information).
 
@@ -171,7 +173,7 @@ If instead you would like to identify specific events occurring within a time fr
 
     List eventsToday = filter.filter(calendar.getComponents(Component.VEVENT));
 
-# Generating event dates
+## Generating event dates
 
     // Reading the file and creating the calendar
     CalendarBuilder builder = new CalendarBuilder();
@@ -201,7 +203,7 @@ If instead you would like to identify specific events occurring within a time fr
         }
     }
 
-# Creating a simple vCard
+## Creating a simple vCard
 
     List<Property> props = new ArrayList<Property>();
     props.add(new Source(URI.create("ldap://ldap.example.com/cn=Babs%20Jensen,%20o=Babsco,%20c=US")));

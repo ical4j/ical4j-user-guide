@@ -1,6 +1,7 @@
+# Android Support
 You can use iCal4j directly in your Android applications. Instructions for adding third-party libraries in Eclipse available [here](http://code.google.com/android/kb/commontasks.html#addexternallibrary).
 
-# Gradle/AndroidStudio
+## Gradle/AndroidStudio
 
 You can use iCal4j with your AndroidStudio/gradle buildfile.
 This is a working build.gradle example taken from https://github.com/k3b/CalendarIcsAdapter
@@ -38,7 +39,7 @@ This is a working build.gradle example taken from https://github.com/k3b/Calenda
         compile 'commons-lang:commons-lang:2.6'
     }
 
-# Eclipse
+## Eclipse
 
 The [Android eclipse plugin](http://developer.android.com/sdk/eclipse-adt.html) is quite useful for creating Android projects, just remember that to make resources visible to the iCal4j library they should be added to the 'src' directory rather than 'res'. For example;
 
@@ -56,7 +57,7 @@ The [Android eclipse plugin](http://developer.android.com/sdk/eclipse-adt.html) 
     +- backport-util-concurrent.jar
 
 
-# Maven
+## Maven
 
 The [Android maven plugin](http://code.google.com/p/maven-android-plugin/) allows you to configure your dependencies, such as iCal4j in the usual way. The important parts to your pom.xml are as follows:
 
@@ -110,7 +111,7 @@ The [Android maven plugin](http://code.google.com/p/maven-android-plugin/) allow
 
 A simple Android test project has been created to demonstrate iCal4j usage. You can browse the contents of this project [here](http://ical4j.cvs.sourceforge.net/viewvc/ical4j/android-test/).
 
-# Caveats
+## Caveats
 
 Note that there are a couple of library dependencies that are required by iCal4j that are also included in Android (but not exposed in the API docs). These are:
 
@@ -155,7 +156,7 @@ As a result I *believe* (untested) that you won't need to include these dependen
         </dependencies>
     </project>
 
-# Reducing Android-footprint by using proguard
+## Reducing Android-footprint by using proguard
 
 ical4j has several groovy classes that are not supported by android
 and fortunately you can live without them under android.

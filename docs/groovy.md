@@ -1,8 +1,10 @@
-# ContentBuilder
+# Groovy Support
+
+## Content Builder
 
 Constructing iCalendar and vCard object models can be quite a tedious process in Java, however the Groovy-based ContentBuilder simplifies this task:
 
-## vCard
+### vCard
 
 <pre>
 def builder = new ContentBuilder()
@@ -58,7 +60,7 @@ def card = builder.vcard() {
 card.validate()
 </pre>
 
-## iCalendar
+### iCalendar
 
 <pre>
 def builder = new ContentBuilder()
@@ -116,7 +118,7 @@ calendar.validate()
 println(calendar)
 </pre>
 
-# Groovlet
+## Groovlet
 
 Here is an example [Groovlet](http://groovy.codehaus.org/Groovlets) that parses a specified calendar and outputs all of the event summaries in HTML:
 
@@ -161,14 +163,14 @@ html.html {
 }
 </pre>
 
-# GSP
+## GSP
 
 Here is an [article] demonstrating iCal4j and [http://groovy.codehaus.org/GSP GSP](http://www.gr8conf.org/blog/2009/01/31/4) integration.
 
-# Grails - iCalendar Plugin
+## Grails - iCalendar Plugin
 Here is an introduction how to use iCal4j and Grails with the [iCalendar Grails Plugin](http://grails.org/plugin/ic-alendar).
 
-#  Using Grape 
+##  Using Grape 
 
 You can also use [Grape] to manage your iCal4j dependencies, however you will need to add the Modularity Maven repositories to your [http://groovy.codehaus.org/Grape#Grape-CustomizeIvysettings Grape config](http://groovy.codehaus.org/Grape) as follows:
 
@@ -212,7 +214,7 @@ def getCalendar() {
 println(calendar)
 </pre>
 
-#  Connecting to a CalDAV Store 
+##  Connecting to a CalDAV Store 
 
 You can also use the iCal4j connector to connect to a CalDAV store (e.g. Google Calendar). For example:
 

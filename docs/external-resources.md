@@ -1,8 +1,6 @@
-## Welcome to the ical4j wiki!
+# References
 
-Note that much of ical4j is currently managed elsewhere, with GitHub currently used for issue tracking only.
-
-### Resources
+## Resources
 
 Source code: https://github.com/ical4j/ical4j
 
