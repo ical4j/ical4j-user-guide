@@ -36,6 +36,7 @@ nav:
     - Recurrences: recurrences.md
     - Timezones: timezones.md
   - Additional:
+    - JSON: json.md
     - Connector: connector.md
     - Extensions: extensions.md
     - Integration: integration.md
