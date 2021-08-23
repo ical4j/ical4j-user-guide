@@ -5,19 +5,14 @@ This page provides examples that demonstrate how to use iCal4j effectively.
 ## Parsing a calendar file
 
     FileInputStream fin = new FileInputStream("mycalendar.ics");
-
     CalendarBuilder builder = new CalendarBuilder();
-
     Calendar calendar = builder.build(fin);
 
 ## Parsing a calendar string
 
     String myCalendarString = ...
-
     StringReader sin = new StringReader(myCalendarString);
-
     CalendarBuilder builder = new CalendarBuilder();
-
     Calendar calendar = builder.build(sin);
 
 ## Creating a new calendar
