@@ -1,5 +1,5 @@
-site_name: iCal4j User Guide
-site_url: https://ical4j.github.io/ical4j-user-guide/
+site_name: iCal4j
+site_url: https://www.ical4j.org
 theme:
   name: material
   favicon: images/favicon.png
