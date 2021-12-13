@@ -10,6 +10,9 @@ google_analytics:
   - UA-402774-10
   - auto
 extra:
+  analytics:
+    provider: google
+    property: UA-402774-10
   disqus: ical4j
   social:
     - icon: fontawesome/brands/github
