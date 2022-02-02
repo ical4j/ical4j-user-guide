@@ -26,5 +26,4 @@ iCal4j Connector requires a minimum of Java 5 due to the use of features introdu
 * [CardDAV Wiki](http://www.vcarddav.org/wiki)
 * [draft-ietf-vcarddav-carddav-01](http://tools.ietf.org/html/draft-ietf-vcarddav-carddav-01) - vCard Extensions to WebDAV (CardDAV)
 * [caldav4j](http://code.google.com/p/caldav4j/)
-* [Comparison of CalDAV and CardDAV implementations]
-(https://en.wikipedia.org/wiki/Comparison_of_CalDAV_and_CardDAV_implementations)
+* [Comparison of CalDAV and CardDAV implementations](https://en.wikipedia.org/wiki/Comparison_of_CalDAV_and_CardDAV_implementations)
