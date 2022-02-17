@@ -4,7 +4,7 @@ iCal4j Connector is an extension library that provides support for connecting to
 
 ## Minimum requirements
 
-iCal4j Connector requires a minimum of Java 5 due to the use of features introduced in this version. If you need to run on an earlier version of Java, consider using [Retroweaver](http://retroweaver.sourceforge.net).
+iCal4j Connector requires a minimum of Java 8 due to the use of features introduced in this version.
 
 ## Getting Started
 
