@@ -51,6 +51,7 @@ nav:
   - iCal4j Integration: integration.md
   - iCal4j vCard: vcard.md
   - iCal4j ZoneInfo Outlook: zoneinfo-outlook.md
+  - TZURL.org: tzurl.md
   - References:
     - RFC Compliance: rfcs.md
     - CUAs: cuas.md
