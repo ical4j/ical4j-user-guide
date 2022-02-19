@@ -45,13 +45,12 @@ nav:
     - Parsing: parser.md
     - Recurrences: recurrences.md
     - Timezones: timezones.md
-  - Additional:
-    - Serializer: serializer.md
-    - Connector: connector.md
-    - Extensions: extensions.md
-    - Integration: integration.md
-    - vCard: vcard.md
-    - ZoneInfo Outlook: zoneinfo-outlook.md
+  - iCal4j Serializer: serializer.md
+  - iCal4j Connector: connector.md
+  - iCal4j Extensions: extensions.md
+  - iCal4j Integration: integration.md
+  - iCal4j vCard: vcard.md
+  - iCal4j ZoneInfo Outlook: zoneinfo-outlook.md
   - References:
     - RFC Compliance: rfcs.md
     - CUAs: cuas.md
