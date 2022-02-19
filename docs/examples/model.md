@@ -1,19 +1,6 @@
-# iCal4j Examples
+# iCal4j Examples - Model
 
-This page provides examples that demonstrate how to use iCal4j effectively.
-
-## Parsing a calendar file
-
-    FileInputStream fin = new FileInputStream("mycalendar.ics");
-    CalendarBuilder builder = new CalendarBuilder();
-    Calendar calendar = builder.build(fin);
-
-## Parsing a calendar string
-
-    String myCalendarString = ...
-    StringReader sin = new StringReader(myCalendarString);
-    CalendarBuilder builder = new CalendarBuilder();
-    Calendar calendar = builder.build(sin);
+This page provides examples of using the iCal4j model to build iCalendar objects.
 
 ## Creating a new calendar
 
@@ -119,13 +106,6 @@ Output:
     icsCalendar.getComponents().add(meeting);
     System.out.println(icsCalendar);
 
-## Generating a calendar file
-
-    FileOutputStream fout = new FileOutputStream("mycalendar.ics");
-
-    CalendarOutputter outputter = new CalendarOutputter();
-    outputter.output(calendar, fout);
-
 ## Attaching binary data
 
     FileInputStream fin = new FileInputStream("etc/artwork/logo.png");
@@ -150,76 +130,9 @@ Output:
      3/WOmvx9J599r3vvf3O8Pvtn6gqzrkaiGwPzCw6jTZsjmrLqq9ERgGXFZdOmyajeuCqr0QOB
      ...
 
+## HTML Support
 
-## Filtering events
-
-The correct way to filter events according to the spec (RFC2445) would be to construct a VFREEBUSY request that represents the properties of events that you are interested in. You would then pass this request as an argument to the constructor of a new VFREEBUSY, along with the list of components (events) you want to inspect to derive a VFREEBUSY instance that represents the consumed/free time based on the specified events (see the [API Documentation](http://ical4j.github.io/docs/ical4j/api/3.0.19/net/fortuna/ical4j/model/component/VFreeBusy.html) for more information).
-
-If instead you would like to identify specific events occurring within a time frame, you can use iCal4j filters to filter components within a specified period. For example, to filter a list of events only occurring today you might do the following:
-
-    java.util.Calendar today = java.util.Calendar.getInstance();
-    today.set(java.util.Calendar.HOUR_OF_DAY, 0);
-    today.clear(java.util.Calendar.MINUTE);
-    today.clear(java.util.Calendar.SECOND);
-
-    // create a period starting now with a duration of one (1) day..
-    Period period = new Period(new DateTime(today.getTime()), new Dur(1, 0, 0, 0));
-    Filter filter = new Filter(new PeriodRule(period));
-
-    List eventsToday = filter.filter(calendar.getComponents(Component.VEVENT));
-
-## Generating event dates
-
-    // Reading the file and creating the calendar
-    CalendarBuilder builder = new CalendarBuilder();
-    Calendar cal = null;
-    try {
-        cal = builder.build(new FileInputStream("my.ics"));
-    } catch (IOException e) {
-        e.printStackTrace();
-    } catch (ParserException e) {
-        e.printStackTrace();
-    }
-
-
-    // Create the date range which is desired.
-    DateTime from = new DateTime("20100101T070000Z");
-    DateTime to = new DateTime("20100201T070000Z");;
-    Period period = new Period(from, to);
-
-
-    // For each VEVENT in the ICS
-    for (Object o : cal.getComponents("VEVENT")) {
-        Component c = (Component)o;
-        PeriodList list = c.calculateRecurrenceSet(period);
-
-        for (Object po : list) {
-            System.out.println((Period)po);
-        }
-    }
-
-## Creating a simple vCard
-
-    List<Property> props = new ArrayList<Property>();
-    props.add(new Source(URI.create("ldap://ldap.example.com/cn=Babs%20Jensen,%20o=Babsco,%20c=US")));
-    props.add(new Name("Babs Jensen's Contact Information"));
-    props.add(Kind.INDIVIDUAL);
-    // add a custom property..
-    props.add(new Property("test") {
-        @Override
-        public String getValue() {
-            return null;
-        }
-
-        @Override
-        public void validate() throws ValidationException {
-        }
-    });
-
-    VCard vcard = new VCard(props);
-
-
-Starting with Outlook 2010, Outlook can now recognize HTML formatted content in an iCalendar. 
+Starting with Outlook 2010, Outlook can now recognize HTML formatted content in an iCalendar.
 
 Here are the steps to add an alternate description in HTML with ical4j:
 
@@ -269,4 +182,5 @@ Example code:
         XProperty htmlProp = new XProperty("X-ALT-DESC", htmlParameters, html);
         vevent.getProperties().add(htmlProp);
         iCalendar.getComponents().add(vevent);
+
         

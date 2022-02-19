@@ -25,7 +25,14 @@ nav:
   - Overview:
     - Introduction: index.md
     - Getting Started: getting-started.md
-    - Examples: examples.md
+    - Examples:
+        - Overview: examples/overview.md
+        - Parsing: examples/parsing.md
+        - Model: examples/model.md
+        - Output: examples/output.md
+        - Recurrences: examples/recur.md
+        - Filtering: examples/filter.md
+        - VCard: examples/vcard.md
     - Android: android.md
     - Maven: maven.md
   - Features:
