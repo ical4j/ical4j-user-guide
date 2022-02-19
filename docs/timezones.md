@@ -56,9 +56,9 @@ To use a zoneinfo set other than the default you will need to create a TimeZoneR
 
 ### TzUrl
 
-These timezone definitions are generated using [tzurl](http://code.google.com/p/tzurl/) - a fork of the vzic tool that now appears to be inactive (?).
+These timezone definitions are generated using [tzurl](./tzurl) - a fork of the vzic tool that now appears to be inactive (?).
 
-As of 1.0-rc2 iCal4j will include support for automatically updating the built-in timezone definitions from the [tzurl.org](http://tzurl.org) site. In some cases this functionality may be undesirable (e.g. applications without Internet access), and as such automatic updating may be disabled by specifying the following directive in the ical4j.properties file or as a System property:
+As of 1.0-rc2 iCal4j will include support for automatically updating the built-in timezone definitions from the [tzurl.org](http://www.tzurl.org) site. In some cases this functionality may be undesirable (e.g. applications without Internet access), and as such automatic updating may be disabled by specifying the following directive in the ical4j.properties file or as a System property:
 
     net.fortuna.ical4j.timezone.update.enabled=false
 
