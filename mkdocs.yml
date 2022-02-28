@@ -36,6 +36,7 @@ nav:
     - Android: android.md
     - Maven: maven.md
   - Features:
+    - Validation: validation.md
     - Compatibility: compatibility.md
     - Date/Time Concepts: datetime.md
     - Encoding: encoding.md
