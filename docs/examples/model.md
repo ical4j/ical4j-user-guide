@@ -10,6 +10,7 @@ This page provides examples of using the iCal4j model to build iCalendar objects
     calendar.getProperties().add(CalScale.GREGORIAN);
 
     // Add events, etc..
+    calendar.getComponents().add(...);
 
 Output:
 
@@ -18,6 +19,18 @@ Output:
     VERSION:2.0
     CALSCALE:GREGORIAN
     END:VCALENDAR
+
+
+## Creating a calendar with the fluent API
+
+The recent addition of a fluent API means we can also write the above example more succinctly:
+
+    Calendar calendar = new Calendar().withProdId("-//Ben Fortuna//iCal4j 1.0//EN")
+        .withDefaults().getFluentTarget();
+
+    // Add events, etc..
+    calendar = calendar.withComponent(...).getFluentTarget();
+
 
 ## Creating an all day event
 
@@ -34,6 +47,15 @@ Output:
 
     net.fortuna.ical4j.model.Calendar cal = new net.fortuna.ical4j.model.Calendar();
     cal.getComponents().add(christmas);
+
+Using fluent API:
+
+    ...
+
+    net.fortuna.ical4j.model.Calendar cal = new net.fortuna.ical4j.model.Calendar()
+        .withComponent(
+            new VEvent(new Date(calendar.getTime()), "Christmas Day")
+                .withProperty(ug.generateUid()).getFluentTarget()).getFluentTarget();
 
 Output:
 
@@ -106,6 +128,34 @@ Output:
     icsCalendar.getComponents().add(meeting);
     System.out.println(icsCalendar);
 
+Using the fluent API:
+
+    ...
+
+    VEvent meeting = new VEvent(start, end, eventName)
+        .withProperty(tz.getTimeZoneId())
+        .withProperty(ug.generateUid())
+        .withProperty(
+            new Attendee(URI.create("mailto:dev1@mycompany.com"))
+                .withParameter(Role.REQ_PARTICIPANT)
+                .withParameter(new Cn("Developer 1").getFluentTarget())
+            .getFluentTarget())
+        .withProperty(
+            new Attendee(URI.create("mailto:dev2@mycompany.com"))
+                .withParameter(Role.OPT_PARTICIPANT)
+                .withParameter(new Cn("Developer 2").getFluentTarget())
+            .getFluentTarget())
+        .getFluentTarget();
+
+    net.fortuna.ical4j.model.Calendar icsCalendar = new net.fortuna.ical4j.model.Calendar()
+        .withProdId("-//Events Calendar//iCal4j 1.0//EN")
+        .withDefaults()
+        .withComponent(meeting)
+        .getFluentTarget();
+
+    System.out.println(icsCalendar);
+
+
 ## Attaching binary data
 
     FileInputStream fin = new FileInputStream("etc/artwork/logo.png");
@@ -142,17 +192,14 @@ Here are the steps to add an alternate description in HTML with ical4j:
 
 Example code:
 
-        ICalendar iCalendar = new ICalendar();
-
         HostInfo hostInfo = new SimpleHostInfo("myHostName");
         UidGenerator ug = new UidGenerator(hostInfo, "1");
         TimeZoneRegistry registry = TimeZoneRegistryFactory.getInstance().createRegistry();
         VTimeZone tz = registry.getTimeZone("US/Eastern").getVTimeZone();
         TzId tzParam = new TzId(tz.getProperties().getProperty(Property.TZID).getValue());
-        iCalendar.getProperties().add(new ProdId("-//MyCalendarApp v1.0//EN"));
-        iCalendar.getProperties().add(Version.VERSION_2_0);
-        iCalendar.getProperties().add(CalScale.GREGORIAN);
-        iCalendar.getComponents().add(tz);
+
+        Calendar iCalendar = new Calendar().withProdId("-//MyCalendarApp v1.0//EN")
+            .withDefaults().withComponent(tz);
 
         //Outlook uses a custom property to display HTML called the X-ALT-DESC property
 
@@ -170,13 +217,14 @@ Example code:
             endTime = startTime;
         }
 
-        VEvent vevent = new VEvent(startTime, endTime, "Scott's Birthday Party");
-        vevent.getProperties().add(ug.generateUid());
-        vevent.getProperties().getProperty(Property.DTSTAMP).getParameters().add(tzParam);
-        vevent.getProperties().getProperty(Property.DTSTART).getParameters().add(tzParam);
-        vevent.getProperties().getProperty(Property.DTEND).getParameters().add(tzParam);
-        vevent.getProperties().add(new Location("Overmountain Shelter on the AT"));
-        vevent.getProperties().add(new Description("See ya there!"));
+        VEvent vevent = new VEvent(startTime, endTime, "Scott's Birthday Party")
+            .withProperty(ug.generateUid())
+            .withProperty(new DtStamp().withParameter(tzParam).getFluentTarget())
+            .withProperty(new DtStart().withParameter(tzParam).getFluentTarget())
+            .withProperty(new DtEnd().withParameter(tzParam).getFluentTarget())
+            .withProperty(new Location("Overmountain Shelter on the AT"))
+            .withProperty(new Description("See ya there!"))
+            .getFluentTarget();
 
         String html = "<font color=#ff0000>You will this description instead of the text version if you have Outlook!</font>";
         XProperty htmlProp = new XProperty("X-ALT-DESC", htmlParameters, html);
