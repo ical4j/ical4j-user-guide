@@ -53,7 +53,9 @@ nav:
   - iCal4j Serializer: serializer.md
   - iCal4j Templates: templates.md
   - iCal4j ZoneInfo Outlook: zoneinfo-outlook.md
-  - TZURL.org: tzurl.md
+  - iCal4j Validator: validator.md
+  - iCal4j FreeBusy: freebusy.md
+  - tzurl.org: tzurl.md
   - References:
     - RFC Compliance: rfcs.md
     - CUAs: cuas.md
