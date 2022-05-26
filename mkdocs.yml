@@ -47,15 +47,16 @@ nav:
     - Recurrences: recurrences.md
     - Timezones: timezones.md
     - OSGi: osgi.md
+  - Services: services.md
+    - iCal4j Serializer: serializer.md
+    - iCal4j Validator: validator.md
+    - iCal4j FreeBusy: freebusy.md
   - iCal4j vCard: vcard.md
   - iCal4j Connector: connector.md
   - iCal4j Extensions: extensions.md
   - iCal4j Integration: integration.md
-  - iCal4j Serializer: serializer.md
   - iCal4j Templates: templates.md
   - iCal4j ZoneInfo Outlook: zoneinfo-outlook.md
-  - iCal4j Validator: validator.md
-  - iCal4j FreeBusy: freebusy.md
   - tzurl.org: tzurl.md
   - References:
     - RFC Compliance: rfcs.md
