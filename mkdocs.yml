@@ -47,7 +47,8 @@ nav:
     - Recurrences: recurrences.md
     - Timezones: timezones.md
     - OSGi: osgi.md
-  - Services: services.md
+  - Services:
+    - Overview: services.md
     - iCal4j Serializer: serializer.md
     - iCal4j Validator: validator.md
     - iCal4j FreeBusy: freebusy.md
