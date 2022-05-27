@@ -52,11 +52,11 @@ nav:
     - iCal4j Serializer: serializer.md
     - iCal4j Validator: validator.md
     - iCal4j FreeBusy: freebusy.md
+    - iCal4j Connector: connector.md
+    - iCal4j Integration: integration.md
     - tzurl.org: tzurl.md
   - iCal4j vCard: vcard.md
-  - iCal4j Connector: connector.md
   - iCal4j Extensions: extensions.md
-  - iCal4j Integration: integration.md
   - iCal4j Templates: templates.md
   - iCal4j ZoneInfo Outlook: zoneinfo-outlook.md
   - References:
