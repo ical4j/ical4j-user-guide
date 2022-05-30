@@ -54,6 +54,8 @@ nav:
     - iCal4j FreeBusy: freebusy.md
     - iCal4j Connector: connector.md
     - iCal4j Integration: integration.md
+    - iCal4j Query: query.md
+    - iCal4j User Agent: useragent.md
     - tzurl.org: tzurl.md
   - iCal4j vCard: vcard.md
   - iCal4j Extensions: extensions.md

@@ -6,11 +6,13 @@ A collection of iCalendar functions delivered as HTTP services.
 
 iCal4j services is a collection of libraries that support deployment as a service. For example:
 
-* [iCal4j Validator](validator.md)
-* [iCal4j Serializer](serializer.md)
-* [iCal4j FreeBusy](freebusy.md)
-* iCal4j Query
-* iCal4j User Agent
+* [iCal4j Validator]
+* [iCal4j Serializer]
+* [iCal4j FreeBusy]
+* [iCal4j Connector]
+* [iCal4j Integration]
+* [iCal4j Query]
+* [iCal4j User Agent]
 * ...
 
 Each of these libraries are bundled with an HTTP Servlet and may be deployed either in a Web container or
@@ -37,7 +39,7 @@ recurring events.
 You may have a need for the [iCal4j FreeBusy] service to generate free/busy data from resource calendars to assist 
 with scheduling.
 
-### Filter iCalendar data using filter expressions
+### Query iCalendar data using filter expressions
 
 iCal4j includes support for a filter expression language that may be used to extract information from iCalendar
 object data using the [iCal4j Query] service.
@@ -46,3 +48,19 @@ object data using the [iCal4j Query] service.
 
 The iTIP specification defines how to coordinate iCalendar data between multiple calendar user agents (CUAs), and
 the [iCal4j User Agent] simplifies the processing of this data.
+
+### Send and receive iCalendar data asynchronously
+
+TBD.
+
+### Manage iCalendar data with CalDAV
+
+TBD.
+
+[iCal4j Validator]: validator.md
+[iCal4j Serializer]: serializer.md
+[iCal4j FreeBusy]: freebusy.md
+[iCal4j Connector]: connector.md
+[iCal4j Integration]: integration.md
+[iCal4j Query]: query.md 
+[iCal4j User Agent]: useragent.md
