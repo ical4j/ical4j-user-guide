@@ -4,7 +4,19 @@ These instructions are designed to help you get a basic setup, to be able to sta
 
 ## Download
 
-Download the latest iCal4j [release](http://sourceforge.net/project/showfiles.php?group_id=107024) from SourceForge. You may choose to download and build the source distribution (e.g. ical4j-0.9.19-src.zip), but for most purposes the pre-built binary distribution will suffice (e.g. ical4j-0.9.19.zip).
+iCal4j libraries are currently published directly to [Maven Central](https://search.maven.org). Use the following
+table to identify current coordinates for iCal4j libraries:
+
+   | Name                    | Current Coordinates                                                                 | Deprecated Coordinates                                                         |
+|-------------------------|-------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
+| ical4j                  | [Maven](https://search.maven.org/artifact/org.mnode.ical4j/ical4j)                  | -                                                                              |
+| ical4j-vcard            | [Maven](https://search.maven.org/artifact/org.mnode.ical4j/ical4j-vcard)            | -                                                                              |
+| ical4j-extensions       | [Maven](https://search.maven.org/artifact/org.mnode.ical4j/ical4j-extensions)       | -                                                                              |
+| ical4j-zoneinfo-outlook | [Maven](https://search.maven.org/artifact/org.mnode.ical4j/ical4j-zoneinfo-outlook) | -                                                                              |
+| ical4j-connector        | [Maven](https://search.maven.org/search?q=g:org.ical4j%20a:ical4j-connector*)       | [Maven](https://search.maven.org/artifact/org.mnode.ical4j/ical4j-connector)   |
+| ical4j-integration      | [Maven](https://search.maven.org/search?q=g:org.ical4j%20a:ical4j-integration*)     | [Maven](https://search.maven.org/artifact/org.mnode.ical4j/ical4j-integration) |
+| ical4j-serializer       | [Maven](https://search.maven.org/artifact/org.ical4j/ical4j-serializer)             | [Maven](https://search.maven.org/artifact/org.mnode.ical4j/ical4j-serializer)  |
+
 
 ## Extract
 
