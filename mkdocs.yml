@@ -26,7 +26,7 @@ nav:
     - Introduction: index.md
     - Getting Started: getting-started.md
     - Examples:
-        - Overview: examples/overview.md
+        - Overview: examples/index.md
         - Parsing: examples/parsing.md
         - Model: examples/model.md
         - Output: examples/output.md
