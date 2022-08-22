@@ -48,15 +48,15 @@ nav:
     - Timezones: timezones.md
     - OSGi: osgi.md
   - Services:
-    - Overview: services.md
-    - iCal4j Serializer: serializer.md
-    - iCal4j Validator: validator.md
-    - iCal4j FreeBusy: freebusy.md
-    - iCal4j Connector: connector.md
-    - iCal4j Integration: integration.md
-    - iCal4j Query: query.md
-    - iCal4j User Agent: useragent.md
-    - tzurl.org: tzurl.md
+    - Overview: services/index.md
+    - iCal4j Serializer: services/serializer.md
+    - iCal4j Validator: services/validator.md
+    - iCal4j FreeBusy: services/freebusy.md
+    - iCal4j Connector: services/connector.md
+    - iCal4j Integration: services/integration.md
+    - iCal4j Query: services/query.md
+    - iCal4j User Agent: services/useragent.md
+    - tzurl.org: services/tzurl.md
   - iCal4j vCard: vcard.md
   - iCal4j Extensions: extensions.md
   - iCal4j Templates: templates.md
