@@ -33,3 +33,7 @@ The complete list of Compatibility Hint properties is as follows:
 You may also specify the same Compatibility Hints above as System properties. For example:
 
     java -Dical4j.unfolding.relaxed=true <some_program>
+
+## Related
+
+See [Configuring iCal4j](configuring.md) for a full list of configuration options.

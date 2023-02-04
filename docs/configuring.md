@@ -34,8 +34,20 @@ The following table describes System properties specific to the core iCal4j libr
 | net.fortuna.ical4j.timezone.update.timeout.connect        | Specifiy a connection timeout for timezone updates                                                                 | A timeout in milliseconds, e.g. 10000 - 10s                                             | -                                                         |
 | net.fortuna.ical4j.timezone.update.timeout.read           | Specify a read timeout for timezone updates                                                                        | A timeout in milliseconds, e.g. 10000 - 10s                                             | -                                                         |
 
+## iCal4j vCard
+
+The following table describes System properties applicable to the iCal4j vCard library.
+
+
+| System Property        | Description                                                | Value        | Default |
+|------------------------|------------------------------------------------------------|--------------|---------|
+| ical4j.parsing.relaxed | A global hint to enable more lenient parsing of vCard data | {true/false} | false   |
 
 ## iCal4j Connector
+
+TBD.
+
+## iCal4j Integration
 
 TBD.
 
