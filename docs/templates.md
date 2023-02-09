@@ -1,6 +1,6 @@
-# iCal4j Templates
+# iCal4j Template
 
-iCal4j Templates provide prototypes and custom validation for common iCalendar and vCard use-cases.
+iCal4j Template provide prototypes and custom validation for common iCalendar and vCard use-cases.
 
 ## Overview
 
