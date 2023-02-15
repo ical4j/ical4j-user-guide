@@ -50,18 +50,18 @@ nav:
     - OSGi: osgi.md
   - Services:
     - Overview: services/index.md
-    - iCal4j Serializer: services/serializer.md
-    - iCal4j Validator: services/validator.md
-    - iCal4j FreeBusy: services/freebusy.md
-    - iCal4j Connector: services/connector.md
-    - iCal4j Integration: services/integration.md
-    - iCal4j Query: services/query.md
-    - iCal4j User Agent: services/useragent.md
-    - tzurl.org: services/tzurl.md
-  - iCal4j vCard: vcard.md
-  - iCal4j Extensions: extensions.md
-  - iCal4j Template: templates.md
-  - iCal4j ZoneInfo Outlook: zoneinfo-outlook.md
+  - Serializer: serializer.md
+  - Validator: validator.md
+  - FreeBusy: freebusy.md
+  - Connector: connector.md
+  - Integration: integration.md
+  - Query: query.md
+  - User Agent: useragent.md
+  - vCard: vcard.md
+  - Extensions: extensions.md
+  - Template: template.md
+  - ZoneInfo Outlook: zoneinfo-outlook.md
+  - tzurl.org: tzurl.md
   - References:
     - RFC Compliance: rfcs.md
     - CUAs: cuas.md

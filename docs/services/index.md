@@ -19,6 +19,26 @@ Each of these libraries are bundled with an HTTP Servlet and may be deployed eit
 standalone with an embedded Jetty server. They are stateless services and containerisation will be supported
 to provide maximum choice in how they are deployed.
 
+## Chaining Services
+
+iCal4j services are designed to be able to chain them together to customise according to your requirements.
+
+For example, if you need to send a meeting invitation to a group of individuals you can achieve this as follows:
+
+     ical4j template meeting | ical4j useragent request | ical4j integration send
+
+Here we are using iCal4j template to create a meeting invitation, user agent to format for email, and integration
+to send the email to all recipients.
+
+Alternatively, you can listen for requests, validate and add to a calendar store like so:
+
+    ical4j integration receive | ical4j validator check | ical4j connector add --collection=Orders
+
+It is also easy to integrate with other tools, such a JQ for extracting information:
+
+    ical4j connector get --uid 1234 | ical4j serializer serialize | jq '.attendee'
+
+
 ## Examples
 
 The following examples demonstrate how you might use iCal4j services to enhance an application or service.
@@ -57,10 +77,10 @@ TBD.
 
 TBD.
 
-[iCal4j Validator]: validator.md
-[iCal4j Serializer]: serializer.md
-[iCal4j FreeBusy]: freebusy.md
-[iCal4j Connector]: connector.md
-[iCal4j Integration]: integration.md
-[iCal4j Query]: query.md 
-[iCal4j User Agent]: useragent.md
+[iCal4j Validator]: /validator.md
+[iCal4j Serializer]: /serializer.md
+[iCal4j FreeBusy]: /freebusy.md
+[iCal4j Connector]: /connector.md
+[iCal4j Integration]: /integration.md
+[iCal4j Query]: /query.md 
+[iCal4j User Agent]: /useragent.md
