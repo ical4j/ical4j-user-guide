@@ -1,25 +1,32 @@
 # iCal4j Connector
 
-iCal4j Connector is an extension library that provides support for connecting to back-end calendar/vCard servers. Initial support includes connecting to CalDAV- and CardDAV-compliant servers, as well as Java Content Repository (JCR) implementations.
+iCal4j Connector is a tool that helps you manage iCalendar and vCard collections.
 
-## Minimum requirements
+## Overview
 
-iCal4j Connector requires a minimum of Java 8 due to the use of features introduced in this version.
+The connector includes multiple interfaces for interacting with collections of iCalendar and vCard data. A
+command line interface allows you to create, query and manipulate collections of data and output to mutliple
+formats for tool chaining support. The REST API uses the same underlying command pattern for the CLI to expose 
+similar functions to HTTP-enabled clients. And the Java API provides support for the implementation of pluggable
+backends for integration with both standard and customized data sources using the same interface.
 
-## Getting Started
+## Command-line Interface
 
-* [[ConnectorTutorial|Tutorial]]
+TBD.
 
-## Project Information
+## REST API
 
-* [Project Home](http://github.com/ical4j/ical4j-connector/)
-* [Javadocs](http://ical4j.github.io/docs/ical4j-connector/api/)
+TBD.
+
+## Java API
+
+TBD.
 
 ## Download
 
-* [Releases](https://bintray.com/ical4j/maven/ical4j-connector)
+TBD.
 
-## Related projects
+## References
 
 * [CalDAV Home](http://caldav.calconnect.org/)
 * [RFC4791](http://www.ietf.org/rfc/rfc4791.txt) - Calendaring Extensions to WebDAV (CalDAV)
