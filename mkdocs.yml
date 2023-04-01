@@ -4,6 +4,9 @@ theme:
   name: material
   favicon: images/favicon.png
   logo: images/logo-48.png
+  features:
+    - content.code.copy
+
 repo_url: https://github.com/ical4j/ical4j-user-guide
 repo_name: ical4j/ical4j
 google_analytics:
