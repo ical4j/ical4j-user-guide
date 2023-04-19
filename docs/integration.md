@@ -9,8 +9,6 @@ Email is the most widely supported transport for calendaring systems, however th
 
 * Email - The official iCalendar message transport as defined by the iMiP RFC.
 * Apache Camel - Support for iCalendar and vCard endpoints in Apache Camel
-* Quartz - Support for Quartz jobs triggered by VALARM definitions
-* Feed - Support for parsing and generating RSS/Atom feeds from iCalendar data
 * AWS SNS, SQS, etc. - Cloud-native messaging support
 * JMS - support for Java messaging
 
