@@ -51,8 +51,8 @@ nav:
     - Recurrences: recurrences.md
     - Timezones: timezones.md
     - OSGi: osgi.md
-  - Services:
-    - Overview: services/index.md
+#   - Services:
+#     - Overview: services/index.md
   - Serializer: serializer.md
   - Validator: validator.md
   - Connector: connector.md
