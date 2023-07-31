@@ -9,14 +9,14 @@ table to identify current coordinates for iCal4j libraries:
 
    | Name                    | Current Coordinates                                                                 | Deprecated Coordinates                                                         |
 |-------------------------|-------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
-| ical4j                  | [Maven](https://search.maven.org/artifact/org.mnode.ical4j/ical4j)                  | -                                                                              |
-| ical4j-vcard            | [Maven](https://search.maven.org/artifact/org.mnode.ical4j/ical4j-vcard)            | -                                                                              |
-| ical4j-extensions       | [Maven](https://search.maven.org/artifact/org.mnode.ical4j/ical4j-extensions)       | -                                                                              |
-| ical4j-zoneinfo-outlook | [Maven](https://search.maven.org/artifact/org.mnode.ical4j/ical4j-zoneinfo-outlook) | -                                                                              |
-| ical4j-template | <a href="https://search.maven.org/artifact/org.mnode.ical4j/ical4j-template" target="_blank">Maven</a> | -                                                                              |
-| ical4j-connector        | [Maven](https://search.maven.org/search?q=g:org.ical4j%20a:ical4j-connector*)       | [Maven](https://search.maven.org/artifact/org.mnode.ical4j/ical4j-connector)   |
-| ical4j-integration      | [Maven](https://search.maven.org/search?q=g:org.ical4j%20a:ical4j-integration*)     | [Maven](https://search.maven.org/artifact/org.mnode.ical4j/ical4j-integration) |
-| ical4j-serializer       | [Maven](https://search.maven.org/artifact/org.ical4j/ical4j-serializer)             | [Maven](https://search.maven.org/artifact/org.mnode.ical4j/ical4j-serializer)  |
+| ical4j                  | [org.mnode.ical4j:ical4j](https://search.maven.org/artifact/org.mnode.ical4j/ical4j)                  | -                                                                              |
+| ical4j-vcard            | [org.mnode.ical4j:ical4j-vcard](https://search.maven.org/artifact/org.mnode.ical4j/ical4j-vcard)            | -                                                                              |
+| ical4j-extensions       | [org.mnode.ical4j:ical4j-extensions](https://search.maven.org/artifact/org.mnode.ical4j/ical4j-extensions)       | -                                                                              |
+| ical4j-zoneinfo-outlook | [org.mnode.ical4j:ical4j-zoneinfo-outlook](https://search.maven.org/artifact/org.mnode.ical4j/ical4j-zoneinfo-outlook) | -                                                                              |
+| ical4j-template | <a href="https://search.maven.org/artifact/org.ical4j/ical4j-template" target="_blank">org.ical4j:ical4j-template</a> | -                                                                              |
+| ical4j-connector        | [org.ical4j:ical4j-connector](https://search.maven.org/search?q=g:org.ical4j%20a:ical4j-connector*)       | [org.mnode.ical4j:ical4j-connector](https://search.maven.org/artifact/org.mnode.ical4j/ical4j-connector)   |
+| ical4j-integration      | [org.ical4j:ical4j-integration](https://search.maven.org/search?q=g:org.ical4j%20a:ical4j-integration*)     | [org.mnode.ical4j:ical4j-integration](https://search.maven.org/artifact/org.mnode.ical4j/ical4j-integration) |
+| ical4j-serializer       | [org.ical4j:ical4j-serializer](https://search.maven.org/artifact/org.ical4j/ical4j-serializer)             | [org.mnode.ical4j:ical4j-serializer](https://search.maven.org/artifact/org.mnode.ical4j/ical4j-serializer)  |
 
 
 ## Extract
