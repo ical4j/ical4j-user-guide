@@ -13,6 +13,7 @@ table to identify current coordinates for iCal4j libraries:
 | ical4j-vcard            | [Maven](https://search.maven.org/artifact/org.mnode.ical4j/ical4j-vcard)            | -                                                                              |
 | ical4j-extensions       | [Maven](https://search.maven.org/artifact/org.mnode.ical4j/ical4j-extensions)       | -                                                                              |
 | ical4j-zoneinfo-outlook | [Maven](https://search.maven.org/artifact/org.mnode.ical4j/ical4j-zoneinfo-outlook) | -                                                                              |
+| ical4j-template | <a href="https://search.maven.org/artifact/org.mnode.ical4j/ical4j-template" target="_blank">Maven</a> | -                                                                              |
 | ical4j-connector        | [Maven](https://search.maven.org/search?q=g:org.ical4j%20a:ical4j-connector*)       | [Maven](https://search.maven.org/artifact/org.mnode.ical4j/ical4j-connector)   |
 | ical4j-integration      | [Maven](https://search.maven.org/search?q=g:org.ical4j%20a:ical4j-integration*)     | [Maven](https://search.maven.org/artifact/org.mnode.ical4j/ical4j-integration) |
 | ical4j-serializer       | [Maven](https://search.maven.org/artifact/org.ical4j/ical4j-serializer)             | [Maven](https://search.maven.org/artifact/org.mnode.ical4j/ical4j-serializer)  |
