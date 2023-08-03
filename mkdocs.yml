@@ -60,6 +60,7 @@ nav:
   - vCard: vcard.md
   - Extensions: extensions.md
   - Template: template.md
+  - Command: command.md
   - ZoneInfo Outlook: zoneinfo-outlook.md
   - tzurl.org: tzurl.md
   - References:

@@ -1,12 +1,12 @@
-# iCal4j User Agent
+# iCal4j Command Line
 
-Communicate with external systems via iCalendar iTIP protocols.
+A command framework for managing iCalendar and vCard data.
 
 ## Command Line Usage
 
 ### Publish a collection of events
 
-    ical4j-user-agent/bin/ical4j-user-agent publish -F ./Australian32Holidays.ics
+    ical4j/bin/ical4j publish -F ./Australian32Holidays.ics
 
 Result:
 
