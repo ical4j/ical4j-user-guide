@@ -12,7 +12,28 @@ specifications (RFCs).
 The core iCal4j library provides an implementation of the iCalendar [specifications](https://www.ical4j.org/rfcs/) that
 are designed to facilitate interoperability between calendaring and scheduling software systems.
 
-iCalendar provides a common data format used to store scheduling information such as events, appointments, to-do lists, etc. All of the popular calendaring tools, such as Lotus Notes, Outlook and Apple's iCal also support the iCalendar standard.
+iCalendar provides a common data format used to store scheduling information such as events, appointments, to-do lists, etc.
+Most calendaring tools include some level of support for the iCalendar standard.
+
+## Active Projects
+
+The following table provides an overview of the currently active projects in iCal4j.
+
+   | Name                    | Description                                                                           | References |
+|-------------------------|---------------------------------------------------------------------------------------|------------|
+| ical4j                  | Support for the iCalendar standard                                                    |            |
+| ical4j-extensions       | Support for non-standard iCalendar components and properties                          |            |
+| ical4j-zoneinfo-outlook | Alternate timezone definitions to improve support for MS Outlook                      |            |
+| ical4j-vcard            | Support for the vCard standard                                                        |            |
+| ical4j-template         | Template calendar and card object builders to assist with data creation               |            |
+| ical4j-connector        | Support for connecting to calendar and card store implementations (e.g. CalDAV)       |            |
+| ical4j-integration      | Support for delivery of calendar and card objects via common transports (e.g Email)   |            |
+| ical4j-command          | Command-line support for calendar and card operations                                 |            |
+| ical4j-serializer       | Serialization of calendar data to standard formats (e.g xCal, jCal, JSCalendar, etc.) |            |
+| tzurl                   | Generation and hosting of timezone data in iCalendar format                           |            |
+
+
+## Further Links
 
  - For a concise description of the goals and directions of iCal4j please
  take a look at the [open issues](https://github.com/ical4j/ical4j/issues).
