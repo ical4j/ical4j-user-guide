@@ -19,18 +19,18 @@ Most calendaring tools include some level of support for the iCalendar standard.
 
 The following table provides an overview of the currently active projects in iCal4j.
 
-   | Name                    | Description                                                                           | References |
-|-------------------------|---------------------------------------------------------------------------------------|------------|
-| ical4j                  | Support for the iCalendar standard                                                    |            |
-| ical4j-extensions       | Support for non-standard iCalendar components and properties                          |            |
-| ical4j-zoneinfo-outlook | Alternate timezone definitions to improve support for MS Outlook                      |            |
-| ical4j-vcard            | Support for the vCard standard                                                        |            |
-| ical4j-template         | Template calendar and card object builders to assist with data creation               |            |
-| ical4j-connector        | Support for connecting to calendar and card store implementations (e.g. CalDAV)       |            |
-| ical4j-integration      | Support for delivery of calendar and card objects via common transports (e.g Email)   |            |
-| ical4j-command          | Command-line support for calendar and card operations                                 |            |
-| ical4j-serializer       | Serialization of calendar data to standard formats (e.g xCal, jCal, JSCalendar, etc.) |            |
-| tzurl                   | Generation and hosting of timezone data in iCalendar format                           |            |
+   | Name                                         | Description                                                                           | References |
+|----------------------------------------------|---------------------------------------------------------------------------------------|------------|
+| [ical4j](/examples)                          | Support for the iCalendar standard                                                    |            |
+| [ical4j-extensions](/extensions)             | Support for non-standard iCalendar components and properties                          |            |
+| [ical4j-zoneinfo-outlook](/zoneinfo-outlook) | Alternate timezone definitions to improve support for MS Outlook                      |            |
+| [ical4j-vcard](/vcard)                       | Support for the vCard standard                                                        |            |
+| [ical4j-template](/template)                 | Template calendar and card object builders to assist with data creation               |            |
+| [ical4j-connector](/connector)               | Support for connecting to calendar and card store implementations (e.g. CalDAV)       |            |
+| [ical4j-integration](/integration)           | Support for delivery of calendar and card objects via common transports (e.g Email)   |            |
+| [ical4j-command](/command)                   | Command-line support for calendar and card operations                                 |            |
+| [ical4j-serializer](/serializer)             | Serialization of calendar data to standard formats (e.g xCal, jCal, JSCalendar, etc.) |            |
+| [tzurl](/tzurl)                              | Generation and hosting of timezone data in iCalendar format                           |            |
 
 
 ## Further Links
