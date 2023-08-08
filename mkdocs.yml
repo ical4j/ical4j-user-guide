@@ -24,6 +24,8 @@ extra:
       link: https://linkedin.com/in/benfortuna
     - icon: fontawesome/brands/twitter
       link: https://twitter.com/micronode
+markdown_extensions:
+  - pymdownx.tilde
 nav:
   - Overview:
     - Introduction: index.md
