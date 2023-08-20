@@ -5,12 +5,12 @@ This page provides examples of using the iCal4j model to build iCalendar objects
 ## Creating a new calendar
 
     Calendar calendar = new Calendar();
-    calendar.getProperties().add(new ProdId("-//Ben Fortuna//iCal4j 1.0//EN"));
-    calendar.getProperties().add(Version.VERSION_2_0);
-    calendar.getProperties().add(CalScale.GREGORIAN);
+    calendar.add(new ProdId("-//Ben Fortuna//iCal4j 1.0//EN"));
+    calendar.add(Version.VERSION_2_0);
+    calendar.add(CalScale.GREGORIAN);
 
     // Add events, etc..
-    calendar.getComponents().add(...);
+    calendar.add(...);
 
 Output:
 
@@ -43,10 +43,10 @@ The recent addition of a fluent API means we can also write the above example mo
 
     // Generate a UID for the event..
     UidGenerator ug = new UidGenerator("1");
-    christmas.getProperties().add(ug.generateUid());
+    christmas.add(ug.generateUid());
 
     net.fortuna.ical4j.model.Calendar cal = new net.fortuna.ical4j.model.Calendar();
-    cal.getComponents().add(christmas);
+    cal.add(christmas);
 
 Using fluent API:
 
@@ -100,32 +100,32 @@ Output:
     VEvent meeting = new VEvent(start, end, eventName);
 
     // add timezone info..
-    meeting.getProperties().add(tz.getTimeZoneId());
+    meeting.add(tz.getTimeZoneId());
 
     // generate unique identifier..
     UidGenerator ug = new UidGenerator("uidGen");
     Uid uid = ug.generateUid();
-    meeting.getProperties().add(uid);
+    meeting.add(uid);
 
     // add attendees..
     Attendee dev1 = new Attendee(URI.create("mailto:dev1@mycompany.com"));
-    dev1.getParameters().add(Role.REQ_PARTICIPANT);
-    dev1.getParameters().add(new Cn("Developer 1"));
-    meeting.getProperties().add(dev1);
+    dev1.add(Role.REQ_PARTICIPANT);
+    dev1.add(new Cn("Developer 1"));
+    meeting.add(dev1);
 
     Attendee dev2 = new Attendee(URI.create("mailto:dev2@mycompany.com"));
-    dev2.getParameters().add(Role.OPT_PARTICIPANT);
-    dev2.getParameters().add(new Cn("Developer 2"));
-    meeting.getProperties().add(dev2);
+    dev2.add(Role.OPT_PARTICIPANT);
+    dev2.add(new Cn("Developer 2"));
+    meeting.add(dev2);
 
     // Create a calendar
     net.fortuna.ical4j.model.Calendar icsCalendar = new net.fortuna.ical4j.model.Calendar();
-    icsCalendar.getProperties().add(new ProdId("-//Events Calendar//iCal4j 1.0//EN"));
-    icsCalendar.getProperties().add(CalScale.GREGORIAN);
+    icsCalendar.add(new ProdId("-//Events Calendar//iCal4j 1.0//EN"));
+    icsCalendar.add(CalScale.GREGORIAN);
 
 
     // Add the event and print
-    icsCalendar.getComponents().add(meeting);
+    icsCalendar.add(meeting);
     System.out.println(icsCalendar);
 
 Using the fluent API:
@@ -196,7 +196,7 @@ Example code:
         UidGenerator ug = new UidGenerator(hostInfo, "1");
         TimeZoneRegistry registry = TimeZoneRegistryFactory.getInstance().createRegistry();
         VTimeZone tz = registry.getTimeZone("US/Eastern").getVTimeZone();
-        TzId tzParam = new TzId(tz.getProperties().getProperty(Property.TZID).getValue());
+        TzId tzParam = new TzId(tz.getRequiredProperty(Property.TZID).getValue());
 
         Calendar iCalendar = new Calendar().withProdId("-//MyCalendarApp v1.0//EN")
             .withDefaults().withComponent(tz);
@@ -228,7 +228,7 @@ Example code:
 
         String html = "<font color=#ff0000>You will this description instead of the text version if you have Outlook!</font>";
         XProperty htmlProp = new XProperty("X-ALT-DESC", htmlParameters, html);
-        vevent.getProperties().add(htmlProp);
-        iCalendar.getComponents().add(vevent);
+        vevent.add(htmlProp);
+        iCalendar.add(vevent);
 
         
