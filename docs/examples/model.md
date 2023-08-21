@@ -6,8 +6,8 @@ This page provides examples of using the iCal4j model to build iCalendar objects
 
     Calendar calendar = new Calendar();
     calendar.add(new ProdId("-//Ben Fortuna//iCal4j 1.0//EN"));
-    calendar.add(Version.VERSION_2_0);
-    calendar.add(CalScale.GREGORIAN);
+    calendar.add(ImmutableVersion.VERSION_2_0);
+    calendar.add(ImmutableCalScale.GREGORIAN);
 
     // Add events, etc..
     calendar.add(...);
@@ -121,7 +121,7 @@ Output:
     // Create a calendar
     net.fortuna.ical4j.model.Calendar icsCalendar = new net.fortuna.ical4j.model.Calendar();
     icsCalendar.add(new ProdId("-//Events Calendar//iCal4j 1.0//EN"));
-    icsCalendar.add(CalScale.GREGORIAN);
+    icsCalendar.add(ImmutableCalScale.GREGORIAN);
 
 
     // Add the event and print
