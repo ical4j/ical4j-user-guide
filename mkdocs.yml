@@ -61,6 +61,7 @@ nav:
   - Integration:
     - Overview: integration/index.md
     - Email: integration/email.md
+    - Reactive Streams: integration/reactive.md
   - vCard: vcard.md
   - Extensions: extensions.md
   - Serializer: serializer.md
