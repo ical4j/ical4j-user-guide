@@ -55,16 +55,16 @@ nav:
     - OSGi: osgi.md
 #   - Services:
 #     - Overview: services/index.md
-  - Serializer: serializer.md
-  - Validator: validator.md
   - Connector:
     - Overview: connector/index.md
     - CalDAV/CardDAV: connector/dav.md
   - Integration:
     - Overview: integration/index.md
-    - Email: integration/gmail.md
+    - Email: integration/email.md
   - vCard: vcard.md
   - Extensions: extensions.md
+  - Serializer: serializer.md
+  - Validator: validator.md
   - Template: template.md
   - Command: command.md
   - ZoneInfo Outlook: zoneinfo-outlook.md
