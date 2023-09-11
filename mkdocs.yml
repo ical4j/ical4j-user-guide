@@ -58,7 +58,9 @@ nav:
   - Serializer: serializer.md
   - Validator: validator.md
   - Connector: connector.md
-  - Integration: integration.md
+  - Integration:
+    - Overview: index.md
+    - GMail Integration: gmail.md
   - vCard: vcard.md
   - Extensions: extensions.md
   - Template: template.md
