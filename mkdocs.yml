@@ -64,9 +64,10 @@ nav:
   - vCard: vcard.md
   - Extensions: extensions.md
   - Serializer: serializer.md
-  - Validator: validator.md
   - Template: template.md
-  - Command: command.md
+  - Command:
+    - Overview: command/index.md
+    - Validator: command/validator.md
   - ZoneInfo Outlook: zoneinfo-outlook.md
   - tzurl.org: tzurl.md
   - References:
