@@ -59,9 +59,10 @@ nav:
   - Validator: validator.md
   - Connector:
     - Overview: connector/index.md
+    - CalDAV/CardDAV: connector/dav.md
   - Integration:
     - Overview: integration/index.md
-    - GMail Integration: integration/gmail.md
+    - Email: integration/gmail.md
   - vCard: vcard.md
   - Extensions: extensions.md
   - Template: template.md
