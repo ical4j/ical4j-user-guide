@@ -38,7 +38,6 @@ nav:
         - Output: examples/output.md
         - Recurrences: examples/recur.md
         - Filtering: examples/filter.md
-        - VCard: examples/vcard.md
     - Android: android.md
     - Maven: maven.md
   - Features:
@@ -55,6 +54,18 @@ nav:
     - OSGi: osgi.md
 #   - Services:
 #     - Overview: services/index.md
+  - Extensions:
+      - Overview: extensions/index.md
+      - CalDAV: extensions/caldav.md
+      - Concept: extensions/concept.md
+      - Link: extensions/link.md
+      - Outlook: extensions/outlook.md
+  - vCard:
+      - Overview: vcard/index.md
+      - Examples: vcard/examples.md
+  - Template:
+      - Overview: template/index.md
+      - Groupware: template/groupware.md
   - Connector:
     - Overview: connector/index.md
     - CalDAV/CardDAV: connector/dav.md
@@ -62,17 +73,7 @@ nav:
     - Overview: integration/index.md
     - Email: integration/email.md
     - Reactive Streams: integration/reactive.md
-  - vCard: vcard.md
-  - Extensions:
-    - Overview: extensions/index.md
-    - CalDAV: extensions/caldav.md
-    - Concept: extensions/concept.md
-    - Link: extensions/link.md
-    - Outlook: extensions/outlook.md
   - Serializer: serializer.md
-  - Template:
-    - Overview: template/index.md
-    - Groupware: template/groupware.md
   - Command:
     - Overview: command/index.md
     - Validator: command/validator.md

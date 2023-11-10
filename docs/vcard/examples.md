@@ -1,4 +1,4 @@
-# iCal4j Examples - VCard
+# iCal4j vCard - Examples
 
 This page provides examples of using an iCal4j VCard model to generate VCard objects.
 
