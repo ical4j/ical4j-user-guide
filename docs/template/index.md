@@ -1,6 +1,6 @@
 # iCal4j Template
 
-iCal4j Template provide prototypes and custom validation for common iCalendar and vCard use-cases.
+iCal4j Template provides prototypes for common iCalendar and vCard use-cases.
 
 ## Overview
 
@@ -9,22 +9,28 @@ may require further constraints to fulfill the requirements of the use-case. iCa
 opinionated prototyping and validation for common use-cases, and a portable definition language for constructing
 your own.
 
-## Calendar Templates
+## Template Domains
+
+Templates are group by specific problem domains, or common scenarios that could benefit from the use of the
+iCalendar and vCard standards. These domains include:
+
+* Groupware - applications for communicating and collaborating within and across teams
+* ...
 
 A template is a construct for building iCalendar and vCard objects for common use-cases.
 
 ### Roster
 
-A roster is a `VCALENDAR` prototype consisting of `VTODO` components with one or more `ATTENDEE`s.
+A roster is a `VCALENDAR` prototype consisting of `VAVAILABILITY` components with one or more `ATTENDEE`s.
 
-    Calendar roster = new Roster().toCalendar();
+    VAvailability roster = new Roster().apply();
 
 ### Sports fixture
 
 A sport fixture is a `VCALENDAR` prototype of `VEVENT` components with a `LOCATION` and embedded Schema.org
 `STRUCTURED-DATA`.
 
-    Calendar fixture = new SportsFixture().toCalendar();
+    VEvent fixture = new SportsFixture().apply();
 
 ### Timetable
 
@@ -55,14 +61,14 @@ etc.).
 * RRULE/RDATE (required)
 
 
-    Calendar anniversary = new Anniversary().withMonthDay(MonthDay.of(Month.DECEMBER, 25)).toCalendar();
+    VEvent anniversary = new Anniversary().withDate(MonthDay.of(Month.DECEMBER, 25)).apply();
 
 ### Meeting
 
 A meeting is a `VCALENDAR` prototype of `VEVENT` components.
 
     Agenda agenda = ...
-    Calendar meeting = new Meeting().withAgenda(agenda).toCalendar();
+    VEvent meeting = new Meeting().withAgenda(agenda).apply();
 
 
 ## VToDo Templates
@@ -71,7 +77,7 @@ A meeting is a `VCALENDAR` prototype of `VEVENT` components.
 
 A project task is a `VTODO` prototype.
 
-    Calendar task = new Task().toCalendar();
+    VTodo task = new Task().apply();
 
 
 ## VJournal Templates
@@ -80,4 +86,4 @@ A project task is a `VTODO` prototype.
 
 Meeting minutes is a `VJOURNAL` prototype with `RELATED-TO` property referencing the meeting.
 
-    Calendar minutes = new MeetingMinutes().toCalendar();
+    VJournal minutes = new MeetingMinutes().apply();

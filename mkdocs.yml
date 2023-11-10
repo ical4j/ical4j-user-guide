@@ -63,9 +63,16 @@ nav:
     - Email: integration/email.md
     - Reactive Streams: integration/reactive.md
   - vCard: vcard.md
-  - Extensions: extensions.md
+  - Extensions:
+    - Overview: extensions/index.md
+    - CalDAV: extensions/caldav.md
+    - Concept: extensions/concept.md
+    - Link: extensions/link.md
+    - Outlook: extensions/outlook.md
   - Serializer: serializer.md
-  - Template: template.md
+  - Template:
+    - Overview: template/index.md
+    - Groupware: template/groupware.md
   - Command:
     - Overview: command/index.md
     - Validator: command/validator.md
