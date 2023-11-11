@@ -47,3 +47,8 @@ completed first.
 
 A Decision captures agreement on a critical Project element that may be referred to or superseded at a later date.
 Decisions are Project assumptions that ensure collaborators all agree on Project outcomes and deliverables.
+
+## Timesheet
+
+A Timesheet is used to capture metrics related to Project effort. On a given day, week or month it may be useful
+to track how much time is spent on specific Tasks for purposed such as financial reporting.

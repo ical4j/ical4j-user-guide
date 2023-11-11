@@ -68,6 +68,7 @@ nav:
       - Groupware: template/groupware.md
       - Project: template/project.md
       - Agile: template/agile.md
+      - Workflow: template/workflow.md
   - Connector:
     - Overview: connector/index.md
     - CalDAV/CardDAV: connector/dav.md
