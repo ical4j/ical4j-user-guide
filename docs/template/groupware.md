@@ -15,3 +15,19 @@ conform with conventional approaches to defining meeting invites.
 ### Examples
 
 TBD.
+
+## Agenda
+
+An Agenda represents one or more objectives for a meeting, or series of meetings. Sometimes a meeting may not
+address all the items on an agenda due to lack of time, etc., so it is useful to maintain the Agenda separately
+such that it may be shared across multiple meetings if required.
+
+## Attendance
+
+A useful metric to track for meetings is how many people actually attended. Each meeting may have one attendance
+record associated with it.
+
+## Action
+
+Follow-up actions are a common output of meetings. Action instances may be associated with individual meetings or
+where available, the associated Agenda.
