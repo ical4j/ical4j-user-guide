@@ -66,6 +66,7 @@ nav:
   - Template:
       - Overview: template/index.md
       - Groupware: template/groupware.md
+      - Project: template/project.md
       - Agile: template/agile.md
   - Connector:
     - Overview: connector/index.md
