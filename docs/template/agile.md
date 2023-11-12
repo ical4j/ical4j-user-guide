@@ -21,7 +21,7 @@ A Backlog represents a group of work items that may be associated with zero or m
 ## Story
 
 A Story represents a single work item that can be implemented and tested independently of others. Typically, each
-Story will have its own acceptance criteria to define what a working implementation looks like.
+Story will have its own acceptance criteria to define the parameters and constraints a working implementation.
 
 ## Epic
 
@@ -31,7 +31,7 @@ demonstrable in ceremonies such as showcases.
 ## Criteria
 
 A Criteria represents a set of customer requirements that are used to guide the defined work items. Also known
-as a User Story, Criteria document the WHAT, whereas work items such as Epics and Stories capture the HOW.
+as a Acceptance Criteria, Criteria document solution details for work items such as Epics and Stories.
 
 ## Retrospective
 
