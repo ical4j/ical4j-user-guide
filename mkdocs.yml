@@ -59,6 +59,7 @@ nav:
       - CalDAV: extensions/caldav.md
       - Concept: extensions/concept.md
       - Link: extensions/link.md
+      - Participant: extensions/participant.md
       - Outlook: extensions/outlook.md
   - vCard:
       - Overview: vcard/index.md
