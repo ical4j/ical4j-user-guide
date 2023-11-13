@@ -16,7 +16,32 @@ or modify `VEVENT` objects to conform with conventional approaches to defining m
 
 ### Examples
 
-TBD.
+Assuming we use vCard to represent meeting participants, we can construct a new meeting:
+
+    VCard organizer = ...
+    VCard chair = ...
+
+    VEvent meeting = new Meeting().organizer(organizer)
+                .chair(new Contact(chair))
+                .start(LocalDate.of(2023, 11, 13).atStartOfDay())
+                .duration(Duration.ofMinutes(30)).apply();
+
+The result is something like this:
+
+    BEGIN:VEVENT
+    DTSTAMP:20231113T000000Z
+    ORGANIZER;CN=Big Boss:mailto:boss@example.com
+    DTSTART:20231113T000000
+    DURATION:PT30M
+    CONCEPT:https://ical4j.org/event-types/MEETING
+    ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=CHAIR:mailto:lead-by@example.com
+    BEGIN:PARTICIPANT
+    PARTICIPANT-TYPE:CONTACT
+    UID:1234
+    CALENDAR-ADDRESS:mailto:lead-by@example.com
+    STRUCTURED-DATA;VALUE=BINARY;ENCODING=BASE64;FMTTYPE=text/vcard:QkVHSU46VkNBUkQNClVJRDoxMjM0DQpGTjpUZWFtIExlYWQNCkNBTEFEUlVSSTptYWlsdG86bGVhZC1ieUBleGFtcGxlLmNvbQ0KRU5EOlZDQVJEDQo=
+    END:PARTICIPANT
+    END:VEVENT    
 
 ## Agenda
 
@@ -49,3 +74,19 @@ An Appointment may still have an associated Agenda for planning, but typically w
 
 An Observance is like an Appointment but does not block any time. It is more informative to recipients as a reminder
 of important dates and times to be observed.
+
+### Examples
+
+Create a new observance for International Science Week.
+
+    VEvent iwsp = new Observance().title("International Week of Science and Peace")
+        .start(LocalDate.of(1988, 11, 6))
+        .end(LocalDate.of(1988, 11, 12))
+        .url(URI.create("https://www.un.org/en/observances/world-science-day/week"))
+        .schedule(new Schedule(Years.ONE)).apply();
+
+Modify an existing observance to override start and end dates for a specific year.
+
+    VEvent iwsp2023 = new Observance(iwsp).recurrence(LocalDate.of(2023, 11, 6))
+        .start(LocalDate.of(1988, 11, 5))
+        .end(LocalDate.of(1988, 11, 11)).apply();
