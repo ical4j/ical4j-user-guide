@@ -72,6 +72,7 @@ nav:
       - Workflow: template/workflow.md
       - Catalog: template/catalog.md
       - Wiki: template/wiki.md
+      - Budget: template/budget.md
   - Connector:
     - Overview: connector/index.md
     - CalDAV/CardDAV: connector/dav.md
