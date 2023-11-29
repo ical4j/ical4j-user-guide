@@ -29,3 +29,8 @@ service fulfilment.
 
 A Roster represents the availability of teams or individuals for servicing requests. A Roster may be used to identify
 who should be notified in the event of a new Request.
+
+## Metric
+
+A Metric captures a measurable outcome of specific objectives. This could refer to elapsed time to complete a task,
+fulfill and order or service a request.
