@@ -9,7 +9,7 @@ Instructions for adding third-party libraries in Eclipse available [here](http:/
 
 You can use iCal4j with your AndroidStudio/gradle buildfile.
 
-This is a working build.gradle example taken from https://github.com/k3b/calef/blob/master/app/build.gradle
+This is a working build.gradle example taken from [k3b/calef](https://github.com/k3b/calef/blob/master/app/build.gradle)
 
 ```groovy
 apply plugin: 'com.android.application'
@@ -243,7 +243,7 @@ and fortunately you can live without them under android.
 
 You can remove unused classes from your android app using proguard.
 
-Here is a working example from https://github.com/k3b/calef/blob/master/app/proguard-rules.pro
+Here is a working example from [k3b/calef](https://github.com/k3b/calef/blob/master/app/proguard-rules.pro)
 
 ```
 # Add project specific ProGuard rules here.
