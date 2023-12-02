@@ -1,6 +1,9 @@
 # Android Support
 
-You can use iCal4j directly in your Android applications. Instructions for adding third-party libraries in Eclipse available [here](http://code.google.com/android/kb/commontasks.html#addexternallibrary).
+You can use iCal4j directly in your Android applications. 
+Instructions for adding third-party libraries in Eclipse available [here](http://code.google.com/android/kb/commontasks.html#addexternallibrary).
+
+**NOTE: Recent changes to example gradle build and proguard configs provided in this [issue](https://github.com/ical4j/ical4j/issues/665)**
 
 ## Gradle/AndroidStudio
 
