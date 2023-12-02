@@ -1,3 +1,3 @@
-# CalDAV/CardDAV Integration
+# iCal4j Connector - CalDAV/CardDAV
 
 TBD.

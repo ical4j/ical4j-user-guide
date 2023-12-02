@@ -75,6 +75,7 @@ nav:
       - Budget: template/budget.md
   - Connector:
     - Overview: connector/index.md
+    - Local: connector/local.md
     - CalDAV/CardDAV: connector/dav.md
   - Integration:
     - Overview: integration/index.md
