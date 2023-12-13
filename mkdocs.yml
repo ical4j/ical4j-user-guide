@@ -57,7 +57,15 @@ nav:
   - Extensions:
       - Overview: extensions/index.md
       - CalDAV: extensions/caldav.md
-      - Concept: extensions/concept.md
+      - Concept:
+        - Overview: extensions/concept/index.md
+        - Event: extensions/concept/event.md
+        - Action: extensions/concept/action.md
+        - Issue: extensions/concept/issue.md
+        - Request: extensions/concept/request.md
+        - Record: extensions/concept/record.md
+        - Metric: extensions/concept/metric.md
+        - Availability: extensions/concept/availability.md
       - Link: extensions/link.md
       - Participant: extensions/participant.md
       - Outlook: extensions/outlook.md
