@@ -63,7 +63,7 @@ nav:
         - Action: extensions/concept/action.md
         - Issue: extensions/concept/issue.md
         - Request: extensions/concept/request.md
-        - Record: extensions/concept/record.md
+        - Note: extensions/concept/note.md
         - Metric: extensions/concept/metric.md
         - Availability: extensions/concept/availability.md
       - Link: extensions/link.md

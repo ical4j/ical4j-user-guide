@@ -1,1 +1,1 @@
-# iCal4j Extensions - Concept: Action
+# iCal4j Extensions - Concept: Availability
