@@ -54,6 +54,9 @@ nav:
     - OSGi: osgi.md
 #   - Services:
 #     - Overview: services/index.md
+  - vCard:
+      - Overview: vcard/index.md
+      - Examples: vcard/examples.md
   - Extensions:
       - Overview: extensions/index.md
       - CalDAV: extensions/caldav.md
@@ -71,9 +74,6 @@ nav:
           Status: extensions/link/status.md
       - Participant: extensions/participant.md
       - Outlook: extensions/outlook.md
-  - vCard:
-      - Overview: vcard/index.md
-      - Examples: vcard/examples.md
   - Template:
       - Overview: template/index.md
       - Groupware: template/groupware.md
@@ -83,6 +83,10 @@ nav:
       - Catalog: template/catalog.md
       - Wiki: template/wiki.md
       - Budget: template/budget.md
+  - Serializer:
+    - Overview: serializer/index.md
+    - JSON-lD: serializer/jsonld.md
+    - JMAP: serializer/jmap.md
   - Connector:
     - Overview: connector/index.md
     - Local: connector/local.md
@@ -93,7 +97,6 @@ nav:
     - Websub: integration/websub.md
     - Webhooks: integration/webhooks.md
     - Chat: integration/chat.md
-  - Serializer: serializer.md
   - Command:
     - Overview: command/index.md
     - Validator: command/validator.md
