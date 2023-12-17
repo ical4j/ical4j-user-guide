@@ -12,9 +12,13 @@ Email is the most widely supported transport for calendaring systems, however th
 * AWS SNS, SQS, etc. - Cloud-native messaging support
 * JMS - support for Java messaging
 
+## Reactive Streams
+
+iCal4j Integration includes support for [Reactive Streams](http://www.reactive-streams.org/), via the Java 9
+implementation.
 
 
-### Apache Camel
+## Apache Camel
 
 Added the ical4j-integration dependency to your project and configure your routes:
 

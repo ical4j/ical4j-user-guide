@@ -90,7 +90,9 @@ nav:
   - Integration:
     - Overview: integration/index.md
     - Email: integration/email.md
-    - Reactive Streams: integration/reactive.md
+    - Websub: integration/websub.md
+    - Webhooks: integration/webhooks.md
+    - Chat: integration/chat.md
   - Serializer: serializer.md
   - Command:
     - Overview: command/index.md
