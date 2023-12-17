@@ -86,8 +86,23 @@ nav:
         - Appointment: template/groupware/appointment.md
       - Project:
         - Overview: template/project/index.md
+        - Project: template/project/project.md
+        - Objective: template/project/objective.md
+        - Milestone: template/project/milestone.md
+        - Task: template/project/task.md
+        - Risk: template/project/risk.md
+        - Issue: template/project/issue.md
+        - Decision: template/project/dedcision.md
+        - Decision: template/project/decision.md
+        - Timesheet: template/project/timesheet.md
       - Agile:
         - Overview: template/agile/index.md
+        - Sprint: template/agile/sprint.md
+        - Backlog: template/agile/backlog.md
+        - Story: template/agile/story.md
+        - Epic: template/agile/epic.md
+        - Criteria: template/agile/criteria.md
+        - Retrospective: template/agile/retrospective.md
       - Workflow:
         - Overview: template/workflow/index.md
       - Catalog:
