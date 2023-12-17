@@ -76,21 +76,34 @@ nav:
       - Outlook: extensions/outlook.md
   - Template:
       - Overview: template/index.md
-      - Groupware: template/groupware.md
-      - Project: template/project.md
-      - Agile: template/agile.md
-      - Workflow: template/workflow.md
-      - Catalog: template/catalog.md
-      - Wiki: template/wiki.md
-      - Budget: template/budget.md
+      - Groupware:
+        - Overview: template/groupware/index.md
+        - Meeting: template/groupware/meeting.md
+        - Agenda: template/groupware/agenda.md
+        - Action: template/groupware/action.md
+        - Note: template/groupware/note.md
+        - Attendance: template/groupware/attendance.md
+        - Appointment: template/groupware/appointment.md
+      - Project:
+        - Overview: template/project/index.md
+      - Agile:
+        - Overview: template/agile/index.md
+      - Workflow:
+        - Overview: template/workflow/index.md
+      - Catalog:
+        - Overview: template/catalog/index.md
+      - Wiki:
+        - Overview: template/wiki/index.md
+      - Budget:
+        - Overview: template/budget/index.md
   - Serializer:
     - Overview: serializer/index.md
-    - JSON-lD: serializer/jsonld.md
+    - JSON-LD: serializer/jsonld.md
     - JMAP: serializer/jmap.md
   - Connector:
     - Overview: connector/index.md
     - Local: connector/local.md
-    - CalDAV/CardDAV: connector/dav.md
+    - WebDAV: connector/dav.md
   - Integration:
     - Overview: integration/index.md
     - Email: integration/email.md
