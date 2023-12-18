@@ -1,1 +1,1 @@
-# iCal4j Extensions - Link: Alternate
+# iCal4j Extensions - Link: License
