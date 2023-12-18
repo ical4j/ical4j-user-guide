@@ -1,9 +1,11 @@
 # iCal4j Serializer
 
-The iCal4j Serializer library provides support for conversion between iCal4j component models and other formats
-for calendar and contact data.
+Support for serialization of iCalendar objects to and from XML and JSON-based formats.
 
 ## Overview
+
+Serialization support is built upon the Jackson JSON ObjectMapper used to convert Java POJOs to and from JSON
+(and XML).
 
 A number of JSON-based specifications are available for representing iCalendar data, with the following supported in
 this library:
@@ -11,7 +13,6 @@ this library:
 * jCal/jCard
 * jsCalendar/jsCard
 * Schema.org (JSON-LD)
-* JOT API
 
 ## Command Line Usage
 

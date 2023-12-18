@@ -141,7 +141,9 @@ nav:
         - Reimbursement: template/budget/reimbursement.md
   - Serializer:
     - Overview: serializer/index.md
-    - JSON-LD: serializer/jsonld.md
+    - XML: serializer/xml.md
+    - JSON: serializer/json.md
+    - JSON-LD: serializer/json-ld.md
     - JMAP: serializer/jmap.md
   - Connector:
     - Overview: connector/index.md
