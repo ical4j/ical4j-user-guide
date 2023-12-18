@@ -1,0 +1,4 @@
+# iCal4j Extensions - Link: Author
+
+Identifies a component author, which can be important when a single component can be modified by multiple
+collaborators.
