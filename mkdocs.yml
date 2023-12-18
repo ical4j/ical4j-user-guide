@@ -84,7 +84,7 @@ nav:
         - Note: template/groupware/note.md
         - Attendance: template/groupware/attendance.md
         - Appointment: template/groupware/appointment.md
-      - Project:
+      - Project Management:
         - Overview: template/project/index.md
         - Project: template/project/project.md
         - Objective: template/project/objective.md
@@ -92,7 +92,6 @@ nav:
         - Task: template/project/task.md
         - Risk: template/project/risk.md
         - Issue: template/project/issue.md
-        - Decision: template/project/dedcision.md
         - Decision: template/project/decision.md
         - Timesheet: template/project/timesheet.md
       - Agile:
@@ -105,12 +104,26 @@ nav:
         - Retrospective: template/agile/retrospective.md
       - Workflow:
         - Overview: template/workflow/index.md
+        - Request: template/workflow/request.md
+        - Approval: template/workflow/approval.md
+        - Roster: template/workflow/roster.md
+        - Metric: template/workflow/metric.md
       - Catalog:
         - Overview: template/catalog/index.md
+        - Offer: template/catalog/offer.md
+        - Order: template/catalog/order.md
+        - Fulfilment: template/catalog/fulfilment.md
       - Wiki:
         - Overview: template/wiki/index.md
+        - Article: template/wiki/article.md
+        - Topic: template/wiki/topic.md
+        - Definition: template/wiki/definition.md
+        - Faq: template/wiki/faq.md
       - Budget:
         - Overview: template/budget/index.md
+        - Funding: template/budget/funding.md
+        - Expense: template/budget/expense.md
+        - Reimbursement: template/budget/reimbursement.md
   - Serializer:
     - Overview: serializer/index.md
     - JSON-LD: serializer/jsonld.md
