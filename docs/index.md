@@ -28,20 +28,20 @@
 
 # Introduction
 
-The iCal4j project is a collection of Open Source Java libraries providing support for working with interoperability
-standards such as iCalendar and vCard. Each library focuses on a specific subset of interoperability functionality,
-with the aim to be concise and easy to understand.
+The iCal4j project is a collection of Open Source Java libraries for creating semantically-rich calendar and
+scheduling data. iCal4j is based on the iCalendar and vCard specifications, with each library focused on a
+specific subset of interoperability functionality.
 
-## Model
+## What is iCalendar?
 
-Model libraries primarily implement data structures that represent interoperability specifications such as iCalendar
-and vCard.
+The iCalendar standard was originally created from a collaboration of leading groupware developers, as a way for
+their software to interoperate.
 
 The core iCal4j library provides an implementation of the iCalendar [specifications](https://www.ical4j.org/rfcs/) that
 are designed to facilitate interoperability between calendaring and scheduling software systems.
 
-iCalendar provides a common data format used to store scheduling information such as events, appointments, to-do lists, etc.
-Most calendaring tools include some level of support for the iCalendar standard.
+iCalendar provides a common data format used to store scheduling information such as events, appointments, to-do lists,
+etc. Most calendaring tools include some level of support for the iCalendar standard.
 
 ## Active Projects
 
