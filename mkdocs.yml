@@ -26,6 +26,13 @@ extra:
       link: https://twitter.com/micronode
 markdown_extensions:
   - pymdownx.tilde
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
 nav:
   - Overview:
     - Introduction: index.md
