@@ -8,13 +8,15 @@ The correct way to filter events according to the spec (RFC2445) would be to con
 
 If instead you would like to identify specific events occurring within a time frame, you can use iCal4j filters to filter components within a specified period. For example, to filter a list of events only occurring today you might do the following:
 
-    java.util.Calendar today = java.util.Calendar.getInstance();
-    today.set(java.util.Calendar.HOUR_OF_DAY, 0);
-    today.clear(java.util.Calendar.MINUTE);
-    today.clear(java.util.Calendar.SECOND);
+```java
+java.util.Calendar today = java.util.Calendar.getInstance();
+today.set(java.util.Calendar.HOUR_OF_DAY, 0);
+today.clear(java.util.Calendar.MINUTE);
+today.clear(java.util.Calendar.SECOND);
 
-    // create a period starting now with a duration of one (1) day..
-    Period period = new Period(new DateTime(today.getTime()), new Dur(1, 0, 0, 0));
-    Filter filter = new Filter(new PeriodRule(period));
+// create a period starting now with a duration of one (1) day..
+Period period = new Period(new DateTime(today.getTime()), new Dur(1, 0, 0, 0));
+Filter filter = new Filter(new PeriodRule(period));
 
-    List eventsToday = filter.filter(calendar.getComponents(Component.VEVENT));
+List eventsToday = filter.filter(calendar.getComponents(Component.VEVENT));
+```
