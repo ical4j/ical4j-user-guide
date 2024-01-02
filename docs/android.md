@@ -141,53 +141,55 @@ The [Android eclipse plugin](http://developer.android.com/sdk/eclipse-adt.html) 
 
 The [Android maven plugin](http://code.google.com/p/maven-android-plugin/) allows you to configure your dependencies, such as iCal4j in the usual way. The important parts to your pom.xml are as follows:
 
-    <project ..>
-            ...
-        <packaging>apk</packaging>
-        <dependencies>
-            <dependency>
-                <groupId>net.fortuna.ical4j</groupId>
-                <artifactId>ical4j</artifactId>
-                <version>1.0-SNAPSHOT</version>
-            </dependency>
-            <dependency>
-                <groupId>com.google.android</groupId>
-                <artifactId>android</artifactId>
-                <version>1.6_r2</version>
-                <scope>provided</scope>
-            </dependency>
-        </dependencies>
-        <build>
-            <sourceDirectory>src</sourceDirectory>
-            <testSourceDirectory>test</testSourceDirectory>
+```xml
+<project ..>
+        ...
+    <packaging>apk</packaging>
+    <dependencies>
+        <dependency>
+            <groupId>net.fortuna.ical4j</groupId>
+            <artifactId>ical4j</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.android</groupId>
+            <artifactId>android</artifactId>
+            <version>1.6_r2</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+    <build>
+        <sourceDirectory>src</sourceDirectory>
+        <testSourceDirectory>test</testSourceDirectory>
 
-            <plugins>
-                <plugin>
-                    <groupId>com.jayway.maven.plugins.android.generation2</groupId>
-                    <artifactId>maven-android-plugin</artifactId>
-                    <version>2.6.0</version>
-                    <configuration>
-                        <sdk>
-                            <platform>4</platform>
-                        </sdk>
-                        <emulator>
-                            <avd>SE_X10_Mini</avd>
-                        </emulator>
-                        <deleteConflictingFiles>true</deleteConflictingFiles>
-                        <undeployBeforeDeploy>true</undeployBeforeDeploy>
-                    </configuration>
-                    <extensions>true</extensions>
-                </plugin>
-                <plugin>
-                    <artifactId>maven-compiler-plugin</artifactId>
-                    <configuration>
-                        <source>5</source>
-                        <target>5</target>
-                    </configuration>
-                </plugin>
-            </plugins>
-        </build>
-    </project>
+        <plugins>
+            <plugin>
+                <groupId>com.jayway.maven.plugins.android.generation2</groupId>
+                <artifactId>maven-android-plugin</artifactId>
+                <version>2.6.0</version>
+                <configuration>
+                    <sdk>
+                        <platform>4</platform>
+                    </sdk>
+                    <emulator>
+                        <avd>SE_X10_Mini</avd>
+                    </emulator>
+                    <deleteConflictingFiles>true</deleteConflictingFiles>
+                    <undeployBeforeDeploy>true</undeployBeforeDeploy>
+                </configuration>
+                <extensions>true</extensions>
+            </plugin>
+            <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>5</source>
+                    <target>5</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
+```
 
 A simple Android test project has been created to demonstrate iCal4j usage. You can browse the contents of this project [here](http://ical4j.cvs.sourceforge.net/viewvc/ical4j/android-test/).
 
@@ -201,40 +203,42 @@ Note that there are a couple of library dependencies that are required by iCal4j
 
 As a result I *believe* (untested) that you won't need to include these dependencies in your APK. The easiest way to exclude them using maven is to change the scope to provided for these dependences. ie:
 
-    <project ..>
-            ...
-        <dependencies>
-            <dependency>
-                <groupId>net.fortuna.ical4j</groupId>
-                <artifactId>ical4j</artifactId>
-                <version>1.0</version>
-            </dependency>
-            <dependency>
-                <groupId>commons-logging</groupId>
-                <artifactId>commons-logging</artifactId>
-                <version>1.1.1</version>
-                <scope>provided</scope>
-            </dependency>
-            <dependency>
-                <groupId>commons-codec</groupId>
-                <artifactId>commons-codec</artifactId>
-                <version>1.2</version>
-                <scope>provided</scope>
-            </dependency>
-            <dependency>
-                <groupId>backport-util-concurrent</groupId>
-                <artifactId>backport-util-concurrent</artifactId>
-                <version>3.1</version>
-                <scope>provided</scope>
-            </dependency>
-            <dependency>
-                <groupId>com.google.android</groupId>
-                <artifactId>android</artifactId>
-                <version>2.3.3</version>
-                <scope>provided</scope>
-            </dependency>
-        </dependencies>
-    </project>
+```xml
+<project ..>
+        ...
+    <dependencies>
+        <dependency>
+            <groupId>net.fortuna.ical4j</groupId>
+            <artifactId>ical4j</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>commons-logging</groupId>
+            <artifactId>commons-logging</artifactId>
+            <version>1.1.1</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>commons-codec</groupId>
+            <artifactId>commons-codec</artifactId>
+            <version>1.2</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>backport-util-concurrent</groupId>
+            <artifactId>backport-util-concurrent</artifactId>
+            <version>3.1</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.google.android</groupId>
+            <artifactId>android</artifactId>
+            <version>2.3.3</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+</project>
+```
 
 ## Reducing Android-footprint by using proguard
 
@@ -311,15 +315,17 @@ Statistics:
 
 Note: If you want to use proguard with gradle your build.gradle also needs this:
 
-    buildTypes {
-        release {
-            minifyEnabled true
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
-        }
-        debug {
-            minifyEnabled true
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
-        }
+```groovy
+buildTypes {
+    release {
+        minifyEnabled true
+        proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
     }
+    debug {
+        minifyEnabled true
+        proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+    }
+}
+```
 
 Further instructions on reducing the size of your APK using Proguard are available [here](http://code.google.com/p/maven-android-plugin/wiki/ProGuard).

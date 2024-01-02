@@ -7,13 +7,15 @@ intention to attend, Attendance can provide a record of actual participation aft
 
 For each participant in a meeting attendance may be recorded as follows:
 
-    VEvent meeting = ...
-    VCard attendee = ...
-    VJournal attendance = new Attendance().participant(new Contact(attendee))
-                .start(LocalDateTime.of(2023, 11, 15, 9, 0))
-                .end(LocalDateTime.of(2023, 11, 15, 9, 30))
-                .context(meeting)
-                .apply();
+```java
+VEvent meeting = ...
+VCard attendee = ...
+VJournal attendance = new Attendance().participant(new Contact(attendee))
+            .start(LocalDateTime.of(2023, 11, 15, 9, 0))
+            .end(LocalDateTime.of(2023, 11, 15, 9, 30))
+            .context(meeting)
+            .apply();
+```
 
 The attendance record looks something like this:
 

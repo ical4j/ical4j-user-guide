@@ -6,7 +6,9 @@ To increase interoperability with other CUAs a number of _Compatibility Hints_ a
 
 Compatibility Hints can be enabled and disabled by calling the static method [CompatibilityHints.setHintEnabled()](http://ical4j.github.io/docs/ical4j/api/3.0.19/net/fortuna/ical4j/util/CompatibilityHints.html#setHintEnabled(java.lang.String,%20boolean)). For example:
 
-    CompatibilityHints.setHintEnabled(KEY_RELAXED_UNFOLDING, true);
+```java
+CompatibilityHints.setHintEnabled(KEY_RELAXED_UNFOLDING, true);
+```
 
 ## Specifying Compatibility Hints in a properties file
 
@@ -14,19 +16,23 @@ Compatibility Hints can be enabled and disabled by calling the static method [Co
 
 2. Add appropriate lines for enabling hints. So for example, to enable relaxed unfolding add the following:
 
-        ical4j.unfolding.relaxed=true
+```properties
+ical4j.unfolding.relaxed=true
+```
 
 The complete list of Compatibility Hint properties is as follows:
 
-    ical4j.unfolding.relaxed={true|false}
+```properties
+ical4j.unfolding.relaxed={true|false}
 
-    ical4j.parsing.relaxed={true|false}
+ical4j.parsing.relaxed={true|false}
 
-    ical4j.validation.relaxed={true|false}
+ical4j.validation.relaxed={true|false}
 
-    ical4j.compatibility.outlook={true|false}
+ical4j.compatibility.outlook={true|false}
 
-    ical4j.compatibility.notes={true|false}
+ical4j.compatibility.notes={true|false}
+```
 
 ## Specifying Compatibility Hints as System properties
 

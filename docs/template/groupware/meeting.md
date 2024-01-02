@@ -8,13 +8,15 @@ or modify `VEVENT` objects to conform with conventional approaches to defining m
 
 Assuming we use vCard to represent meeting participants, we can construct a new meeting:
 
-    VCard organizer = ...
-    VCard chair = ...
+```java
+VCard organizer = ...
+VCard chair = ...
 
-    VEvent meeting = new Meeting().organizer(organizer)
-                .chair(new Contact(chair))
-                .start(LocalDate.of(2023, 11, 13).atStartOfDay())
-                .duration(Duration.ofMinutes(30)).apply();
+VEvent meeting = new Meeting().organizer(organizer)
+            .chair(new Contact(chair))
+            .start(LocalDate.of(2023, 11, 13).atStartOfDay())
+            .duration(Duration.ofMinutes(30)).apply();
+```
 
 The result is something like this:
 

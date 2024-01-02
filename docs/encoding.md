@@ -14,6 +14,8 @@ By default, iCal4j supports the MIME encodings specified in [RFC2045](http://www
 
 You may add support for additional encodings by providing an implementation of <pre>net.fortuna.ical4j.util.EncoderFactory</pre> and/or <pre>net.fortuna.ical4j.util.DecoderFactory</pre>. You can instruct iCal4j to use these factories by specifying the following system properties:
 
-<pre>net.fortuna.ical4j.factory.encoder=<encoder_factory_class_name></pre>
+```properties
+net.fortuna.ical4j.factory.encoder=<encoder_factory_class_name>
 
-<pre>net.fortuna.ical4j.factory.decoder=<decoder_factory_class_name></pre>
+net.fortuna.ical4j.factory.decoder=<decoder_factory_class_name>
+```

@@ -9,12 +9,14 @@ such that it may be shared across multiple meetings if required.
 Multiple Agenda may be linked in sequence to track items individually. This can be useful where time constraints
 require additional meetings to address outstanding Agenda items:
 
-    VToDo item4 = new Agenda().summary("Further business and close").uid(...).apply();
-    VToDo item3 = new Agenda().summary("Standing items").uid(...).nextItem(item4).apply();
-    VToDo item2 = new Agenda().summary("Business arising").uid(...).nextItem(item3).apply();
-    VToDo item1 = new Agenda().summary("ACME Monthly Board Meeting").uid(...).nextItem(item2).apply();
+```java
+VToDo item4 = new Agenda().summary("Further business and close").uid(...).apply();
+VToDo item3 = new Agenda().summary("Standing items").uid(...).nextItem(item4).apply();
+VToDo item2 = new Agenda().summary("Business arising").uid(...).nextItem(item3).apply();
+VToDo item1 = new Agenda().summary("ACME Monthly Board Meeting").uid(...).nextItem(item2).apply();
 
-    ComponentList agenda = new ComponentList(Arrays.asList(item1, item2, item3, item4);
+ComponentList agenda = new ComponentList(Arrays.asList(item1, item2, item3, item4);
+```
 
 The resulting component list looks like this:
 

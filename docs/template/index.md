@@ -27,26 +27,34 @@ A template is a construct for building iCalendar and vCard objects for common us
 
 A roster is a `VCALENDAR` prototype consisting of `VAVAILABILITY` components with one or more `ATTENDEE`s.
 
-    VAvailability roster = new Roster().apply();
+```java
+VAvailability roster = new Roster().apply();
+```
 
 ### Sports fixture
 
 A sport fixture is a `VCALENDAR` prototype of `VEVENT` components with a `LOCATION` and embedded Schema.org
 `STRUCTURED-DATA`.
 
-    VEvent fixture = new SportsFixture().apply();
+```java
+VEvent fixture = new SportsFixture().apply();
+```
 
 ### Timetable
 
 A timetable is a `VCALENDAR` prototype of `VEVENT` components.
 
-    Calendar timetable = new Timetable().toCalendar();
+```java
+Calendar timetable = new Timetable().toCalendar();
+```
 
 ### Timesheet
 
 A timesheet is a `VCALENDAR` prototype of `VJOURNAL` components.
 
-    Calendar timesheet = new Timesheet().toCalendar();
+```java
+Calendar timesheet = new Timesheet().toCalendar();
+```
 
 ### Project Schedule
 
@@ -64,15 +72,18 @@ etc.).
 * DTSTART - VALUE=DATE
 * RRULE/RDATE (required)
 
-
-    VEvent anniversary = new Anniversary().withDate(MonthDay.of(Month.DECEMBER, 25)).apply();
+```java
+VEvent anniversary = new Anniversary().withDate(MonthDay.of(Month.DECEMBER, 25)).apply();
+```
 
 ### Meeting
 
 A meeting is a `VCALENDAR` prototype of `VEVENT` components.
 
-    Agenda agenda = ...
-    VEvent meeting = new Meeting().withAgenda(agenda).apply();
+```java
+Agenda agenda = ...
+VEvent meeting = new Meeting().withAgenda(agenda).apply();
+```
 
 
 ## VToDo Templates
@@ -81,7 +92,9 @@ A meeting is a `VCALENDAR` prototype of `VEVENT` components.
 
 A project task is a `VTODO` prototype.
 
-    VTodo task = new Task().apply();
+```java
+VTodo task = new Task().apply();
+```
 
 
 ## VJournal Templates
@@ -90,4 +103,6 @@ A project task is a `VTODO` prototype.
 
 Meeting minutes is a `VJOURNAL` prototype with `RELATED-TO` property referencing the meeting.
 
-    VJournal minutes = new MeetingMinutes().apply();
+```java
+VJournal minutes = new MeetingMinutes().apply();
+```

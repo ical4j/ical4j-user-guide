@@ -6,19 +6,19 @@ iCal4j Extensions is a Java library that provides support for widely used non-st
 
 To add support for extensions you may register the required factories with your CalendarBuilder instance:
 
-<pre>
-        CalendarParser parser = CalendarParserFactory.getInstance().createParser();
-        
-        PropertyFactoryRegistry propertyFactoryRegistry = new PropertyFactoryRegistry();
-        propertyFactoryRegistry.register(WrTimezone.PROPERTY_NAME, WrTimezone.FACTORY);
-        propertyFactoryRegistry.register(WrCalName.PROPERTY_NAME, WrCalName.FACTORY);
-        
-        ParameterFactoryRegistry parameterFactoryRegistry = new ParameterFactoryRegistry();
-        
-        TimeZoneRegistry tzRegistry = TimeZoneRegistryFactory.getInstance().createRegistry();
-        
-        builder = new CalendarBuilder(parser, propertyFactoryRegistry, parameterFactoryRegistry, tzRegistry);
-</pre>
+```java
+CalendarParser parser = CalendarParserFactory.getInstance().createParser();
+
+PropertyFactoryRegistry propertyFactoryRegistry = new PropertyFactoryRegistry();
+propertyFactoryRegistry.register(WrTimezone.PROPERTY_NAME, WrTimezone.FACTORY);
+propertyFactoryRegistry.register(WrCalName.PROPERTY_NAME, WrCalName.FACTORY);
+
+ParameterFactoryRegistry parameterFactoryRegistry = new ParameterFactoryRegistry();
+
+TimeZoneRegistry tzRegistry = TimeZoneRegistryFactory.getInstance().createRegistry();
+
+builder = new CalendarBuilder(parser, propertyFactoryRegistry, parameterFactoryRegistry, tzRegistry);
+```
 
 ## Minimum requirements
 
@@ -37,7 +37,9 @@ Traditionally any components, properties and parameters not defined by [RFC2445]
 
 In the iCal4j object model, these objects are represented by the XComponent, XProperty and XParameter classes respectively. Names that do not conform to the <strong>"X-"</strong> name prefix requirement may be supported by enabling the following Compatibility Hint:
 
-<pre>ical4j.parsing.relaxed</pre>
+```properties
+ical4j.parsing.relaxed=true
+```
 
 ##  Extension Factory Registration 
 
@@ -47,7 +49,7 @@ There are a number of deficiences with above approach, most notably that only <e
 
 You can now add support for extension properties by registering custom <em>PropertyFactory</em> implementations:
 
-<pre>
+```java
 PropertyFactory somePropertyFactory = ...
 
 PropertyFactoryRegistry propertyFactoryRegistry = new PropertyFactoryRegistry();
@@ -60,13 +62,13 @@ CalendarBuilder builder = new CalendarBuilder(CalendarParserFactory.getInstance(
     TimeZoneRegistryFactory.getInstance().createRegistry());
 
 Calendar calendar = builder.build(..);
-</pre>
+```
 
 ###  ParameterFactoryRegistry 
 
 Extension parameters are also supported:
 
-<pre>
+```java
 ParameterFactory someParameterFactory = ...
 
 ParameterFactoryRegistry parameterFactoryRegistry = new ParameterFactoryRegistry();
@@ -79,7 +81,7 @@ CalendarBuilder builder = new CalendarBuilder(CalendarParserFactory.getInstance(
     TimeZoneRegistryFactory.getInstance().createRegistry());
 
 Calendar calendar = builder.build(..);
-</pre>
+```
 
 ##  Common Extensions 
 
