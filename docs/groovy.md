@@ -6,7 +6,7 @@ Constructing iCalendar and vCard object models can be quite a tedious process in
 
 ### vCard
 
-<pre>
+```groovy
 def builder = new ContentBuilder()
 def card = builder.vcard() {
     version(value: '4.0')
@@ -15,11 +15,11 @@ def card = builder.vcard() {
     photo(value: 'http://example.com/photo', parameters: [value('uri')])
 }
 card.validate()
-</pre>
+```
 
 Where a property doesn't require any parameters the syntax may be even more concise:
 
-<pre>
+```groovy
 def builder = new ContentBuilder()
 def card = builder.vcard() {
     version('4.0')
@@ -28,11 +28,11 @@ def card = builder.vcard() {
     photo(value: 'http://example.com/photo', parameters: [value('uri')])
 }
 card.validate()
-</pre>
+```
 
 Property parameters that are not required for property construction may also be nested:
 
-<pre>
+```groovy
 def builder = new ContentBuilder()
 def card = builder.vcard() {
     version('4.0')
@@ -43,11 +43,11 @@ def card = builder.vcard() {
     photo(value: 'http://example.com/photo', parameters: [value('uri')])
 }
 card.validate()
-</pre>
+```
 
 Attach a photo as encoded binary data:
 
-<pre>
+```groovy
 def builder = new ContentBuilder()
 def card = builder.vcard() {
     version('4.0')
@@ -58,11 +58,11 @@ def card = builder.vcard() {
     photo(new File('http://example.com/photo.png').bytes.encodeBase64() as String)
 }
 card.validate()
-</pre>
+```
 
 ### iCalendar
 
-<pre>
+```groovy
 def builder = new ContentBuilder()
 def calendar = builder.calendar() {
     prodid('-//Ben Fortuna//iCal4j 1.0//EN')
@@ -77,11 +77,11 @@ def calendar = builder.calendar() {
             value('URI')})
     }
 }
-</pre>
+```
 
 Attach a vCard to an iCalendar object:
 
-<pre>
+```groovy
 import net.fortuna.ical4j.model.property.DtStamp
 
 def icalendar = new net.fortuna.ical4j.model.ContentBuilder();
@@ -116,13 +116,13 @@ def calendar = icalendar.calendar() {
 
 calendar.validate()
 println(calendar)
-</pre>
+```
 
 ## Groovlet
 
 Here is an example [Groovlet](http://groovy.codehaus.org/Groovlets) that parses a specified calendar and outputs all of the event summaries in HTML:
 
-<pre>
+```groovy
 import net.fortuna.ical4j.data.CalendarBuilder
 import net.fortuna.ical4j.model.Calendar
 import net.fortuna.ical4j.model.Component
@@ -161,7 +161,7 @@ html.html {
     	}
     }
 }
-</pre>
+```
 
 ## GSP
 
@@ -174,7 +174,7 @@ Here is an introduction how to use iCal4j and Grails with the [iCalendar Grails 
 
 You can also use [Grape] to manage your iCal4j dependencies, however you will need to add the Modularity Maven repositories to your [http://groovy.codehaus.org/Grape#Grape-CustomizeIvysettings Grape config](http://groovy.codehaus.org/Grape) as follows:
 
-<pre>
+```xml
 <ivysettings>
   ...
   <resolvers>
@@ -184,11 +184,11 @@ You can also use [Grape] to manage your iCal4j dependencies, however you will ne
     </chain>
   </resolvers>
 </ivysettings>
-</pre>
+```
 
 Then you can use scripts like this without any dependency configuration required:
 
-<pre>
+```groovy
 import net.fortuna.ical4j.vcard.ContentBuilder
 import net.fortuna.ical4j.model.property.DtStamp
 
@@ -212,13 +212,13 @@ def getCalendar() {
 }
 
 println(calendar)
-</pre>
+```
 
 ##  Connecting to a CalDAV Store 
 
 You can also use the iCal4j connector to connect to a CalDAV store (e.g. Google Calendar). For example:
 
-<pre>
+```groovy
 import net.fortuna.ical4j.connector.dav.CalDavCalendarStore
 import net.fortuna.ical4j.connector.dav.PathResolver
 import org.apache.commons.httpclient.protocol.Protocol
@@ -250,4 +250,4 @@ def getCollections() {
 collections.each() {
   println "${it.description}: ${it.components.size()}"
 }
-</pre>
+```
