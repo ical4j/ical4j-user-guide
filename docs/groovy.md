@@ -9,10 +9,10 @@ Constructing iCalendar and vCard object models can be quite a tedious process in
 ```groovy
 def builder = new ContentBuilder()
 def card = builder.vcard() {
-    version(value: '4.0')
-    fn(value: 'test')
-    n(value: 'example')
-    photo(value: 'http://example.com/photo', parameters: [value('uri')])
+    version '4.0'
+    fn 'test'
+    n 'example'
+    photo 'http://example.com/photo', parameters: [value('uri')]
 }
 card.validate()
 ```
@@ -22,10 +22,10 @@ Where a property doesn't require any parameters the syntax may be even more conc
 ```groovy
 def builder = new ContentBuilder()
 def card = builder.vcard() {
-    version('4.0')
-    fn('test')
-    n('example')
-    photo(value: 'http://example.com/photo', parameters: [value('uri')])
+    version '4.0'
+    fn 'test'
+    n 'example'
+    photo 'http://example.com/photo', parameters: [value('uri')]
 }
 card.validate()
 ```
@@ -35,12 +35,12 @@ Property parameters that are not required for property construction may also be 
 ```groovy
 def builder = new ContentBuilder()
 def card = builder.vcard() {
-    version('4.0')
-    fn('test')
-    n('example') {
+    version '4.0'
+    fn 'test'
+    n 'example' {
         value('text')
     }
-    photo(value: 'http://example.com/photo', parameters: [value('uri')])
+    photo 'http://example.com/photo', parameters: [value('uri')]
 }
 card.validate()
 ```
@@ -50,10 +50,10 @@ Attach a photo as encoded binary data:
 ```groovy
 def builder = new ContentBuilder()
 def card = builder.vcard() {
-    version('4.0')
-    fn('test')
-    n('example') {
-        value('text')
+    version '4.0'
+    fn 'test'
+    n 'example' {
+        value 'text'
     }
     photo(new File('http://example.com/photo.png').bytes.encodeBase64() as String)
 }
@@ -65,16 +65,18 @@ card.validate()
 ```groovy
 def builder = new ContentBuilder()
 def calendar = builder.calendar() {
-    prodid('-//Ben Fortuna//iCal4j 1.0//EN')
-    version('2.0')
-    vevent() {
-        uid('1')
-        dtstamp(new DtStamp())
-        dtstart('20090810', parameters: parameters() {
-            value('DATE')})
-        action('DISPLAY')
-        attach('http://example.com/attachment', parameters: parameters() {
-            value('URI')})
+    prodid '-//Ben Fortuna//iCal4j 1.0//EN'
+    version '2.0'
+    vevent {
+        uid '1'
+        dtstamp new DtStamp()
+        dtstart '20090810', parameters: parameters() {
+            value 'DATE'
+        }
+        action 'DISPLAY'
+        attach 'http://example.com/attachment', parameters: parameters() {
+            value 'URI'
+        }
     }
 }
 ```
@@ -88,29 +90,32 @@ def icalendar = new net.fortuna.ical4j.model.ContentBuilder();
 def vcard = new net.fortuna.ical4j.vcard.ContentBuilder();
 
 def card = vcard.vcard() {
-    version(value: '4.0')
-    fn(value: 'test')
-    n(value: 'example')
-    photo(value: 'http://example.com/photo', parameters: [value('uri')])
+    version '4.0'
+    fn 'test'
+    n 'example'
+    photo 'http://example.com/photo', parameters: [value('uri')]
 }
 card.validate()
 //println(card)
 
 def calendar = icalendar.calendar() {
-    prodid('-//Ben Fortuna//iCal4j 1.0//EN')
-    version('2.0')
-    vevent() {
-        uid('1')
-        dtstamp(new DtStamp())
-        dtstart('20090810', parameters: parameters() {
-            value('DATE')})
-        action('DISPLAY')
-        attach('http://example.com/attachment', parameters: parameters() {
-            value('URI')})
-        attach(card.toString(), parameters: parameters() {
-            fmttype('text/vcard')
-            encoding('8BIT')
-            value('TEXT')})
+    prodid '-//Ben Fortuna//iCal4j 1.0//EN'
+    version '2.0'
+    vevent {
+        uid '1'
+        dtstamp new DtStamp()
+        dtstart '20090810', parameters: parameters() {
+            value 'DATE'
+        }
+        action 'DISPLAY'
+        attach 'http://example.com/attachment', parameters: parameters() {
+            value 'URI'
+        }
+        attach card.toString(), parameters: parameters() {
+            fmttype 'text/vcard'
+            encoding '8BIT'
+            value 'TEXT'
+        }
     }
 }
 
