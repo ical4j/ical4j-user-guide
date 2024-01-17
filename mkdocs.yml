@@ -152,7 +152,7 @@ nav:
     - JSON: serializer/json.md
     - JSON-LD: serializer/json-ld.md
     - JMAP: serializer/jmap.md
-    - JOT:
+    - JOTP:
       - Overview: serializer/jotp/index.md
       - Calendar: serializer/jotp/calendar.md
       - Event: serializer/jotp/event.md

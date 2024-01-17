@@ -30,10 +30,10 @@ An example using all of these properties may look like this:
   "refresh-interval": "P1W",
   "source": "https://example.com/public_holidays.ics",
   "color": "orange",
-  "name": ["International Public Holidays"],
-  "description": ["Globally recognised public holidays"],
+  "name": "International Public Holidays",
+  "description": "Globally recognised public holidays",
   "categories": ["holidays", "global"],
-  "image": ["https://example.com/images/holiday.png"]
+  "image": "https://example.com/images/holiday.png"
 }
 ```
 
