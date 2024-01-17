@@ -152,10 +152,18 @@ nav:
     - JSON: serializer/json.md
     - JSON-LD: serializer/json-ld.md
     - JMAP: serializer/jmap.md
+    - JOT:
+      - Overview: serializer/jotp/index.md
+      - Calendar: serializer/jotp/calendar.md
+      - Event: serializer/jotp/event.md
+      - ToDo: serializer/jotp/todo.md
+      - Journal: serializer/jotp/journal.md
+      - Availability: serializer/jotp/availability.md
+      - Card: serializer/jotp/card.md
   - Connector:
     - Overview: connector/index.md
     - Local: connector/local.md
-    - WebDAV: connector/dav.md
+    - DAV: connector/dav.md
   - Integration:
     - Overview: integration/index.md
     - Email: integration/email.md
