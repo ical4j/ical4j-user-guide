@@ -113,6 +113,29 @@ RESPONSE:
 
 ```
 
+### Cancel an occurrence of a recurring event
+
+```json
+POST https://api.example.com/v1/events/1234-abcd
+{
+  "exdate": "20260101"
+}
+
+RESPONSE:
+
+{
+    "uid": "1234-abcd",
+    "dtstamp": "20240117T105900Z",
+    "created": "20240117T105900Z",
+    "last-modified": "20240117T105900Z",
+    "dtstart": "20240101",
+    "summary": "New Years Day",
+    "categories": "holidays",
+    "rrule": "FREQ=YEARLY",
+    "exdate": "20260101"
+}
+```
+
 ### Retrieve all occurrences of a recurring event
 
 ```json
@@ -129,7 +152,8 @@ RESPONSE:
         "dtstart": "20240101",
         "summary": "New Years Day",
         "categories": "holidays",
-        "rrule": "FREQ=YEARLY"
+        "rrule": "FREQ=YEARLY",
+        "exdate": "20260101"
     },
     {
         "uid": "1234-abcd",
@@ -143,4 +167,27 @@ RESPONSE:
         "description": "New Years Day (2025)"
     }
 ]
+```
+
+### Update an existing event (idemptotently)
+
+```json
+PATCH https://api.example.com/v1/events/1234-abcd
+{
+  "summary": "New Years Day (Public Holiday)"
+}
+
+RESPONSE:
+
+{
+    "uid": "1234-abcd",
+    "dtstamp": "20240117T105900Z",
+    "created": "20240117T105900Z",
+    "last-modified": "20240117T105900Z",
+    "dtstart": "20240101",
+    "summary": "New Years Day (Public Holiday)"
+    "categories": "holidays",
+    "rrule": "FREQ=YEARLY",
+    "exdate": "20260101"
+}
 ```
