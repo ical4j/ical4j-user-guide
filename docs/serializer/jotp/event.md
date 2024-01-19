@@ -191,3 +191,36 @@ RESPONSE:
     "exdate": "20260101"
 }
 ```
+
+### Delete an existing event
+
+```json
+DELETE https://api.example.com/v1/events/1234-abcd
+
+RESPONSE:
+
+[
+    {
+        "uid": "1234-abcd",
+        "dtstamp": "20240117T105900Z",
+        "created": "20240117T105900Z",
+        "last-modified": "20240117T105900Z",
+        "dtstart": "20240101",
+        "summary": "New Years Day (Public Holiday)",
+        "categories": "holidays",
+        "rrule": "FREQ=YEARLY",
+        "exdate": "20260101"
+    },
+    {
+        "uid": "1234-abcd",
+        "recurrence-id": "20250101",
+        "dtstamp": "20240117T105900Z",
+        "created": "20240117T105900Z",
+        "last-modified": "20240117T105900Z",
+        "dtstart": "20240101",
+        "summary": "New Years Day",
+        "categories": "holidays",
+        "description": "New Years Day (2025)"
+    }
+]
+```
