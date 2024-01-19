@@ -49,7 +49,7 @@ Combined with HTTP verbs an API for event management can be created.
 ```json
 POST https://api.example.com/v1/events
 {
-  "dtstart": "20240101",
+  "dtstart": "2024-01-01",
   "summary": "New Years Day",
   "categories": "holidays"
 }
@@ -58,10 +58,10 @@ RESPONSE:
 
 {
   "uid": "1234-abcd",
-  "dtstamp": "20240117T105900Z",
-  "created": "20240117T105900Z",
-  "last-modified": "20240117T105900Z",
-  "dtstart": "20240101",
+  "dtstamp": "2024-01-17T10:59:00Z",
+  "created": "2024-01-17T10:59:00Z",
+  "last-modified": "2024-01-17T10:59:00Z",
+  "dtstart": "2024-01-01",
   "summary": "New Years Day",
   "categories": "holidays"
 }
@@ -79,10 +79,10 @@ RESPONSE:
 
 {
   "uid": "1234-abcd",
-  "dtstamp": "20240117T105900Z",
-  "created": "20240117T105900Z",
-  "last-modified": "20240117T105900Z",
-  "dtstart": "20240101",
+  "dtstamp": "2024-01-17T10:59:00Z",
+  "created": "2024-01-17T10:59:00Z",
+  "last-modified": "2024-01-17T10:59:00Z",
+  "dtstart": "2024-01-01",
   "summary": "New Years Day",
   "categories": "holidays",
   "rrule": "FREQ=YEARLY"
@@ -102,10 +102,10 @@ RESPONSE:
 {
     "uid": "1234-abcd",
     "recurrence-id": "20250101",
-    "dtstamp": "20240117T105900Z",
-    "created": "20240117T105900Z",
-    "last-modified": "20240117T105900Z",
-    "dtstart": "20240101",
+    "dtstamp": "2024-01-17T10:59:00Z",
+    "created": "2024-01-17T10:59:00Z",
+    "last-modified": "2024-01-17T10:59:00Z",
+    "dtstart": "2024-01-01",
     "summary": "New Years Day",
     "categories": "holidays",
     "description": "New Years Day (2025)"
@@ -125,10 +125,10 @@ RESPONSE:
 
 {
     "uid": "1234-abcd",
-    "dtstamp": "20240117T105900Z",
-    "created": "20240117T105900Z",
-    "last-modified": "20240117T105900Z",
-    "dtstart": "20240101",
+    "dtstamp": "2024-01-17T10:59:00Z",
+    "created": "2024-01-17T10:59:00Z",
+    "last-modified": "2024-01-17T10:59:00Z",
+    "dtstart": "2024-01-01",
     "summary": "New Years Day",
     "categories": "holidays",
     "rrule": "FREQ=YEARLY",
@@ -146,10 +146,10 @@ RESPONSE:
 [
     {
         "uid": "1234-abcd",
-        "dtstamp": "20240117T105900Z",
-        "created": "20240117T105900Z",
-        "last-modified": "20240117T105900Z",
-        "dtstart": "20240101",
+        "dtstamp": "2024-01-17T10:59:00Z",
+        "created": "2024-01-17T10:59:00Z",
+        "last-modified": "2024-01-17T10:59:00Z",
+        "dtstart": "2024-01-01",
         "summary": "New Years Day",
         "categories": "holidays",
         "rrule": "FREQ=YEARLY",
@@ -158,10 +158,10 @@ RESPONSE:
     {
         "uid": "1234-abcd",
         "recurrence-id": "20250101",
-        "dtstamp": "20240117T105900Z",
-        "created": "20240117T105900Z",
-        "last-modified": "20240117T105900Z",
-        "dtstart": "20240101",
+        "dtstamp": "2024-01-17T10:59:00Z",
+        "created": "2024-01-17T10:59:00Z",
+        "last-modified": "2024-01-17T10:59:00Z",
+        "dtstart": "2024-01-01",
         "summary": "New Years Day",
         "categories": "holidays",
         "description": "New Years Day (2025)"
@@ -181,10 +181,10 @@ RESPONSE:
 
 {
     "uid": "1234-abcd",
-    "dtstamp": "20240117T105900Z",
-    "created": "20240117T105900Z",
-    "last-modified": "20240117T105900Z",
-    "dtstart": "20240101",
+    "dtstamp": "2024-01-17T10:59:00Z",
+    "created": "2024-01-17T10:59:00Z",
+    "last-modified": "2024-01-17T10:59:00Z",
+    "dtstart": "2024-01-01",
     "summary": "New Years Day (Public Holiday)"
     "categories": "holidays",
     "rrule": "FREQ=YEARLY",
@@ -202,10 +202,10 @@ RESPONSE:
 [
     {
         "uid": "1234-abcd",
-        "dtstamp": "20240117T105900Z",
-        "created": "20240117T105900Z",
-        "last-modified": "20240117T105900Z",
-        "dtstart": "20240101",
+        "dtstamp": "2024-01-17T10:59:00Z",
+        "created": "2024-01-17T10:59:00Z",
+        "last-modified": "2024-01-17T10:59:00Z",
+        "dtstart": "2024-01-01",
         "summary": "New Years Day (Public Holiday)",
         "categories": "holidays",
         "rrule": "FREQ=YEARLY",
@@ -214,10 +214,10 @@ RESPONSE:
     {
         "uid": "1234-abcd",
         "recurrence-id": "20250101",
-        "dtstamp": "20240117T105900Z",
-        "created": "20240117T105900Z",
-        "last-modified": "20240117T105900Z",
-        "dtstart": "20240101",
+        "dtstamp": "2024-01-17T10:59:00Z",
+        "created": "2024-01-17T10:59:00Z",
+        "last-modified": "2024-01-17T10:59:00Z",
+        "dtstart": "2024-01-01",
         "summary": "New Years Day",
         "categories": "holidays",
         "description": "New Years Day (2025)"

@@ -50,3 +50,23 @@ The following properties may occur more than once:
 
 Combined with HTTP verbs an API for entity management can be created.
 
+### Create a new entity
+
+```json
+POST https://api.example.com/v1/entities
+{
+  "kind": "individual",
+  "n": ";;;;;;",
+  "categories": "contacts"
+}
+
+RESPONSE:
+
+{
+  "uid": "1234-abcd",
+  "rev": "20240117T105900Z",
+  "kind": "individual",
+  "n": ";;;;;;",
+  "categories": "contacts"
+}
+```

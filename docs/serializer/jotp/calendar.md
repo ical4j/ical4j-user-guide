@@ -25,7 +25,7 @@ An example using all of these properties may look like this:
 ```json
 {
   "uid": "1234-abcd",
-  "last-modified": "20240117T105900Z",
+  "last-modified": "2024-01-17T10:59:00Z",
   "url": "https://example.com/public_holidays",
   "refresh-interval": "P1W",
   "source": "https://example.com/public_holidays.ics",
@@ -47,19 +47,19 @@ full CRUD operations may be implemented:
 ```json
 POST https://api.example.com/v1/calendars
 {
-  "name": ["International Public Holidays"],
-  "description": ["Globally recognised public holidays"],
-  "categories": ["holidays"]
+  "name": "International Public Holidays",
+  "description": "Globally recognised public holidays",
+  "categories": "holidays"
 }
 
 RESPONSE:
 
 {
   "uid": "1234-abcd",
-  "last-modified": "20240117T105900Z",
-  "name": ["International Public Holidays"],
-  "description": ["Globally recognised public holidays"],
-  "categories": ["holidays"]
+  "last-modified": "2024-01-17T10:59:00Z",
+  "name": "International Public Holidays",
+  "description": "Globally recognised public holidays",
+  "categories": "holidays"
 }
 ```
 
@@ -68,16 +68,16 @@ RESPONSE:
 ```json
 POST https://api.example.com/v1/calendars/1234-abcd
 {
-  "categories": ["global"]
+  "categories": "global"
 }
 
 RESPONSE:
 
 {
   "uid": "1234-abcd",
-  "last-modified": "20240117T105900Z",
-  "name": ["International Public Holidays"],
-  "description": ["Globally recognised public holidays"],
+  "last-modified": "2024-01-17T10:59:00Z",
+  "name": "International Public Holidays",
+  "description": "Globally recognised public holidays",
   "categories": ["holidays", "global"]
 }
 ```
@@ -94,30 +94,30 @@ RESPONSE:
 
 {
   "uid": "1234-abcd",
-  "last-modified": "20240117T105900Z",
-  "name": ["International Public Holidays"],
-  "description": ["Globally recognised public holidays"],
-  "categories": ["holidays"]
+  "last-modified": "2024-01-17T10:59:00Z",
+  "name": "International Public Holidays",
+  "description": "Globally recognised public holidays",
+  "categories": "holidays"
 }
 ```
 
-### Replace all properties
+### Replace one or more properties
 
 ```json
 PUT https://api.example.com/v1/calendars/1234-abcd
 {
-  "uid": "1234-abcd",
-  "last-modified": "20240117T105900Z",
-  "name": ["International Public Holidays"],
-  "description": ["Globally recognised public holidays"]
+  "name": "Public Holidays",
+  "description": "International public holidays",
+  "categories": ["international", "breaks"]
 }
 
 RESPONSE:
 
 {
   "uid": "1234-abcd",
-  "last-modified": "20240117T105900Z",
-  "name": ["International Public Holidays"],
-  "description": ["Globally recognised public holidays"]
+  "last-modified": "2024-01-17T10:59:00Z",
+  "name": "Public Holidays",
+  "description": "International public holidays",
+  "categories": ["international", "breaks"]
 }
 ```
