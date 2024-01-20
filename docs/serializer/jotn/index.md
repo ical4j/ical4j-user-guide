@@ -1,6 +1,7 @@
-# iCal4j Serializer - JOT Protocol
+# iCal4j Serializer - JOT Notation
 
-The JOT Protocol is derived JSON format that may be used to construct and modify iCalendar and vCard objects.
+The JOT notation is JSON format dervied from iCalendar and vCard properties, that may be used to construct and modify
+iCalendar and vCard objects.
 
 ## Overview
 

@@ -152,14 +152,14 @@ nav:
     - JSON: serializer/json.md
     - JSON-LD: serializer/json-ld.md
     - JMAP: serializer/jmap.md
-    - JOTP:
-      - Overview: serializer/jotp/index.md
-      - Calendar: serializer/jotp/calendar.md
-      - Event: serializer/jotp/event.md
-      - ToDo: serializer/jotp/todo.md
-      - Journal: serializer/jotp/journal.md
-      - Availability: serializer/jotp/availability.md
-      - Card: serializer/jotp/card.md
+    - JOTN:
+      - Overview: serializer/jotn/index.md
+      - Calendar: serializer/jotn/calendar.md
+      - Event: serializer/jotn/event.md
+      - ToDo: serializer/jotn/todo.md
+      - Journal: serializer/jotn/journal.md
+      - Availability: serializer/jotn/availability.md
+      - Card: serializer/jotn/card.md
   - Connector:
     - Overview: connector/index.md
     - Local: connector/local.md
