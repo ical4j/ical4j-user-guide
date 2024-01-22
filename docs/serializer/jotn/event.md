@@ -185,7 +185,7 @@ RESPONSE:
     "created": "2024-01-17T10:59:00Z",
     "last-modified": "2024-01-17T10:59:00Z",
     "dtstart": "2024-01-01",
-    "summary": "New Years Day (Public Holiday)"
+    "summary": "New Years Day (Public Holiday)",
     "categories": "holidays",
     "rrule": "FREQ=YEARLY",
     "exdate": "20260101"
