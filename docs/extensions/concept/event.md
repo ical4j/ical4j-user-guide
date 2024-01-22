@@ -22,11 +22,3 @@ cases. Some of these are represented by the following concepts:
 ### Performance
 
 * Performance - a public event with one or more performers and no active participation of attendees
-
-### Subscription
-
-* Subscription - a recurring transparent event representing an active subscription to a resource
-
-### Invitation
-
-* Invitation - a transparent event representing eligibility to participate in an activity

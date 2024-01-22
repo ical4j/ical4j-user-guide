@@ -11,6 +11,7 @@ use-cases for iCalendar objects.
 These concepts include:
 
 * [Event](event.md) - an opaque `VEVENT` object that may support recurrences.
+* [Observance](observance.md) - a transparent `VEVENT` object that may support recurrences.
 * [Action](action.md) - a `VTODO` object that is assignable to individuals for resolution. Supports recurrences.
 * [Issue](issue.md) - a `VTODO` object capturing a one-off impediment to other activities or actors. Does not support recurrences.
 * [Request](request.md) - a `VTODO` object representing a service request, often fulfilled via an [Action](action.md). May support recurrences.
