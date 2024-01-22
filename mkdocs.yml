@@ -151,16 +151,23 @@ nav:
     - Overview: serializer/index.md
     - XML: serializer/xml.md
     - JSON: serializer/json.md
-    - JSON-LD: serializer/json-ld.md
-    - JMAP: serializer/jmap.md
+    - JSON-LD:
+      - Overview: serializer/jsonld/index.md
+    - JMAP:
+      - Overview: serializer/jmap/index.md
     - JOTN:
       - Overview: serializer/jotn/index.md
-      - Calendar: serializer/jotn/calendar.md
-      - Event: serializer/jotn/event.md
-      - ToDo: serializer/jotn/todo.md
-      - Journal: serializer/jotn/journal.md
+      - Alarm: serializer/jotn/alarm.md
       - Availability: serializer/jotn/availability.md
+      - Available: serializer/jotn/available.md
+      - Calendar: serializer/jotn/calendar.md
       - Card: serializer/jotn/card.md
+      - Event: serializer/jotn/event.md
+      - Journal: serializer/jotn/journal.md
+      - Location: serializer/jotn/location.md
+      - Participant: serializer/jotn/participant.md
+      - Resource: serializer/jotn/resource.md
+      - ToDo: serializer/jotn/todo.md
   - Connector:
     - Overview: connector/index.md
     - Local: connector/local.md
