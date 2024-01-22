@@ -70,6 +70,7 @@ nav:
       - Concept:
         - Overview: extensions/concept/index.md
         - Event: extensions/concept/event.md
+        - Observance: extensions/concept/observance.md
         - Action: extensions/concept/action.md
         - Issue: extensions/concept/issue.md
         - Request: extensions/concept/request.md
