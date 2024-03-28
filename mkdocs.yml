@@ -67,34 +67,34 @@ nav:
   - Extensions:
       - Overview: extensions/index.md
       - CalDAV: extensions/caldav.md
-      - Concept:
-        - Overview: extensions/concept/index.md
-        - Event: extensions/concept/event.md
-        - Observance: extensions/concept/observance.md
-        - Action: extensions/concept/action.md
-        - Issue: extensions/concept/issue.md
-        - Request: extensions/concept/request.md
-        - Note: extensions/concept/note.md
-        - Metric: extensions/concept/metric.md
-        - Availability: extensions/concept/availability.md
-      - Link:
-          Overview: extensions/link/index.md
-          Alternate: extensions/link/alternate.md
-          Author: extensions/link/author.md
-          Bookmark: extensions/link/bookmark.md
-          Copyright: extensions/link/copyright.md
-          Edit: extensions/link/edit.md
-          External: extensions/link/external.md
-          Help: extensions/link/help.md
-          Hub: extensions/link/hub.md
-          Icon: extensions/link/icon.md
-          License: extensions/link/license.md
-          Next: extensions/link/next.md
-          Prev: extensions/link/prev.md
-          Related: extensions/link/related.md
-          Replies: extensions/link/replies.md
-          Self: extensions/link/self.md
-          Status: extensions/link/status.md
+      - Concept: concept.md
+#        - Overview: extensions/concept/index.md
+#        - Event: extensions/concept/event.md
+#        - Observance: extensions/concept/observance.md
+#        - Action: extensions/concept/action.md
+#        - Issue: extensions/concept/issue.md
+#        - Request: extensions/concept/request.md
+#        - Note: extensions/concept/note.md
+#        - Metric: extensions/concept/metric.md
+#        - Availability: extensions/concept/availability.md
+      - Link: link.md
+#          Overview: extensions/link/index.md
+#          Alternate: extensions/link/alternate.md
+#          Author: extensions/link/author.md
+#          Bookmark: extensions/link/bookmark.md
+#          Copyright: extensions/link/copyright.md
+#          Edit: extensions/link/edit.md
+#          External: extensions/link/external.md
+#          Help: extensions/link/help.md
+#          Hub: extensions/link/hub.md
+#          Icon: extensions/link/icon.md
+#          License: extensions/link/license.md
+#          Next: extensions/link/next.md
+#          Prev: extensions/link/prev.md
+#          Related: extensions/link/related.md
+#          Replies: extensions/link/replies.md
+#          Self: extensions/link/self.md
+#          Status: extensions/link/status.md
       - Participant: extensions/participant.md
       - Outlook: extensions/outlook.md
   - Template:
