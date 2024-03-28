@@ -67,7 +67,7 @@ nav:
   - Extensions:
       - Overview: extensions/index.md
       - CalDAV: extensions/caldav.md
-      - Concept: concept.md
+      - Concept: extensions/concept.md
 #        - Overview: extensions/concept/index.md
 #        - Event: extensions/concept/event.md
 #        - Observance: extensions/concept/observance.md
@@ -77,7 +77,7 @@ nav:
 #        - Note: extensions/concept/note.md
 #        - Metric: extensions/concept/metric.md
 #        - Availability: extensions/concept/availability.md
-      - Link: link.md
+      - Link: extensions/link.md
 #          Overview: extensions/link/index.md
 #          Alternate: extensions/link/alternate.md
 #          Author: extensions/link/author.md
