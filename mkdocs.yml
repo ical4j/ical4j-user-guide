@@ -125,8 +125,8 @@ nav:
     - Overview: serializer/index.md
     - XML: serializer/xml.md
     - JSON: serializer/json.md
-    - JSON-LD: serializer/jsonld/index.md
-    - JMAP: serializer/jmap/index.md
+    - JSON-LD: serializer/jsonld.md
+    - JMAP: serializer/jmap.md
     - JOTN:
       - Overview: serializer/jotn/index.md
       - Alarm: serializer/jotn/alarm.md
