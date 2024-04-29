@@ -14,7 +14,7 @@ download as specified below.
 * [Maven Central - org.ical4j](https://central.sonatype.com/namespace/org.ical4j)
 * [Release Notes](http://ical4j.github.io/docs/release-notes.html)
 * [Snapshot Builds](https://oss.sonatype.org/content/repositories/snapshots/org/mnode/ical4j/)
-* [iCal4j Files]([https;](https://files.ical4j.org/)
+* [iCal4j Files](https://files.ical4j.org/)
 
 ## Getting Started
 
