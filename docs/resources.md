@@ -1,14 +1,20 @@
 # iCal4j Resources
 
-* [Project Home](http://github.com/ical4j/ical4j/)
-* [API Documentation](http://ical4j.github.io/docs/ical4j/api/)
-* [Support Forums](http://sourceforge.net/forum/?group_id=107024)
+* [Project Sources](http://github.com/ical4j)
+* [API Documentation](http://ical4j.github.io/docs)
+* [Support Forums](https://github.com/orgs/ical4j/discussions)
 * [License](http://github.com/ical4j/ical4j/license.html)
 
-## Download
+## Downloads
 
-* [Releases](https://sourceforge.net/project/platformdownload.php?group_id=107024)
+iCal4j libraries are published via Maven Central. Additional packages are also available to
+download as specified below.
+
+* [Maven Central - org.mnode.ical4j](https://central.sonatype.com/namespace/org.mnode.ical4j)
+* [Maven Central - org.ical4j](https://central.sonatype.com/namespace/org.ical4j)
+* [Release Notes](http://ical4j.github.io/docs/release-notes.html)
 * [Snapshot Builds](https://oss.sonatype.org/content/repositories/snapshots/org/mnode/ical4j/)
+* [iCal4j Files]([https;](https://files.ical4j.org/)
 
 ## Getting Started
 
