@@ -105,7 +105,12 @@ nav:
     - Chat: integration/chat.md
   - Command:
     - Overview: command/index.md
-    - Validator: command/validator.md
+    - Calendar: command/calendar.md
+    - Card: command/card.md
+    - Collection: command/collection.md
+    - Channel: command/channel.md
+    - Store: command/store.md
+    - Template: command/template.md
   - ZoneInfo Outlook: zoneinfo-outlook.md
   - tzurl.org: tzurl.md
   - References:

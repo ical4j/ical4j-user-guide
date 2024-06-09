@@ -4,6 +4,12 @@ A command framework for managing iCalendar and vCard data.
 
 [Download](https://files.ical4j.org/releases/ical4j-0.1.1-develop-SNAPSHOT.zip)
 
+## Overview
+
+iCal4j Command is a framework that implements common actions and transformations with respect to iCalendar
+and vCard data. A command line tool is included that allows you to experiment with commands and integrate
+with your existing processes and workflows.
+
 ## Command Line Usage
 
 ### Publish a collection of events
