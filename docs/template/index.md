@@ -15,4 +15,4 @@ TBD.
 
 ## Semantic Calendaring
 
-iCal4j supports templates defined by [Semantic Calendaring](https://www.semcal.org/templating).
+iCal4j supports templates defined by [Semantic Calendaring](https://www.semcal.org/concepts).
