@@ -28,7 +28,7 @@ and filtering.
 
 ## iCal4j Zoneinfo Outlook
 
-If you have data compatibility concerns regarding recurring events, you might try using the
+If you have data compatibility concerns regarding [timezones](/timezones), you might try using the
 [Zoneinfo Outlook](/zoneinfo-outlook) library. This provides an alternate set of timezone data that use 
 simplified recurrence definitions.
 

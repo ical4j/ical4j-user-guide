@@ -46,7 +46,6 @@ nav:
         - Recurrences: examples/recur.md
         - Filtering: examples/filter.md
     - Android: android.md
-    - Maven: maven.md
   - Features:
     - Validation: validation.md
     - Compatibility: compatibility.md
