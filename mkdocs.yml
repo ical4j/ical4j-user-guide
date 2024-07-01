@@ -115,8 +115,5 @@ nav:
   - References:
     - RFC Compliance: rfcs.md
     - CUAs: cuas.md
-    - External Resources: external-resources.md
     - Projects using iCal4j: projects.md
     - Resources: resources.md
-    - Roadmap: roadmap.md
-  - FAQ: faq.md
