@@ -4,6 +4,8 @@ iCal4j includes a comprehensive validation framework for checking compliance wit
 specifications. This framework may also be used to implement custom validation rules to support data validation
 for specific use-cases.
 
+![validation.mmd.svg](images/validation.mmd.svg)
+
 ## Overview
 
 The iCal4j Validation framework is based on the concept of apply a collection of validation rules to a target

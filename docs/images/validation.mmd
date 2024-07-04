@@ -1,0 +1,33 @@
+classDiagram
+    Validator~T~: ValidationResult validate(T target)
+
+    AbstractValidator~T~: List~AbstractValidationRuleSet~? super T~~ ruleSets
+
+    PropertyValidator~T extends Property~: .
+
+    ComponentValidator~T extends Component~: .
+
+    ValidationResult: Set~ValidationEntry~ entries
+
+    ValidationEntry: String message
+    ValidationEntry: Severity severity
+    ValidationEntry: String context
+
+    ValidationRule~T~: ValidationType type
+    ValidationRule~T~: String message
+    ValidationRule~T~: Predicate~T~ predicate
+
+    AbstractValidationRuleSet~T~: Set~ValidationRule~? super T~~ rules
+
+    PropertyRuleSet~T extends Property~: .
+    PropertyContainerRuleSet~T extends PropertyContainer~: .
+    ComponentContainerRuleSet~ComponentContainer~: .
+
+    Validator~T~ <|-- AbstractValidator~T~: Implements
+
+    AbstractValidator~T~ <|-- PropertyValidator~T extends Property~: Inherits
+    AbstractValidator~T~ <|-- ComponentValidator~T extends Component~: Inherits
+
+    AbstractValidationRuleSet~T~ <|-- PropertyRuleSet~T extends Property~: Inherits
+    AbstractValidationRuleSet~T~ <|-- PropertyContainerRuleSet~T extends PropertyContainer~: Inherits
+    AbstractValidationRuleSet~T~ <|-- ComponentContainerRuleSet~ComponentContainer~: Inherits
