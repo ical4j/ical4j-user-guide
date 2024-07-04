@@ -1,11 +1,20 @@
+---
+title: iCal4j Validation
+---
 classDiagram
-    Validator~T~: ValidationResult validate(T target)
+    direction RL
 
+    class Validator~T~
+    <<Interface>> Validator~T~
+    Validator~T~: validate(T target) ValidationResult
+
+    class AbstractValidator~T~
+    <<Abstract>> AbstractValidator~T~
     AbstractValidator~T~: List~AbstractValidationRuleSet~? super T~~ ruleSets
 
-    PropertyValidator~T extends Property~: .
+    class PropertyValidator~T extends Property~
 
-    ComponentValidator~T extends Component~: .
+    class ComponentValidator~T extends Component~
 
     ValidationResult: Set~ValidationEntry~ entries
 
@@ -17,11 +26,13 @@ classDiagram
     ValidationRule~T~: String message
     ValidationRule~T~: Predicate~T~ predicate
 
+    class AbstractValidationRuleSet~T~
+    <<Abstract>> AbstractValidationRuleSet~T~
     AbstractValidationRuleSet~T~: Set~ValidationRule~? super T~~ rules
 
-    PropertyRuleSet~T extends Property~: .
-    PropertyContainerRuleSet~T extends PropertyContainer~: .
-    ComponentContainerRuleSet~ComponentContainer~: .
+    class PropertyRuleSet~T extends Property~
+    class PropertyContainerRuleSet~T extends PropertyContainer~
+    class ComponentContainerRuleSet~ComponentContainer~
 
     Validator~T~ <|-- AbstractValidator~T~: Implements
 
