@@ -1,5 +1,8 @@
 # iCal4j Integration
+
 iCal4j Integration provides support for popular calendar message transports and tooling.
+
+![integration.mmd.svg](../images/integration.mmd.svg)
 
 ## Overview
 

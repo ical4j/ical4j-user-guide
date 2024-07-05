@@ -34,7 +34,7 @@ classDiagram
     class PropertyContainerRuleSet~T extends PropertyContainer~
     class ComponentContainerRuleSet~ComponentContainer~
 
-    Validator~T~ <|-- AbstractValidator~T~: Implements
+    Validator~T~ <|.. AbstractValidator~T~: Implements
 
     AbstractValidator~T~ <|-- PropertyValidator~T extends Property~: Extends
     AbstractValidator~T~ <|-- ComponentValidator~T extends Component~: Extends

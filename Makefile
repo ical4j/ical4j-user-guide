@@ -11,3 +11,4 @@ diagram:
 images:
 	$(MERMAIDJS) -i docs/images/validation.mmd
 	$(MERMAIDJS) -i docs/images/filter.mmd
+	$(MERMAIDJS) -i docs/images/integration.mmd

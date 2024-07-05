@@ -46,19 +46,19 @@ classDiagram
 
     class PropertyFilter
 
-    FilterExpression <|-- BinaryExpression: Implements
-    FilterExpression <|-- UnaryExpression: Implements
+    FilterExpression <|.. BinaryExpression: Implements
+    FilterExpression <|.. UnaryExpression: Implements
     FilterExpression <|-- LiteralExpression~T~: Extends
 
-    LiteralExpression~T~ <|-- BooleanExpression: Implements
-    LiteralExpression~T~ <|-- CollectionExpression: Implements
-    LiteralExpression~T~ <|-- DateExpression: Implements
-    LiteralExpression~T~ <|-- FunctionExpression: Implements
-    LiteralExpression~T~ <|-- NumberExpression: Implements
-    LiteralExpression~T~ <|-- StringExpression: Implements
-    LiteralExpression~T~ <|-- TemporalExpression: Implements
+    LiteralExpression~T~ <|.. BooleanExpression: Implements
+    LiteralExpression~T~ <|.. CollectionExpression: Implements
+    LiteralExpression~T~ <|.. DateExpression: Implements
+    LiteralExpression~T~ <|.. FunctionExpression: Implements
+    LiteralExpression~T~ <|.. NumberExpression: Implements
+    LiteralExpression~T~ <|.. StringExpression: Implements
+    LiteralExpression~T~ <|.. TemporalExpression: Implements
 
-    PredicateFactory~T~ <|-- AbstractFilter~T~: Implements
+    PredicateFactory~T~ <|.. AbstractFilter~T~: Implements
 
     AbstractFilter~T~ <|-- ComponentFilter~T extends Component~: Extends
     AbstractFilter~T~ <|-- PropertyFilter: Extends
