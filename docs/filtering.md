@@ -4,6 +4,8 @@ In addition to a robust and compliant implementation of the iCalendar specificat
 an expressive and powerful mechanism for accessing calendar data. iCal4j filters provide a framework for calendar
 object retrieval whether it be in-memory object models or some other data source.
 
+![filter.mmd.svg](images/filter.mmd.svg)
+
 ## Filter Expressions
 
 Filter expressions serve to provide an abstract syntax tree (AST) for modeling an iCalendar filter that can be

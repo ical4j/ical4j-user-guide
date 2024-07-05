@@ -5,11 +5,11 @@ classDiagram
     direction LR
 
     class Validator~T~
-    <<Interface>> Validator~T~
+    <<interface>> Validator~T~
     Validator~T~: validate(T target) ValidationResult
 
     class AbstractValidator~T~
-    <<Abstract>> AbstractValidator~T~
+    <<abstract>> AbstractValidator~T~
     AbstractValidator~T~: List~AbstractValidationRuleSet~? super T~~ ruleSets
 
     class PropertyValidator~T extends Property~
@@ -27,7 +27,7 @@ classDiagram
     ValidationRule~T~: Predicate~T~ predicate
 
     class AbstractValidationRuleSet~T~
-    <<Abstract>> AbstractValidationRuleSet~T~
+    <<abstract>> AbstractValidationRuleSet~T~
     AbstractValidationRuleSet~T~: Set~ValidationRule~? super T~~ rules
 
     class PropertyRuleSet~T extends Property~
@@ -36,9 +36,9 @@ classDiagram
 
     Validator~T~ <|-- AbstractValidator~T~: Implements
 
-    AbstractValidator~T~ <|-- PropertyValidator~T extends Property~: Inherits
-    AbstractValidator~T~ <|-- ComponentValidator~T extends Component~: Inherits
+    AbstractValidator~T~ <|-- PropertyValidator~T extends Property~: Extends
+    AbstractValidator~T~ <|-- ComponentValidator~T extends Component~: Extends
 
-    AbstractValidationRuleSet~T~ <|-- PropertyRuleSet~T extends Property~: Inherits
-    AbstractValidationRuleSet~T~ <|-- PropertyContainerRuleSet~T extends PropertyContainer~: Inherits
-    AbstractValidationRuleSet~T~ <|-- ComponentContainerRuleSet~ComponentContainer~: Inherits
+    AbstractValidationRuleSet~T~ <|-- PropertyRuleSet~T extends Property~: Extends
+    AbstractValidationRuleSet~T~ <|-- PropertyContainerRuleSet~T extends PropertyContainer~: Extends
+    AbstractValidationRuleSet~T~ <|-- ComponentContainerRuleSet~ComponentContainer~: Extends
