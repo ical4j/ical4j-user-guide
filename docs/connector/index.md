@@ -2,6 +2,8 @@
 
 iCal4j Connector is a tool that helps you manage iCalendar and vCard collections.
 
+![connector.mmd.svg](../images/connector.mmd.svg)
+
 ## Overview
 
 The connector includes multiple interfaces for interacting with collections of iCalendar and vCard data. A

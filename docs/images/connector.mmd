@@ -1,0 +1,129 @@
+---
+title: iCal4j Connector
+---
+classDiagram
+    direction LR
+
+    class ObjectStore~T, C extends ObjectCollection~
+    <<interface>> ObjectStore~T, C extends ObjectCollection~
+    ObjectStore~T, C extends ObjectCollection~: addCollection(String id) C
+    ObjectStore~T, C extends ObjectCollection~: addCollection(String id, String workspace) C
+    ObjectStore~T, C extends ObjectCollection~: getCollection(String id) C
+    ObjectStore~T, C extends ObjectCollection~: getCollection(String id, String workspace) C
+    ObjectStore~T, C extends ObjectCollection~: getCollections() List~C~
+    ObjectStore~T, C extends ObjectCollection~: getCollections(String workspace) List~C~
+    ObjectStore~T, C extends ObjectCollection~: listWorkspaces() List~String~
+
+    class CalendarStore~C extends CalendarCollection~
+    <<interface>> CalendarStore~C extends CalendarCollection~
+
+    class CardStore~C extends CardCollection~
+    <<interface>> CardStore~C extends CardCollection~
+
+%%    class AbstractObjectStore~T, C extends ObjectCollection~
+%%    <<abstract>> AbstractObjectStore~T, C extends ObjectCollection~
+
+    class LocalCalendarStore
+    LocalCalendarStore: File root
+
+    class LocalCardStore
+    LocalCardStore: File root
+
+    class CalDavCalendarStore
+    CalDavCalendarStore: DavClientFactory clientFactory
+    CalDavCalendarStore: URL rootUrl
+    CalDavCalendarStore: PathResolver pathResolver
+
+    class CardDavStore
+    CardDavStore: DavClientFactory clientFactory
+    CardDavStore: URL rootUrl
+    CardDavStore: PathResolver pathResolver
+
+    class DavClientFactory
+    DavClientFactory: DavClientConfiguration clientConfiguration
+    DavClientFactory: CredentialsProvider credentialsProvider
+
+    class DavClientConfiguration
+    DavClientConfiguration: boolean preemptiveAuth
+    DavClientConfiguration: boolean followRedirects
+
+    class PathResolver
+    <<interface>> PathResolver
+    PathResolver: getPrincipalPath(String calendarId) String
+    PathResolver: getCalendarPath(String resourcePath, String wspPath) String
+    PathResolver: getCardPath(String resourcePath, String wspPath) String
+    PathResolver: getResourceName(String repositoryPath, String wspPath) String
+
+    class ObjectCollection~T~
+    <<interface>> ObjectCollection~T~
+    ObjectCollection~T~: getDisplayName() String
+    ObjectCollection~T~: getDescription() String
+    ObjectCollection~T~: listObjectUIDs() List~String~
+    ObjectCollection~T~: getAll(String...uid) List~T~
+    ObjectCollection~T~: get(String uid) Optional~T~
+    ObjectCollection~T~: add(T object) String
+    ObjectCollection~T~: removeAll(String...uid) List~T~
+    ObjectCollection~T~: query(FilterExpression filter) List~T~
+    ObjectCollection~T~: delete()
+
+    class MediaType
+    <<enumeration>> MediaType
+    MediaType: ICALENDAR_2_0
+    MediaType: VCARD_4_0
+
+    class CalendarCollection
+    <<interface>> CalendarCollection
+    CalendarCollection: getTimeZone() Calendar
+    CalendarCollection: getSupportedComponentTypes() String[]
+    CalendarCollection: getSupportedMediaTypes() MediaType[]
+    CalendarCollection: getMaxResourceSize() long
+    CalendarCollection: getMinDateTime() Instant
+    CalendarCollection: getMaxDateTime() Instant
+    CalendarCollection: getMaxInstances() Integer
+    CalendarCollection: getMaxAttendeesPerInstance() Integer
+    CalendarCollection: getFreeBusy(Temporal start, Temporal end) Calendar
+    CalendarCollection: merge(Calendar calendar) Uid[]
+    CalendarCollection: export() Calendar
+
+    class CardCollection
+    <<interface>> CardCollection
+    CardCollection: merge(VCard card) Uid[]
+    CardCollection: export() VCard[]
+
+    class LocalCalendarCollection
+    LocalCalendarCollection: File root
+
+    class LocalCardCollection
+    LocalCardCollection: File root
+
+    class CalDavCalendarCollection
+    CalDavCalendarCollection: CalDavCalendarStore store
+
+    class CardDavCollection
+    CardDavCollection: CardDavStore store
+
+%%    class AbstractObjectCollection~T~
+%%    <<abstract>> AbstractObjectCollection~T~
+
+%%    ObjectStore~T, C extends ObjectCollection~ <|-- AbstractObjectStore~T, C extends ObjectCollection~
+    ObjectStore~T, C extends ObjectCollection~ <|-- CalendarStore~C extends CalendarCollection~
+    ObjectStore~T, C extends ObjectCollection~ <|-- CardStore~C extends CardCollection~
+
+    CalendarStore~C extends CalendarCollection~ <|.. LocalCalendarStore
+    CalendarStore~C extends CalendarCollection~ <|.. CalDavCalendarStore
+
+    CardStore~C extends CardCollection~ <|.. LocalCardStore
+    CardStore~C extends CardCollection~ <|.. CardDavStore
+
+%%    AbstractObjectStore~T, C extends ObjectCollection~ <|-- LocalCalendarStore
+%%    AbstractObjectStore~T, C extends ObjectCollection~ <|-- LocalCardStore
+
+%%    ObjectCollection~T~ <|-- AbstractObjectCollection~T~
+    ObjectCollection~T~ <|-- CalendarCollection
+    ObjectCollection~T~ <|-- CardCollection
+
+    CalendarCollection <|.. LocalCalendarCollection
+    CalendarCollection <|.. CalDavCalendarCollection
+
+    CardCollection <|.. LocalCardCollection
+    CardCollection <|.. CardDavCollection
