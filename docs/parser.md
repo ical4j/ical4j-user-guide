@@ -2,6 +2,8 @@
 
 The iCal4j parsing functionality is designed to allow the use of alternate parser and content handler implementations.
 
+![parsing.mmd.svg](images/parsing.mmd.svg)
+
 ### [net.fortuna.ical4j.data.CalendarParser](http://ical4j.github.io/docs/ical4j/api/3.0.19/net/fortuna/ical4j/data/CalendarParser.html)
 
 The CalendarParser interface defines two methods that implementors must provide implementations for. The first method parses data from a java.io.InputStream, whilst the second reads from a java.io.Reader. Both methods must notify the specified ContentHandler by calling the appropriate methods on parse events. The default parser implementation used by iCal4j is the [net.fortuna.ical4j.data.CalendarParserImpl](http://ical4j.github.io/docs/ical4j/api/3.0.19/net/fortuna/ical4j/data/CalendarParserImpl.html).

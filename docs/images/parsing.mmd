@@ -1,0 +1,48 @@
+---
+title: iCal4j Parsing
+---
+classDiagram
+    direction LR
+
+    class CalendarParser
+    <<interface>> CalendarParser
+    CalendarParser: parse(InputStream in, ContentHandler handler)
+    CalendarParser: parse(Reader in, ContentHandler handler)
+
+    class CalendarParserImpl
+
+    class ContentHandler
+    <<interface>> ContentHandler
+    ContentHandler: startCalendar()
+    ContentHandler: endCalendar()
+    ContentHandler: startComponent(String name)
+    ContentHandler: endComponent(String name)
+    ContentHandler: startProperty(String name)
+    ContentHandler: propertyValue(String value)
+    ContentHandler: endProperty(String name)
+    ContentHandler: parameter(String name, String value)
+
+    class DefaultContentHandler
+    DefaultContentHandler: ContentHandlerContext context
+    DefaultContentHandler: TimeZoneRegistry tzRegistry
+    DefaultContentHandler: Consumer~Calendar~ consumer
+
+    class ContentHandlerContext
+    ContentHandlerContext: getParameterFactorySupplier() Supplier~List~
+    ContentHandlerContext: getPropertyFactorySupplier() Supplier~List~
+    ContentHandlerContext: getComponentFactorySupplier() Supplier~List~
+    ContentHandlerContext: getIgnoredPropertyNames() List~String~
+    ContentHandlerContext: isSuppressInvalidProperties() boolean
+
+    class CalendarBuilder
+    CalendarBuilder: CalendarParser parser
+    CalendarBuilder: ContentHandler contentHandler
+    CalendarBuilder: TimeZoneRegistry tzRegistry
+    CalendarBuilder: build(final InputStream in) Calendar
+    CalendarBuilder: build(final Reader in) Calendar
+    CalendarBuilder: build(final UnfoldingReader uin) Calendar
+
+    CalendarParser <|.. CalendarParserImpl
+
+    ContentHandler <|.. DefaultContentHandler
+
