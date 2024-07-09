@@ -49,6 +49,7 @@ nav:
   - Features:
     - Parameters: parameters.md
     - Properties: properties.md
+    - Components: components.md
     - Validation: validation.md
     - Compatibility: compatibility.md
     - Date/Time Concepts: datetime.md
