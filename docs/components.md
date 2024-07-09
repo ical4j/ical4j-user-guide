@@ -42,9 +42,35 @@ for a proximity trigger.
 Each component may implement one or more property accessors, which provide convenience
 methods for retrieval of different property types.
 
-  | Property Accessor                | Supported Properties                                                                                                              |
+```java
+Optional<DtStart> start = event.getDtStart();
+
+List<Categories> categories = todo.getCategories();
+```
+
+| Property Accessor                | Supported Properties                                                                                                              |
 |----------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
 | ChangeManagementPropertyAccessor | `CREATED`, `DTSTAMP`, `LAST-MODIFIED`, `SEQUENCE`                                                                                 |
 | DateTimePropertyAccessor         | `COMPLETED`, `DTEND`, `DUE`, `DTSTART`, `DURATION`, `FREEBUSY`, `TRANSP`                                                          |
 | DescriptivePropertyAccessor      | `ATTACH`, `CATEGORIES`, `CLASS`, `COMMENT`, `DESCRIPTION`, `GEO`, `LOCATION`, `PERCENT-COMPLETE`, `PRIORITY`, `STATUS`, `SUMMARY` |
 | RelationshipPropertyAccessor     | `ATTENDEE`, `CONTACT`, `ORGANIZER`, `RECURRENCE-ID`, `RELATED-TO`, `URL`                                                          |
+
+## Property Modifiers
+
+The iCalendar specification defines which properties are applicable, along with their cardinality for 
+iCalendar objects and components. Property modifiers provide a safe way to modify properties for existing
+objects and components that comply with the rules of the iCalendar specification.
+
+```java
+event.with(DTSTART, new DtStart("20240101T0900000"));
+
+todo.with(CATEGORIES, new Categories("travel"));
+```
+
+ | Property Modifier                 | Supported Properties                                                     |
+|-----------------------------------|--------------------------------------------------------------------------|
+| ChangeManagementPropertyModifiers | `CREATED`, `DTSTAMP`, `LAST-MODIFIED`, `SEQUENCE`                        |
+| DateTimePropertyModifiers         | `COMPLETED`, `DTEND`, `DUE`, `DTSTART`, `DURATION`, `FREEBUSY`, `TRANSP` |
+| DescriptivePropertyModifiers      | `ATTACH`, `CATEGORIES`, `DESCRIPTION`, `SUMMARY`                         |
+| RecurrencePropertyModifiers       | `EXDATE`, `RDATE`, `RRULE`                                               |
+| RelationshipPropertyModifiers     | `ATTENDEE`, `CONTACT`, `ORGANIZER`, `RECURRENCE-ID`, `RELATED-TO`, `URL` |
