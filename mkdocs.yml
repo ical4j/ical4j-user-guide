@@ -47,6 +47,7 @@ nav:
         - Filtering: examples/filter.md
     - Android: android.md
   - Features:
+    - Parameters: parameters.md
     - Validation: validation.md
     - Compatibility: compatibility.md
     - Date/Time Concepts: datetime.md
