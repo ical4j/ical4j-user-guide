@@ -30,8 +30,41 @@ no variable elements (e.g. `VERSION`, `CALSCALE`, `METHOD`, etc.).
 
 ```java
 VEvent event1 = new VEvent("Meeting 1").add(ImmutableTransp.OPAQUE)
-        .ImmutableClazz.PRIVATE;
+        .add(ImmutableClazz.PRIVATE);
 VEvent event2 = new VEvent("Meeting 2").add(ImmutableTransp.OPAQUE)
-        .ImmutableClazz.PRIVATE;
+        .add(ImmutableClazz.PRIVATE);
 
+```
+
+## Equality
+
+Two property instances are considered equal if they share the same name, value and list of parameters.
+
+## Factory
+
+Each property type defines a factory that may be used for creating new instances. Where the factory
+differs from typical constructor usage is that constant immutable instances will be returned
+where applicable.
+
+```java
+new Clazz.Factory().createProperty(new ParameterList(), "PUBLIC") == ImmutableClazz.PUBLIC
+```
+
+## Immutable Collections
+
+In iCal4j we use specific collection implementations to improve support for functional
+programming. The `PropertyList` is one such implementation that will return a new collection
+instance when applying mutator operations.
+
+```java
+PropertyList list1 = new PropertyList();
+PropertyList list2 = list1.add(new DtStamp());
+// list2 != list1
+```
+
+Where an operation does not result in any change, the original instance is returned.
+
+```java
+PropertyList list3 = list2.remove(ImmutableClazz.PRIVATE);
+// list3 == list2
 ```
