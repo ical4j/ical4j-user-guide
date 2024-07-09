@@ -17,6 +17,7 @@ _Calendar Components_ and extend the `CalendarComponent` abstract class.
 | `VJOURNAL`          |
 | `VFREEBUSY`         |
 | `VTIMEZONE`         |
+| `VAVAILABILITY`     |
 
 
 ## Subcomponents
@@ -25,13 +26,25 @@ Subcomponents are nested components, and can be multiple levels deep. For exampl
 event may have a nested alarm component, which in turn has a nested location component
 for a proximity trigger.
 
-| Component     | Subcomponents                                     |
-|---------------|---------------------------------------------------|
-| `VEVENT`      | `VALARM`, `PARTICIPANT`, `VLOCATION`, `VRESOURCE` |
-| `VTODO`       | `VALARM`, `PARTICIPANT`, `VLOCATION`, `VRESOURCE` |
-| `VJOURNAL`    | `PARTICIPANT`, `VLOCATION`, `VRESOURCE`           |
-| `VFREEBUSY`   | `PARTICIPANT`, `VLOCATION`, `VRESOURCE`           |
-| `VTIMEZONE`   | `STANDARD`, `DAYLIGHT`                            |
-| `VALARM`      | `VLOCATION`                                       |
-| `PARTICIPANT` | `VLOCATION`, `VRESOURCE`                          |
+| Component       | Subcomponents                                     |
+|-----------------|---------------------------------------------------|
+| `VEVENT`        | `VALARM`, `PARTICIPANT`, `VLOCATION`, `VRESOURCE` |
+| `VTODO`         | `VALARM`, `PARTICIPANT`, `VLOCATION`, `VRESOURCE` |
+| `VJOURNAL`      | `PARTICIPANT`, `VLOCATION`, `VRESOURCE`           |
+| `VFREEBUSY`     | `PARTICIPANT`, `VLOCATION`, `VRESOURCE`           |
+| `VTIMEZONE`     | `STANDARD`, `DAYLIGHT`                            |
+| `VAVAILABILITY` | `AVAILABLE`                                       |
+| `VALARM`        | `VLOCATION`                                       |
+| `PARTICIPANT`   | `VLOCATION`, `VRESOURCE`                          |
 
+## Property Accessors
+
+Each component may implement one or more property accessors, which provide convenience
+methods for retrieval of different property types.
+
+  | Property Accessor                | Supported Properties                                                                                                              |
+|----------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
+| ChangeManagementPropertyAccessor | `CREATED`, `DTSTAMP`, `LAST-MODIFIED`, `SEQUENCE`                                                                                 |
+| DateTimePropertyAccessor         | `COMPLETED`, `DTEND`, `DUE`, `DTSTART`, `DURATION`, `FREEBUSY`, `TRANSP`                                                          |
+| DescriptivePropertyAccessor      | `ATTACH`, `CATEGORIES`, `CLASS`, `COMMENT`, `DESCRIPTION`, `GEO`, `LOCATION`, `PERCENT-COMPLETE`, `PRIORITY`, `STATUS`, `SUMMARY` |
+| RelationshipPropertyAccessor     | `ATTENDEE`, `CONTACT`, `ORGANIZER`, `RECURRENCE-ID`, `RELATED-TO`, `URL`                                                          |
