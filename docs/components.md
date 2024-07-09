@@ -67,13 +67,27 @@ event.with(DTSTART, new DtStart("20240101T0900000"));
 todo.with(CATEGORIES, new Categories("travel"));
 ```
 
- | Property Modifier                 | Supported Properties                                                     |
+| Property Modifier                 | Supported Properties                                                     |
 |-----------------------------------|--------------------------------------------------------------------------|
-| ChangeManagementPropertyModifiers | `CREATED`, `DTSTAMP`, `LAST-MODIFIED`, `SEQUENCE`                        |
+| ChangeManagementPropertyModifiers | `CREATED`, `DTSTAMP`, `LAST-MODIFIED`, `SEQUENCE`, `SEQUENCE_INCREMENT`   |
 | DateTimePropertyModifiers         | `COMPLETED`, `DTEND`, `DUE`, `DTSTART`, `DURATION`, `FREEBUSY`, `TRANSP` |
 | DescriptivePropertyModifiers      | `ATTACH`, `CATEGORIES`, `DESCRIPTION`, `SUMMARY`                         |
 | RecurrencePropertyModifiers       | `EXDATE`, `RDATE`, `RRULE`                                               |
 | RelationshipPropertyModifiers     | `ATTENDEE`, `CONTACT`, `ORGANIZER`, `RECURRENCE-ID`, `RELATED-TO`, `URL` |
+
+## Component Accessors
+
+Component accessors provide convenience methods for subcomponent retrieval, and are implemented by components
+that support nested subcomponents.
+
+| Component Accessor   | Supported Components |
+|----------------------|----------------------|
+| AlarmsAccessor       | `VALARM`             |
+| LocationsAccessor    | `VLOCATION`          |
+| ParticipantsAccessor | `PARTICIPANT`        |
+| ResourcesAccessor    | `VRESOURCE`          |
+
+
 
 ## Recurrence Support
 
