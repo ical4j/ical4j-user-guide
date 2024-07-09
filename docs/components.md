@@ -74,3 +74,17 @@ todo.with(CATEGORIES, new Categories("travel"));
 | DescriptivePropertyModifiers      | `ATTACH`, `CATEGORIES`, `DESCRIPTION`, `SUMMARY`                         |
 | RecurrencePropertyModifiers       | `EXDATE`, `RDATE`, `RRULE`                                               |
 | RelationshipPropertyModifiers     | `ATTENDEE`, `CONTACT`, `ORGANIZER`, `RECURRENCE-ID`, `RELATED-TO`, `URL` |
+
+## Recurrence Support
+
+Some components support the concept of recurrence, which may be defined by the inclusion of `RRULE`,
+`RDATE` and/or `EXDATE` properties. Components that support these properties also implement the
+`RecurrenceSupport` interface which defines methods for calculating discrete occurrences.
+
+```java
+Period period = new Period("20230301/P1M");
+
+List<VEvent> occurrences = event.getOccurrences(period);
+
+Set<Period> recurrenceSet = event.calculateRecurrenceSet(period);
+```
