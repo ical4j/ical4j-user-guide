@@ -113,6 +113,9 @@ nav:
     - Channel: command/channel.md
     - Store: command/store.md
     - Template: command/template.md
+  - Actions:
+    - Overview: actions/index.md
+    - Workflow: actions/workflow.md
   - ZoneInfo Outlook: zoneinfo-outlook.md
   - tzurl.org: tzurl.md
   - References:
