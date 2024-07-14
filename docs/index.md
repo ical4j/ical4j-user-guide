@@ -32,6 +32,8 @@ The iCal4j project is a collection of Open Source Java libraries for creating se
 scheduling data. iCal4j is based on the iCalendar and vCard specifications, with each library focused on a
 specific subset of interoperability functionality.
 
+![overview.mmd.svg](images/overview.mmd.svg)
+
 ## What is iCalendar?
 
 The iCalendar standard was originally created from a collaboration of leading groupware developers, as a way for
