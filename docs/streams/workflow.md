@@ -7,7 +7,7 @@ A workflow automation library using iCalendar to define workflow definitions and
 A typical workflow system supports the creation of workflow rules that control how tasks
 are generated and fulfilled.
 
-The iCal4j Actions Workflow Engine builds on the trigger framework with support for
+The iCal4j Actions Workflow Engine builds on the streams framework with support for
 configurable workflows defined as iCalendar actions.
 
 ## Time-based workflows
