@@ -60,10 +60,10 @@ iCalendar includes specifications for converting to and from equivalent XML/JSON
 by the [serializer](/serializer) library. This library also includes support for other conversions including 
 [JMAP](/serializer/jmap), Atom, and a custom JSON-based format for API development ([JOTN](/serializer/jotn)).
 
-## iCal4j Actions
+## iCal4j Streams
 
 If you are implementing workflow automation as part of your iCalendar use-case, you may want to look at the
-actions library. This includes a simple workflow definition language and engine for producing tasks that
+[streams](/streams) library. This includes a simple workflow definition language and engine for producing tasks that
 may be subsequently acted upon by one or more execution agents.
 
 
