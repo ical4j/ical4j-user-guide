@@ -6,11 +6,13 @@ classDiagram
 
     class IngressChannel~T~
     <<interface>> IngressChannel~T~
-    IngressChannel~T~: poll(long timeout) boolean
+    IngressChannel~T~: poll(Consumer~T~, long timeout) boolean
+    IngressChannel~T~: poll(Consumer~T~, long timeout, boolean autoExpunge) boolean
+    IngressChannel~T~: expunge(String uid) boolean
 
-    class EgressChannel~T, P~
-    <<interface>> EgressChannel~T, P~
-    EgressChannel~T, P~: send(Supplier~T~ supplier) boolean
+    class EgressChannel~T~
+    <<interface>> EgressChannel~T~
+    EgressChannel~T~: send(Supplier~T~ supplier) boolean
 
     class ChannelPublisher~T~
     ChannelPublisher~T~: submit(T item) int
@@ -27,14 +29,14 @@ classDiagram
     class JakartaMailPollingChannel
     JakartaMailPollingChannel: Session session
 
+    class JakartaMailPublisher
+
     IngressChannel~T~ <|.. LocalQueueChannel~T~: Implements
-    EgressChannel~T, P~ <|.. LocalQueueChannel~T~: Implements
-    ChannelPublisher~T~ <|-- LocalQueueChannel~T~: Extends
+    EgressChannel~T~ <|.. LocalQueueChannel~T~: Implements
 
-    ChannelPublisher~T~ <|-- LocalQueuePublisher~T~: Extends
-
-    EgressChannel~T, P~ <|.. JakartaMailSMTPChannel~P~: T->MimeMessage
-    ChannelPublisher~T~ <|-- JakartaMailSMTPChannel~P~: Extends
+    EgressChannel~T~ <|.. JakartaMailSMTPChannel~P~: T->MimeMessage
 
     IngressChannel~T~ <|.. JakartaMailPollingChannel: T->MimeMessage
-    ChannelPublisher~T~ <|-- JakartaMailPollingChannel: Extends
+
+    ChannelPublisher~T~ <|-- LocalQueuePublisher~T~: Extends
+    ChannelPublisher~T~ <|-- JakartaMailPublisher: Extends
