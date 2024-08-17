@@ -1,5 +1,7 @@
 # iCal4j Filters
 
+[[Javadoc]](https://javadoc.io/doc/org.mnode.ical4j/ical4j/latest/ical4j.core/net/fortuna/ical4j/filter/package-summary.html)
+
 In addition to a robust and compliant implementation of the iCalendar specification, it is also important to have
 an expressive and powerful mechanism for accessing calendar data. iCal4j filters provide a framework for calendar
 object retrieval whether it be in-memory object models or some other data source.

@@ -1,5 +1,7 @@
 # iCalendar Properties
 
+[[Javadoc]](https://javadoc.io/doc/org.mnode.ical4j/ical4j/latest/ical4j.core/net/fortuna/ical4j/model/property/package-summary.html)
+
 In the iCalendar specification properties are used to define features of iCalendar objects
 or components embedded within them (e.g. `VEVENT`, `VTIMEZONE`, etc.).
 

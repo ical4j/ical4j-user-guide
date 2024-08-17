@@ -1,5 +1,7 @@
 # iCal4j Integration
 
+[[Javadoc]](https://javadoc.io/doc/org.ical4j/ical4j-integration-api)
+
 iCal4j Integration provides support for popular calendar message transports and tooling.
 
 ![integration.mmd.svg](../images/integration.mmd.svg)

@@ -1,5 +1,7 @@
 # iCal4j ZoneInfo Outlook
 
+[[Javadoc]](https://javadoc.io/doc/org.mnode.ical4j/ical4j-zoneinfo-outlook)
+
 iCal4j ZoneInfo Outlook provides alternate timezone definitions that may provide greater compatibility with certain versions of Microsoft Outlook.
 
 ## Usage

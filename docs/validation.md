@@ -1,5 +1,7 @@
 # iCal4j Validation
 
+[[Javadoc]](https://javadoc.io/doc/org.mnode.ical4j/ical4j/latest/ical4j.core/net/fortuna/ical4j/validate/package-summary.html)
+
 iCal4j includes a comprehensive validation framework for checking compliance with the various iCalendar
 specifications. This framework may also be used to implement custom validation rules to support data validation
 for specific use-cases.

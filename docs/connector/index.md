@@ -1,5 +1,7 @@
 # iCal4j Connector
 
+[[Javadoc]](https://javadoc.io/doc/org.ical4j/ical4j-connector-api)
+
 iCal4j Connector is a tool that helps you manage iCalendar and vCard collections.
 
 ![connector.mmd.svg](../images/connector.mmd.svg)

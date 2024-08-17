@@ -1,5 +1,7 @@
 # iCal4j Command Line
 
+[[Javadoc]](https://javadoc.io/doc/org.ical4j/ical4j-command)
+
 A command framework for managing iCalendar and vCard data.
 
 [Download](https://files.ical4j.org/releases/ical4j-0.1.1-develop-SNAPSHOT.zip)

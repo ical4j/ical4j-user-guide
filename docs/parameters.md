@@ -1,5 +1,7 @@
 # iCalendar Parameters
 
+[[Javadoc]](https://javadoc.io/doc/org.mnode.ical4j/ical4j/latest/ical4j.core/net/fortuna/ical4j/model/parameter/package-summary.html)
+
 The iCalendar specification defines parameters that may be added to properties to define metadata
 such as value type or classification.
 

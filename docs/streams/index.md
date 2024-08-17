@@ -1,5 +1,7 @@
 # iCal4j Streams
 
+[[Javadoc]](https://javadoc.io/doc/org.ical4j/ical4j-streams)
+
 Reactive programming for iCalendar and vCard.
 
 ![streams.mmd.svg](../images/streams.mmd.svg)

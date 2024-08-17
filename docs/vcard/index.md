@@ -1,5 +1,7 @@
 # iCal4j vCard
 
+[[Javadoc]](https://javadoc.io/doc/org.mnode.ical4j/ical4j-vcard)
+
 iCal4j vCard is a Java library that provides support for the vCard specification as defined by [draft-ietf-vcarddav-vcardrev-06](http://www.ietf.org/internet-drafts/draft-ietf-vcarddav-vcardrev-06.txt).
 
 ## Minimum requirements
