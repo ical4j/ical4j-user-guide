@@ -68,7 +68,7 @@ The following table provides an overview of the currently active projects in iCa
  - For a concise description of the goals and directions of iCal4j please
  take a look at the [open issues](https://github.com/ical4j/ical4j/issues).
 
- - In this guide You will find [examples](https://www.ical4j.org/examples/) of how to use iCal4j, as well as throughout the [API documentation](https://ical4j.github.io/docs/ical4j/api).
+ - In this guide You will find [examples](https://www.ical4j.org/examples/) of how to use iCal4j, as well as throughout the [API documentation](https://javadoc.io/doc/org.mnode.ical4j/ical4j/).
 
  - Detailed descriptions of changes included in each release may be found
  in the [CHANGELOG](https://ical4j.github.io/docs/ical4j/release-notes).
