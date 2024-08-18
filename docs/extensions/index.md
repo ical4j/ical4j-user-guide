@@ -1,6 +1,6 @@
 # iCal4j Extensions
 
-[![javadoc](https://javadoc.io/badge2/org.ical4j/ical4j-extensions/javadoc.svg)](https://javadoc.io/doc/org.ical4j/ical4j-extensions)
+[![javadoc](https://javadoc.io/badge2/org.mnode.ical4j/ical4j-extensions/javadoc.svg)](https://javadoc.io/doc/org.mnode.ical4j/ical4j-extensions)
 
 iCal4j Extensions is a Java library that provides support for widely used non-standard iCalendar objects (i.e. properties and parameters). These model extensions are implemented via the [object registry]]([ModelExtensions|custom) support in iCal4j.
 
