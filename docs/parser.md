@@ -1,6 +1,6 @@
 # iCal4j Parser
 
-[[Javadoc]](https://javadoc.io/doc/org.mnode.ical4j/ical4j/latest/ical4j.core/net/fortuna/ical4j/data/package-summary.html)
+[![javadoc](https://javadoc.io/badge2/org.mnode.ical4j/ical4j/javadoc.svg)](https://javadoc.io/doc/org.mnode.ical4j/ical4j/latest/ical4j.core/net/fortuna/ical4j/data/package-summary.html)
 
 The iCal4j parsing functionality is designed to allow the use of alternate parser and content handler implementations.
 

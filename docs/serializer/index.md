@@ -1,6 +1,6 @@
 # iCal4j Serializer
 
-[[Javadoc]](https://javadoc.io/doc/org.ical4j/ical4j-serializer)
+[![javadoc](https://javadoc.io/badge2/org.ical4j/ical4j-serializer/javadoc.svg)](https://javadoc.io/doc/org.ical4j/ical4j-serializer)
 
 Support for serialization of iCalendar objects to and from XML and JSON-based formats.
 

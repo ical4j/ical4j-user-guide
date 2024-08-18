@@ -1,6 +1,6 @@
 # iCal4j Command Line
 
-[[Javadoc]](https://javadoc.io/doc/org.ical4j/ical4j-command)
+[![javadoc](https://javadoc.io/badge2/org.ical4j/ical4j-command/javadoc.svg)](https://javadoc.io/doc/org.ical4j/ical4j-command)
 
 A command framework for managing iCalendar and vCard data.
 

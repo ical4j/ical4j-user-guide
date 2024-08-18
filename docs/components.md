@@ -1,6 +1,6 @@
 # iCalendar Components
 
-[[Javadoc]](https://javadoc.io/doc/org.mnode.ical4j/ical4j/latest/ical4j.core/net/fortuna/ical4j/model/component/package-summary.html)
+[![javadoc](https://javadoc.io/badge2/org.mnode.ical4j/ical4j/javadoc.svg)](https://javadoc.io/doc/org.mnode.ical4j/ical4j/latest/ical4j.core/net/fortuna/ical4j/model/component/package-summary.html)
 
 Components in iCalendar are used to encapsulate a group of properties (and subcomponents) that
 define a specific type of content. For example, events, to-dos and journals

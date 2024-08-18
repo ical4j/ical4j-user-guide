@@ -1,6 +1,6 @@
 # iCal4j Template
 
-[[Javadoc]](https://javadoc.io/doc/org.ical4j/ical4j-template)
+[![javadoc](https://javadoc.io/badge2/org.ical4j/ical4j-template/javadoc.svg)](https://javadoc.io/doc/org.ical4j/ical4j-template)
 
 iCal4j Template provides prototypes for common iCalendar and vCard use-cases.
 
