@@ -73,6 +73,7 @@ nav:
       - Link: extensions/link.md
       - Participant: extensions/participant.md
       - Outlook: extensions/outlook.md
+      - Strategy: extensions/strategy.md
   - Template:
       - Overview: template/index.md
       - Examples: template/examples.md
