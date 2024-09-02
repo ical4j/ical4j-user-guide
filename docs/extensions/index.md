@@ -2,7 +2,16 @@
 
 [![javadoc](https://javadoc.io/badge2/org.mnode.ical4j/ical4j-extensions/javadoc.svg)](https://javadoc.io/doc/org.mnode.ical4j/ical4j-extensions)
 
-iCal4j Extensions is a Java library that provides support for widely used non-standard iCalendar objects (i.e. properties and parameters). These model extensions are implemented via the [object registry]]([ModelExtensions|custom) support in iCal4j.
+## Overview
+
+iCal4j Extensions is a Java library that provides support for extension (and some non-standard) iCalendar properties
+and components. This includes support for [CalDAV](caldav.md) properties, common Calendar User Agents (CUAs) such as
+[Microsoft Outlook](outlook.md), and convenience implementations of components and properties not explicitly defined in the core
+specifications.
+
+This library also defines a collection of [strategies](strategy.md), which are opinionated approaches to constructing iCalendar
+and vCard objects for common use-cases.
+
 
 ## Usage
 
