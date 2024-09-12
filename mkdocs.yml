@@ -4,8 +4,11 @@ theme:
   name: material
   favicon: images/favicon.png
   logo: images/logo-48.png
+  features:
+    - content.code.copy
+
 repo_url: https://github.com/ical4j/ical4j-user-guide
-repo_name: ical4j/ical4j
+repo_name: ical4j/ical4j-user-guide
 google_analytics:
   - UA-402774-10
   - auto
@@ -21,10 +24,20 @@ extra:
       link: https://linkedin.com/in/benfortuna
     - icon: fontawesome/brands/twitter
       link: https://twitter.com/micronode
+markdown_extensions:
+  - pymdownx.tilde
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
 nav:
   - Overview:
     - Introduction: index.md
     - Getting Started: getting-started.md
+    - Configuration: configuring.md
     - Examples:
         - Overview: examples/index.md
         - Parsing: examples/parsing.md
@@ -32,10 +45,11 @@ nav:
         - Output: examples/output.md
         - Recurrences: examples/recur.md
         - Filtering: examples/filter.md
-        - VCard: examples/vcard.md
     - Android: android.md
-    - Maven: maven.md
   - Features:
+    - Parameters: parameters.md
+    - Properties: properties.md
+    - Components: components.md
     - Validation: validation.md
     - Compatibility: compatibility.md
     - Date/Time Concepts: datetime.md
@@ -47,25 +61,66 @@ nav:
     - Recurrences: recurrences.md
     - Timezones: timezones.md
     - OSGi: osgi.md
-  - Services:
-    - Overview: services/index.md
-    - iCal4j Serializer: services/serializer.md
-    - iCal4j Validator: services/validator.md
-    - iCal4j FreeBusy: services/freebusy.md
-    - iCal4j Connector: services/connector.md
-    - iCal4j Integration: services/integration.md
-    - iCal4j Query: services/query.md
-    - iCal4j User Agent: services/useragent.md
-    - tzurl.org: services/tzurl.md
-  - iCal4j vCard: vcard.md
-  - iCal4j Extensions: extensions.md
-  - iCal4j Templates: templates.md
-  - iCal4j ZoneInfo Outlook: zoneinfo-outlook.md
+#   - Services:
+#     - Overview: services/index.md
+  - vCard:
+      - Overview: vcard/index.md
+      - Examples: vcard/examples.md
+  - Extensions:
+      - Overview: extensions/index.md
+      - CalDAV: extensions/caldav.md
+      - Concept: extensions/concept.md
+      - Link: extensions/link.md
+      - Participant: extensions/participant.md
+      - Outlook: extensions/outlook.md
+      - Strategy: extensions/strategy.md
+  - Template:
+      - Overview: template/index.md
+      - Examples: template/examples.md
+  - Serializer:
+    - Overview: serializer/index.md
+    - XML: serializer/xml.md
+    - JSON: serializer/json.md
+    - JSON-LD: serializer/jsonld.md
+    - JMAP: serializer/jmap.md
+    - JOTN:
+      - Overview: serializer/jotn/index.md
+      - Alarm: serializer/jotn/alarm.md
+      - Availability: serializer/jotn/availability.md
+      - Available: serializer/jotn/available.md
+      - Calendar: serializer/jotn/calendar.md
+      - Card: serializer/jotn/card.md
+      - Event: serializer/jotn/event.md
+      - Journal: serializer/jotn/journal.md
+      - Location: serializer/jotn/location.md
+      - Participant: serializer/jotn/participant.md
+      - Resource: serializer/jotn/resource.md
+      - ToDo: serializer/jotn/todo.md
+  - Connector:
+    - Overview: connector/index.md
+    - Local: connector/local.md
+    - DAV: connector/dav.md
+  - Integration:
+    - Overview: integration/index.md
+    - Email: integration/email.md
+    - Websub: integration/websub.md
+    - Webhooks: integration/webhooks.md
+    - Chat: integration/chat.md
+  - Command:
+    - Overview: command/index.md
+    - Calendar: command/calendar.md
+    - Card: command/card.md
+    - Collection: command/collection.md
+    - Channel: command/channel.md
+    - Store: command/store.md
+    - Template: command/template.md
+  - Streams:
+    - Overview: streams/index.md
+    - Workflow: streams/workflow.md
+  - ZoneInfo Outlook: zoneinfo-outlook.md
+  - tzurl.org: tzurl.md
   - References:
     - RFC Compliance: rfcs.md
     - CUAs: cuas.md
-    - External Resources: external-resources.md
     - Projects using iCal4j: projects.md
     - Resources: resources.md
-    - Roadmap: roadmap.md
-  - FAQ: faq.md

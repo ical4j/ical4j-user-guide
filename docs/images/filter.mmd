@@ -1,0 +1,64 @@
+---
+title: iCal4j Filter
+---
+classDiagram
+    direction LR
+
+    class FilterExpression
+    <<interface>> FilterExpression
+    FilterExpression: equalTo(String target, Object value) FilterExpression$
+    FilterExpression: in(String target, Collection~?~ value) FilterExpression$
+    FilterExpression: greaterThan(String target, Temporal value) FilterExpression$
+    FilterExpression: and(FilterExpression expression) FilterExpression$
+    FilterExpression: or(FilterExpression expression) FilterExpression$
+    FilterExpression: not(FilterExpression expression) FilterExpression$
+
+    class BinaryExpression
+    BinaryExpression: FilterExpression left
+    BinaryExpression: FilterExpression right
+    BinaryExpression: FilterExpression.Op operator
+
+    class UnaryExpression
+    UnaryExpression: FilterExpression operand
+    UnaryExpression: FilterExpression.Op operator
+
+    class LiteralExpression~T~
+    <<interface>> LiteralExpression~T~
+    LiteralExpression~T~: getValue() T
+
+    class BooleanExpression
+    class CollectionExpression
+    class DateExpression
+    class FunctionExpression
+    class NumberExpression
+    class StringExpression
+    class TemporalExpression
+
+    class PredicateFactory~T~
+    <<interface>> PredicateFactory~T~
+    PredicateFactory~T~: predicate(UnaryExpression expression) Predicate<T>
+    PredicateFactory~T~: predicate(BinaryExpression expression) Predicate<T>
+
+    class AbstractFilter~T~
+    <<abstract>> AbstractFilter~T~
+
+    class ComponentFilter~T extends Component~
+
+    class PropertyFilter
+
+    FilterExpression <|.. BinaryExpression: Implements
+    FilterExpression <|.. UnaryExpression: Implements
+    FilterExpression <|-- LiteralExpression~T~: Extends
+
+    LiteralExpression~T~ <|.. BooleanExpression: Implements
+    LiteralExpression~T~ <|.. CollectionExpression: Implements
+    LiteralExpression~T~ <|.. DateExpression: Implements
+    LiteralExpression~T~ <|.. FunctionExpression: Implements
+    LiteralExpression~T~ <|.. NumberExpression: Implements
+    LiteralExpression~T~ <|.. StringExpression: Implements
+    LiteralExpression~T~ <|.. TemporalExpression: Implements
+
+    PredicateFactory~T~ <|.. AbstractFilter~T~: Implements
+
+    AbstractFilter~T~ <|-- ComponentFilter~T extends Component~: Extends
+    AbstractFilter~T~ <|-- PropertyFilter: Extends

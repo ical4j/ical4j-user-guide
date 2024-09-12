@@ -4,7 +4,9 @@ This page provides examples of using an iCal4j model to generate iCalendar (*.ic
 
 ## Generating a calendar file
 
-    FileOutputStream fout = new FileOutputStream("mycalendar.ics");
+```java
+FileOutputStream fout = new FileOutputStream("mycalendar.ics");
 
-    CalendarOutputter outputter = new CalendarOutputter();
-    outputter.output(calendar, fout);
+CalendarOutputter outputter = new CalendarOutputter();
+outputter.output(calendar, fout);
+```
