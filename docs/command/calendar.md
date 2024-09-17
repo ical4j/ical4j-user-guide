@@ -2,7 +2,7 @@
 
 Calendar commands are used to parse, transform and validate existing iCalendar data.
 
-## Validate
+## Validate Object
 
 ### Generate validation report
 
@@ -14,14 +14,19 @@ Result:
 - ERROR: VCALENDAR - If one is present, ALL others MUST NOT be present: VEVENT,VFREEBUSY,VTODO,VJOURNAL
 ```
 
-## Serialize
+## Serialize Object
 
 TBD.
 
-## Filter
+## Filter Components
 
 TBD.
 
-## Replace UIDs
+## Replace Component UIDs
 
 TBD.
+
+## Free/Busy Report
+
+TBD.
+
