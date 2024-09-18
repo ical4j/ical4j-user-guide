@@ -1,4 +1,4 @@
-# iCal4j Actions - Workflow
+# iCal4j Streams - Workflow
 
 A workflow automation library using iCalendar to define workflow definitions and state.
 
@@ -123,3 +123,53 @@ a new task:
     LAST-MODIFIED:20241231T210000Z
     END:VTODO
     END:VCALENDAR
+
+
+## Examples
+
+The following examples demonstrate how you could use iCalendar to implement automated workflows.
+
+### Trial Subscription
+
+A trial subscription allows the user to use a product for free for 30 days, after which the user will be billed
+on the same day each month.
+
+#### Create a subscription
+
+Used as a linked reference for related activities.
+
+#### Send email notifications
+
+For active subscriptions:
+
+* Create a welcome email request (to be sent immediately) for subscriptions without one.
+* Create a reminder email to be sent prior to end of trial.
+* Create an end of trial email to be sent after the end of the trial period.
+
+#### Create monthly charge (recurring after 30 days)
+
+For active subscriptions:
+
+* Create a monthly charge (30 days from subscription start date) for active subscriptions without one.
+
+#### Process recurring charge
+
+For active charge request:
+
+* Process billing
+* Create and attach invoice to charge occurrence
+
+#### Send invoice email
+
+For active invoice:
+
+* Send email notification with invoice attached
+* Close invoice as completed
+
+#### Process cancellations
+
+For cancelled subscriptions:
+
+* Create a cancelled subscriptipn email for subscriptions without one
+* Cancel linked reminder/end of trial email notifications
+* Cancel linked monthly charge
