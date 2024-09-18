@@ -113,6 +113,7 @@ nav:
     - Collection: command/collection.md
     - Channel: command/channel.md
     - Store: command/store.md
+    - iTIP: command/itip.md
   - Streams:
     - Overview: streams/index.md
     - Workflow: streams/workflow.md
