@@ -182,3 +182,17 @@ Used as a linked reference for related activities.
 * Send a cancelled subscriptipn email
 * Cancel subscription-linked reminder/end of trial email notifications
 * Cancel subscription-linked monthly charge
+
+
+### Approval Flow
+
+An approval flow provides a workflow for approving service requests followed by fulfilment.
+
+#### Create approval action
+
+**Trigger:** Request created/updated.
+
+**Description:**
+
+* Create approval action with due date corresponding to SLA
+* 
