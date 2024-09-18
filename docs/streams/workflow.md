@@ -140,9 +140,7 @@ Used as a linked reference for related activities.
 
 #### Send email notifications
 
-**Trigger:** 
-
-Subscription created/updated.
+**Trigger:** Subscription created/updated.
 
 **Description:**
 
@@ -152,9 +150,7 @@ Subscription created/updated.
 
 #### Create monthly charge (recurring after 30 days)
 
-**Trigger:** 
-
-Subscription created/updated.
+**Trigger:** Subscription created/updated.
 
 **Description:**
 
@@ -162,9 +158,7 @@ Subscription created/updated.
 
 #### Process recurring charge
 
-**Trigger:**
-
-Timer
+**Trigger:** Timer
 
 **Description:**
 
@@ -173,9 +167,7 @@ Timer
 
 #### Send invoice email
 
-**Trigger:**
-
-Invoice created/updated.
+**Trigger:** Invoice created/updated.
 
 **Description:**
 
@@ -183,9 +175,7 @@ Invoice created/updated.
 
 #### Process cancellations
 
-**Trigger:** 
-
-Subscription cancelled.
+**Trigger:** Subscription cancelled.
 
 **Description:**
 
