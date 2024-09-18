@@ -140,36 +140,55 @@ Used as a linked reference for related activities.
 
 #### Send email notifications
 
-For active subscriptions:
+**Trigger:** 
 
-* Create a welcome email request (to be sent immediately) for subscriptions without one.
-* Create a reminder email to be sent prior to end of trial.
-* Create an end of trial email to be sent after the end of the trial period.
+Subscription created/updated.
+
+**Description:**
+
+* Send a welcome email.
+* Schedule a reminder email to be sent prior to end of trial (linked to subscription).
+* Schedule an end of trial email to be sent after the end of the trial period (linked to subscription).
 
 #### Create monthly charge (recurring after 30 days)
 
-For active subscriptions:
+**Trigger:** 
 
-* Create a monthly charge (30 days from subscription start date) for active subscriptions without one.
+Subscription created/updated.
+
+**Description:**
+
+* Schedule a monthly charge, 30 days from subscription start date (linked to subscription).
 
 #### Process recurring charge
 
-For active charge request:
+**Trigger:**
+
+Timer
+
+**Description:**
 
 * Process billing
-* Create and attach invoice to charge occurrence
+* Create invoice linked to charge occurrence
 
 #### Send invoice email
 
-For active invoice:
+**Trigger:**
 
-* Send email notification with invoice attached
-* Close invoice as completed
+Invoice created/updated.
+
+**Description:**
+
+* Send invoice via email
 
 #### Process cancellations
 
-For cancelled subscriptions:
+**Trigger:** 
 
-* Create a cancelled subscriptipn email for subscriptions without one
-* Cancel linked reminder/end of trial email notifications
-* Cancel linked monthly charge
+Subscription cancelled.
+
+**Description:**
+
+* Send a cancelled subscriptipn email
+* Cancel subscription-linked reminder/end of trial email notifications
+* Cancel subscription-linked monthly charge
