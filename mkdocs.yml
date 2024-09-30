@@ -74,9 +74,16 @@ nav:
       - Participant: extensions/participant.md
       - Outlook: extensions/outlook.md
       - Strategy: extensions/strategy.md
-  - Template:
-      - Overview: template/index.md
-      - Examples: template/examples.md
+  - Connector:
+    - Overview: connector/index.md
+    - Local: connector/local.md
+    - DAV: connector/dav.md
+  - Integration:
+    - Overview: integration/index.md
+    - Email: integration/email.md
+    - Websub: integration/websub.md
+    - Webhooks: integration/webhooks.md
+    - Chat: integration/chat.md
   - Serializer:
     - Overview: serializer/index.md
     - XML: serializer/xml.md
@@ -96,16 +103,6 @@ nav:
       - Participant: serializer/jotn/participant.md
       - Resource: serializer/jotn/resource.md
       - ToDo: serializer/jotn/todo.md
-  - Connector:
-    - Overview: connector/index.md
-    - Local: connector/local.md
-    - DAV: connector/dav.md
-  - Integration:
-    - Overview: integration/index.md
-    - Email: integration/email.md
-    - Websub: integration/websub.md
-    - Webhooks: integration/webhooks.md
-    - Chat: integration/chat.md
   - Command:
     - Overview: command/index.md
     - Calendar: command/calendar.md
@@ -117,6 +114,9 @@ nav:
   - Streams:
     - Overview: streams/index.md
     - Workflow: streams/workflow.md
+  - Template:
+      - Overview: template/index.md
+      - Examples: template/examples.md
   - ZoneInfo Outlook: zoneinfo-outlook.md
   - tzurl.org: tzurl.md
   - References:
