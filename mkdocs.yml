@@ -35,8 +35,25 @@ markdown_extensions:
   - pymdownx.snippets
   - pymdownx.superfences
 nav:
-  - Overview:
+  - Home:
     - Introduction: index.md
+    - Features:
+        - Parameters: parameters.md
+        - Properties: properties.md
+        - Components: components.md
+        - Validation: validation.md
+        - Compatibility: compatibility.md
+        - Date/Time Concepts: datetime.md
+        - Encoding: encoding.md
+        - Filtering: filtering.md
+        - Groovy: groovy.md
+        - Indexing: indexing.md
+        - Parsing: parser.md
+        - Recurrences: recurrences.md
+        - Timezones: timezones.md
+        - OSGi: osgi.md
+#   - Services:
+#     - Overview: services/index.md
     - Getting Started: getting-started.md
     - Configuration: configuring.md
     - Examples:
@@ -52,23 +69,7 @@ nav:
         - CUAs: cuas.md
         - Projects using iCal4j: projects.md
         - Resources: resources.md
-  - Features:
-    - Parameters: parameters.md
-    - Properties: properties.md
-    - Components: components.md
-    - Validation: validation.md
-    - Compatibility: compatibility.md
-    - Date/Time Concepts: datetime.md
-    - Encoding: encoding.md
-    - Filtering: filtering.md
-    - Groovy: groovy.md
-    - Indexing: indexing.md
-    - Parsing: parser.md
-    - Recurrences: recurrences.md
-    - Timezones: timezones.md
-    - OSGi: osgi.md
-#   - Services:
-#     - Overview: services/index.md
+
   - vCard:
       - Overview: vcard/index.md
       - Examples: vcard/examples.md
