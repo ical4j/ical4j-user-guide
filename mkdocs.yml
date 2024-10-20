@@ -6,7 +6,8 @@ theme:
   logo: images/logo-48.png
   features:
     - content.code.copy
-
+    - navigation.tabs
+    
 repo_url: https://github.com/ical4j/ical4j-user-guide
 repo_name: ical4j/ical4j-user-guide
 google_analytics:
