@@ -47,6 +47,11 @@ nav:
         - Recurrences: examples/recur.md
         - Filtering: examples/filter.md
     - Android: android.md
+    - References:
+        - RFC Compliance: rfcs.md
+        - CUAs: cuas.md
+        - Projects using iCal4j: projects.md
+        - Resources: resources.md
   - Features:
     - Parameters: parameters.md
     - Properties: properties.md
@@ -120,8 +125,4 @@ nav:
       - Examples: template/examples.md
   - ZoneInfo Outlook: zoneinfo-outlook.md
   - tzurl.org: tzurl.md
-  - References:
-    - RFC Compliance: rfcs.md
-    - CUAs: cuas.md
-    - Projects using iCal4j: projects.md
-    - Resources: resources.md
+
