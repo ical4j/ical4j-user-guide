@@ -64,6 +64,8 @@ nav:
         - Recurrences: examples/recur.md
         - Filtering: examples/filter.md
     - Android: android.md
+    - ZoneInfo Outlook: zoneinfo-outlook.md
+    - tzurl.org: tzurl.md
     - References:
         - RFC Compliance: rfcs.md
         - CUAs: cuas.md
@@ -124,6 +126,4 @@ nav:
   - Template:
       - Overview: template/index.md
       - Examples: template/examples.md
-  - ZoneInfo Outlook: zoneinfo-outlook.md
-  - tzurl.org: tzurl.md
 
