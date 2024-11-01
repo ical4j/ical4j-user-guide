@@ -123,6 +123,8 @@ nav:
   - Streams:
     - Overview: streams/index.md
     - Workflow: streams/workflow.md
+  - Graph:
+      - Overview: graph/index.md
   - Template:
       - Overview: template/index.md
       - Examples: template/examples.md
