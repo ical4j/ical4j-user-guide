@@ -49,18 +49,20 @@ etc. Most calendaring tools include some level of support for the iCalendar stan
 
 The following table provides an overview of the currently active projects in iCal4j.
 
-   | Name                                         | Description                                                                                 | References                                                                                        |
-|----------------------------------------------|---------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
-| [ical4j](/examples)                          | Model and parsing support for iCalendar standards                                           | [RFC5545], [RFC5546], [RFC6868], [RFC7953], [RFC7986], [RFC7529], [RFC9073], [RFC9074], [RFC9253] |
-| [ical4j-extensions](/extensions)             | Model extensions for non-standard data objects                                              | -                                                                                                 |
-| [ical4j-zoneinfo-outlook](/zoneinfo-outlook) | Alternate timezone definitions to improve support for MS Outlook                            | -                                                                                                 |
-| [ical4j-vcard](/vcard)                       | Model and parsing support for vCard standards                                               | [RFC6350], [RFC6473], [RFC6474], [RFC6868], [RFC6869]                                             |
-| [ical4j-template](/template)                 | Mutator functions for building and modifying data objects                                   | -                                                                                                 |
-| [ical4j-connector](/connector)               | Connectivity to persistent store implementations (e.g. CalDAV)                              | [RFC4791], [RFC6352]                                                                              |
-| [ical4j-integration](/integration)           | Delivery of data objects via common transport channels (e.g Email)                          | [RFC6047]                                                                                         |
-| [ical4j-command](/command)                   | Command framework for common use-cases                                                      | -                                                                                                 |
-| [ical4j-serializer](/serializer)             | Serialization of data objects to structured data formats (e.g xCal, jCal, JSCalendar, etc.) | [RFC6321], [RFC6351], [RFC7095], [RFC7265], [RFC8984]                                             |
-| [tzurl](/tzurl)                              | Generation and hosting of timezone data in iCalendar format                                 | -                                                                                                 |
+   | Name                                        | Description                                                                                 | References                                                                                        |
+|:--------------------------------------------|---------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
+| [ical4j](examples)                          | Model and parsing support for iCalendar standards                                           | [RFC5545], [RFC5546], [RFC6868], [RFC7953], [RFC7986], [RFC7529], [RFC9073], [RFC9074], [RFC9253] |
+| [ical4j-zoneinfo-outlook](zoneinfo-outlook) | Alternate timezone definitions to improve support for MS Outlook                            | -                                                                                                 |
+   | [ical4j-vcard](vcard)                       | Model and parsing support for vCard standards                                               | [RFC6350], [RFC6473], [RFC6474], [RFC6868], [RFC6869]                                             |
+   | [ical4j-extensions](extensions)             | Model extensions for non-standard data objects                                              | -                                                                                                 |
+| [ical4j-connector](connector)               | Connectivity to persistent store implementations (e.g. CalDAV)                              | [RFC4791], [RFC6352]                                                                              |
+| [ical4j-integration](integration)           | Delivery of data objects via common transport channels (e.g Email)                          | [RFC6047]                                                                                         |
+   | [ical4j-serializer](serializer)             | Serialization of data objects to structured data formats (e.g xCal, jCal, JSCalendar, etc.) | [RFC6321], [RFC6351], [RFC7095], [RFC7265], [RFC8984]                                             |
+| [ical4j-command](command)                   | Command framework and CLI                                                                   | -                                                                                                 |
+| [ical4j-streams](streams)                   | Asynchronous stream processing                                                              | -                                                                                                 |
+| [ical4j-graph](graph)                       | Linked object traversal                                                                     | -                                                                                                 |
+   | [ical4j-template](template)                 | Templating support for data presentation                                                    | -                                                                                                 |
+| [tzurl](/tzurl)                             | Generation and hosting of timezone data in iCalendar format                                 | -                                                                                                 |
 
 
 ## Further Links
