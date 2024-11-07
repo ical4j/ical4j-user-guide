@@ -92,7 +92,7 @@ nav:
     - Email: integration/email.md
     - Websub: integration/websub.md
     - Webhooks: integration/webhooks.md
-    - Chat: integration/chat.md
+    - XMPP: integration/xmpp.md
   - Serializer:
     - Overview: serializer/index.md
     - XML: serializer/xml.md
