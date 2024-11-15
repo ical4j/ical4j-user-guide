@@ -82,7 +82,9 @@ nav:
       - Link: extensions/link.md
       - Participant: extensions/participant.md
       - Outlook: extensions/outlook.md
-      - Strategy: extensions/strategy.md
+      - Strategy:
+        - Overview: extensions/strategy/index.md
+        - VEvent: extensions/strategy/vevent.md
   - Connector:
     - Overview: connector/index.md
     - Local: connector/local.md
