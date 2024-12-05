@@ -78,7 +78,8 @@ nav:
   - Extensions:
       - Overview: extensions/index.md
       - CalDAV: extensions/caldav.md
-      - Concept: extensions/concept.md
+      - Concept:
+        - Overview: extensions/concept/index.md
       - Link: extensions/link.md
       - Participant: extensions/participant.md
       - Outlook: extensions/outlook.md
