@@ -80,6 +80,7 @@ nav:
       - CalDAV: extensions/caldav.md
       - Concept:
         - Overview: extensions/concept/index.md
+        - Event: extensions/concept/event.md
       - Link: extensions/link.md
       - Participant: extensions/participant.md
       - Outlook: extensions/outlook.md
