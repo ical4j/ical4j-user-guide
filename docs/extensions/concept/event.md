@@ -1,6 +1,7 @@
 # iCal4j Extensions - Concept: Event
 
-An Event is a planned activity, scheduled in the future for one or more active participants. This may be used to represent activities such as meetings, appointments, seminars, conferences, etc.
+An Event is a planned activity, scheduled in the future for one or more active participants. This may be used to 
+represent activities such as meetings, appointments, seminars, conferences, etc.
 
 ## Event information
 
@@ -13,4 +14,5 @@ An Event required the following property information:
 
 ## Event occurrences
 
-For repeating events each occurrence may override properties in the series in order to provide additional/alternative details specific to the occurrence.
+For repeating events each occurrence may override properties in the series in order to provide additional/alternative
+details specific to the occurrence.
