@@ -81,12 +81,44 @@ nav:
       - Concept:
         - Overview: extensions/concept/index.md
         - Event: extensions/concept/event.md
-      - Link: extensions/link.md
+        - Observance: extensions/concept/observance.md
+        - Action: extensions/concept/action.md
+        - Issue: extensions/concept/issue.md
+        - Request: extensions/concept/request.md
+        - Note: extensions/concept/note.md
+        - Report: extensions/concept/report.md
+        - Availability: extensions/concept/availability.md
+      - Link:
+        - Overview: extensions/link/index.md
+        - Alternate: extensions/link/alternate.md
+        - Author: extensions/link/author.md
+        - Bookmark: extensions/link/bookmark.md
+        - Copyright: extensions/link/copyright.md
+        - Edit: extensions/link/edit.md
+        - External: extensions/link/external.md
+        - Help: extensions/link/help.md
+        - Hub: extensions/link/hub.md
+        - Icon: extensions/link/icon.md
+        - License: extensions/link/license.md
+        - Next: extensions/link/next.md
+        - Prev: extensions/link/prev.md
+        - Related: extensions/link/related.md
+        - Replies: extensions/link/replies.md
+        - Self: extensions/link/self.md
+        - Status: extensions/link/status.md
+        - Webmention: extensions/link/webmention.md
       - Participant: extensions/participant.md
       - Outlook: extensions/outlook.md
       - Strategy:
         - Overview: extensions/strategy/index.md
-        - VEvent: extensions/strategy/vevent.md
+        - Event: extensions/strategy/event.md
+        - Observance: extensions/strategy/observance.md
+        - Action: extensions/strategy/action.md
+        - Issue: extensions/strategy/issue.md
+        - Request: extensions/strategy/request.md
+        - Note: extensions/strategy/note.md
+        - Report: extensions/strategy/report.md
+        - Availability: extensions/strategy/availability.md
   - Connector:
     - Overview: connector/index.md
     - Local: connector/local.md
