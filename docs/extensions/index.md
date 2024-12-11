@@ -12,6 +12,17 @@ specifications.
 This library also defines a collection of [strategies](strategy.md), which are opinionated approaches to constructing iCalendar
 and vCard objects for common use-cases.
 
+## Experimental Properties
+
+| Name | Description | References |
+|------|-------------|------------|
+| X-CALSTART |||
+| X-LIC-LOCATION |||
+| X-WR-ALARMID |||
+| X-WR-CALDESC |||
+| X-WR-CALNAME |||
+| X-WR-RELCALID |||
+| X-WR-TIMEZONE |||
 
 ## Usage
 
