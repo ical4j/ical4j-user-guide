@@ -119,6 +119,7 @@ nav:
         - Note: extensions/strategy/note.md
         - Report: extensions/strategy/report.md
         - Availability: extensions/strategy/availability.md
+        - Entity: extensions/strategy/entity.md
   - Connector:
     - Overview: connector/index.md
     - Local: connector/local.md
