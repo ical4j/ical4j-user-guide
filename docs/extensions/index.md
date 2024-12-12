@@ -12,17 +12,31 @@ specifications.
 This library also defines a collection of [strategies](/extensions/strategy), which are opinionated approaches to constructing iCalendar
 and vCard objects for common use-cases.
 
+## Property Extensions
+
+The following classes extend standard property implementations whilst maintaining specification compliance.
+
+| Property | Extends | Description |
+|----------|---------|-------------|
+| CompletionStatus | PercentComplete | Immutable property defining common values for `PERCENT-COMPLETE` property |
+| HtmlDescription | StyledDescription | Convenience class for managing HTML-formatted `STYLED-DESCRIPTION` properties |
+| MarkdownDescription | StyledDescription | Convenience class for managing Markdown-formatted `STYLED-DESCRIPTION` properties |
+| Notify | Trigger | Provides a more intuitive way to define `VALARM` triggers |
+| Repeats | RRule | Provides a more intuitive way to define recurrence rules for components |
+
+
 ## Experimental Properties
 
-| Name | Description | References |
-|------|-------------|------------|
-| X-CALSTART |||
-| X-LIC-LOCATION |||
-| X-WR-ALARMID |||
-| X-WR-CALDESC |||
-| X-WR-CALNAME |||
-| X-WR-RELCALID |||
-| X-WR-TIMEZONE |||
+| Name | Property | Description | References |
+|------|----------|-------------|------------|
+| CalStart | X-CALSTART |||
+| LicLocation | X-LIC-LOCATION |||
+| WrAlarmId | X-WR-ALARMID |||
+| WrCalDesc | X-WR-CALDESC |||
+| WrCalName | X-WR-CALNAME |||
+| WrRelCalId | X-WR-RELCALID |||
+| WrTimeZone | X-WR-TIMEZONE |||
+
 
 ## Usage
 
