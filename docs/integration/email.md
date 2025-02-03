@@ -47,5 +47,6 @@ as individual messages are applied, except for the following replacements for Me
 |----------------|------|--------------------|
 | Date           | DATE-TIME | RDATE |
 | List-Id     | URI      | UID |
+| List-URL | URI | URL/LINK |
 
 In this way each list message is represented as a separate occurence of the list object.
