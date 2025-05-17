@@ -70,10 +70,10 @@ TimeZoneRegistry registry = new TimeZoneRegistryImpl("zoneinfo-outlook/")
 
 These timezone definitions are generated using [tzurl](./tzurl) - a fork of the vzic tool that now appears to be inactive (?).
 
-As of 1.0-rc2 iCal4j will include support for automatically updating the built-in timezone definitions from the [tzurl.org](http://www.tzurl.org) site. In some cases this functionality may be undesirable (e.g. applications without Internet access), and as such automatic updating may be disabled by specifying the following directive in the ical4j.properties file or as a System property:
+iCal4j includes support for automatically updating the included timezone definitions from the [tzurl.org](http://www.tzurl.org) site. By default, this feature is disabled to avoid instability for  applications without Internet access, but is easily enabled by specifying the following directive in the ical4j.properties file or as a System property:
 
 ```properties
-net.fortuna.ical4j.timezone.update.enabled=false
+net.fortuna.ical4j.timezone.update.enabled=true
 ```
 
 _NOTE: It is recommended that you create a custom TimeZoneRegistryFactory, as described above, to create such a TimeZoneRegistryImpl instance_
