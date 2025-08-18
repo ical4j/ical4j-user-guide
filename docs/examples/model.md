@@ -178,9 +178,7 @@ for (int i = fin.read(); i >= 0;) {
     i = fin.read();
 }
 
-ParameterList params = new ParameterList();
-params.add(Value.BINARY);
-params.add(Encoding.BASE64);
+ParameterList params = new ParameterList().add(Value.BINARY).add(Encoding.BASE64);
 
 Attach attach = new Attach(params, bout.toByteArray());
 ```
