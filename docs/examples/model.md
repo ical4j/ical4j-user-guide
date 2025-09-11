@@ -216,9 +216,8 @@ Calendar iCalendar = new Calendar().withProdId("-//MyCalendarApp v1.0//EN")
 
 //Outlook uses a custom property to display HTML called the X-ALT-DESC property
 
-ParameterList htmlParameters = new ParameterList();
 XParameter fmtTypeParameter = new XParameter("FMTTYPE", "text/html");
-htmlParameters.add(fmtTypeParameter);
+htmlParameters.add(new ParameterList(List.of(fmtTypeParameter)));
 
 DateTime startTime, endTime;
 try {
