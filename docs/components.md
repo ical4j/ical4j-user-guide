@@ -45,7 +45,7 @@ Each component may implement one or more property accessors, which provide conve
 methods for retrieval of different property types.
 
 ```java
-Optional<DtStart> start = event.getDtStart();
+DtStart<LocalDate> start = event.getDateTimeStart();
 
 List<Categories> categories = todo.getCategories();
 ```
@@ -56,6 +56,9 @@ List<Categories> categories = todo.getCategories();
 | DateTimePropertyAccessor         | `COMPLETED`, `DTEND`, `DUE`, `DTSTART`, `DURATION`, `FREEBUSY`, `TRANSP`                                                          |
 | DescriptivePropertyAccessor      | `ATTACH`, `CATEGORIES`, `CLASS`, `COMMENT`, `DESCRIPTION`, `GEO`, `LOCATION`, `PERCENT-COMPLETE`, `PRIORITY`, `STATUS`, `SUMMARY` |
 | RelationshipPropertyAccessor     | `ATTENDEE`, `CONTACT`, `ORGANIZER`, `RECURRENCE-ID`, `RELATED-TO`, `URL`                                                          |
+| TimeZonePropertyAccessor         | `TZID`, `LAST-MODIFIED`, `TZURL`, `TZOFFSETFROM`, `TZOFFSETTO`, `DTSTART`                                                         |
+| CalendarPropertyAccessor         | `PRODID`, `VERSION`, `CALSCALE`, `METHOD`                                                                                         |
+
 
 ## Property Modifiers
 
@@ -71,11 +74,12 @@ todo.with(CATEGORIES, new Categories("travel"));
 
 | Property Modifier                 | Supported Properties                                                     |
 |-----------------------------------|--------------------------------------------------------------------------|
-| ChangeManagementPropertyModifiers | `CREATED`, `DTSTAMP`, `LAST-MODIFIED`, `SEQUENCE`, `SEQUENCE_INCREMENT`   |
+| ChangeManagementPropertyModifiers | `CREATED`, `DTSTAMP`, `LAST-MODIFIED`, `SEQUENCE`, `SEQUENCE_INCREMENT`  |
 | DateTimePropertyModifiers         | `COMPLETED`, `DTEND`, `DUE`, `DTSTART`, `DURATION`, `FREEBUSY`, `TRANSP` |
 | DescriptivePropertyModifiers      | `ATTACH`, `CATEGORIES`, `DESCRIPTION`, `SUMMARY`                         |
 | RecurrencePropertyModifiers       | `EXDATE`, `RDATE`, `RRULE`                                               |
 | RelationshipPropertyModifiers     | `ATTENDEE`, `CONTACT`, `ORGANIZER`, `RECURRENCE-ID`, `RELATED-TO`, `URL` |
+| CalendarPropertyModifiers         | `METHOD`                                                                 |
 
 ## Component Accessors
 
