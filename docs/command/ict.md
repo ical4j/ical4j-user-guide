@@ -103,12 +103,12 @@ Core commands include:
 * `lc` - List collections
 * `mkcol` - Create a collection
 * `rmcol` - Remove collections
-* `ls <collection> [<uid> | <filter>]` - list calendars and cards
-* `rm <collection> [<uid> | <filter>]` - Delete calendars and cards
-* `cp -target=<col> <collection> [<uid> | <filter>]` - Copy calendars and cards
-* `mv -target=<col> <collection> [<uid> | <filter>]` - Move calendars and cards to other collections
+* `ls <collection>[:<uid>] [-filter <filter>]` - list calendars and cards
+* `rm <collection>[:<uid>] [-filter <filter>]` - Delete calendars and cards
+* `cp <collection>[:<uid>] <destination> [-filter <filter>]` - Copy calendars and cards
+* `mv <collection>[:<uid>] <destination> [-filter <filter>]` - Move calendars and cards to other collections
 * `import -file=<file>, ... <collection>` - Import files
-* `export -file=<file> <collection> [<uid> | <filter>]` - Export files
+* `export -file=<file> <collection>[:<uid>] [-filter <filter>]` - Export files
 
 Creation commands include:
 
