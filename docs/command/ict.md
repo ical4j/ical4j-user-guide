@@ -47,20 +47,30 @@ No items found in collection 'birthdays'. Use 'new' or 'import' to add items.
 Created reminder with UID '1234567890' in collection 'birthdays'.
 ```
 
-Refine object metadata using commands like 'participants', 'status', 'link', etc.
+Refine object metadata like 'participants', 'status', 'link', etc.
 
 ```shell
-> ict participants birthdays/1234567890 -add "Dad, Sister"
+> ict add participants birthdays:1234567890 Dad Sister
+Added participants to 'birthdays:1234567890'.
 
-Added participants to 'birthdays/1234567890'.
+> ict set status birthdays:1234567890 "confirmed"
+Set status of 'birthdays:1234567890' to 'confirmed'.
 
-> ict status birthdays/1234567890 -set "confirmed"
+> ict add link birthdays:1234567890 "https://example.com/birthday-info"
+Added link to 'birthdays:1234567890'.
+```
 
-Set status of 'birthdays/1234567890' to 'confirmed'.
+Use filters to find objects based on metadata.
 
-> ict link birthdays/1234567890 -add "https://example.com/birthday-info"
+```shell
+> ict ls birthdays -filter "status=confirmed"
+Found 1 item in collection 'birthdays':
+- UID: 1234567890, Summary: "Mom's Birthday", Due: 2024-12-01, Status: confirmed
 
-Added link to 'birthdays/1234567890'.
+> ict ls my-todo-list -filter "parent=1234567890"
+Found 2 items in collection 'my-todo-list' linked to 'birthdays:1234567890':
+- UID: 9876543210, Summary: "Buy gift", Due: 2024-11-30
+- UID: 8765432109, Summary: "Plan party", Due: 2024-12-01
 ```
 
 
@@ -157,8 +167,8 @@ Created to-do item with UID '1122334455' in collection 'my-todo-list'.
 Further refinements can be made using `edit` to update the description using the configured editor.
 
 ```shell
-> ict edit my-calendar/0987654321 # opens the event description in the default editor
-Edited event 'my-calendar/0987654321'.
+> ict edit my-calendar:0987654321 # opens the event description in the default editor
+Edited event 'my-calendar:0987654321'.
 ```
 
 
@@ -176,34 +186,34 @@ The tool supports managing metadata for calendar and contact objects, including:
 Update participants, attachments, notifications, etc. using the `add` command.
 
 ```shell
-> ict add participants my-calendar/0987654321 @joebloggs@example.com -required
-Added participant 'joebloggs' as required to 'my-calendar/0987654321'.
+> ict add participants my-calendar:0987654321 @joebloggs@example.com -required
+Added participant 'joebloggs' as required to 'my-calendar:0987654321'.
 
-> ict add attach my-calendar/0987654321 "/path/to/agenda.pdf"
-Added attachment to 'my-calendar/0987654321'.
+> ict add attach my-calendar:0987654321 "/path/to/agenda.pdf"
+Added attachment to 'my-calendar:0987654321'.
 
-> ict add notify my-calendar/0987654321 "email:15m"
-Add notification for 'my-calendar/0987654321' to email 15 minutes before start.
+> ict add notify my-calendar:0987654321 "email:15m"
+Add notification for 'my-calendar:0987654321' to email 15 minutes before start.
 ```
 
 Set status, conference links and other properties using the `set` command.
 
 ```shell
-> ict set status my-todo-list/1122334455 "in-progress"
-Set status of 'my-todo-list/1122334455' to 'in-progress'.
+> ict set status my-todo-list:1122334455 "in-progress"
+Set status of 'my-todo-list:1122334455' to 'in-progress'.
 
-> ict set conference my-calendar/0987654321 "https://meet.example.com/meeting123"
-Set conference link to 'my-calendar/0987654321'.
+> ict set conference my-calendar:0987654321 "https://meet.example.com/meeting123"
+Set conference link to 'my-calendar:0987654321'.
 ```
 
 Custom metadata properties may also be added via the `add` and `set` commands.
 
 ```shell
-> ict add x-property my-calendar/0987654321 "X-CUSTOM-PROP:Custom Value"
-Added custom property 'X-CUSTOM-PROP' to 'my-calendar/0987654321'.
+> ict add x-property my-calendar:0987654321 "X-CUSTOM-PROP:Custom Value"
+Added custom property 'X-CUSTOM-PROP' to 'my-calendar:0987654321'.
 
-> ict set x-property my-calendar/0987654321 "X-CUSTOM-PROP:Updated Value"
-Set custom property 'X-CUSTOM-PROP' on 'my-calendar/0987654321' to 'Updated Value'.
+> ict set x-property my-calendar:0987654321 "X-CUSTOM-PROP:Updated Value"
+Set custom property 'X-CUSTOM-PROP' on 'my-calendar:0987654321' to 'Updated Value'.
 ```
 
 ## Import/Export
@@ -216,6 +226,13 @@ Imported 10 events into collection 'my-calendar' from '/path/to/calendar.ics'.
 
 > ict export -file="/path/to/exported_calendar.ics" my-calendar
 Exported 10 events from collection 'my-calendar' to '/path/to/exported_calendar.ics'.
+```
+
+You can also export individual objects by specifying their UID.
+
+```shell
+> ict export -file="/path/to/exported_event.ics" my-calendar:0987654321
+Exported event 'my-calendar:0987654321' to '/path/to/exported_event.ics'.
 ```
 
 
@@ -240,21 +257,21 @@ The tool supports revision management for calendar and contact objects. Use the 
 revisions, and the `revert` command to revert to a previous revision.
 
 ```shell
-> ict revisions my-calendar/0987654321
-Revisions for 'my-calendar/0987654321':
+> ict revisions my-calendar:0987654321
+Revisions for 'my-calendar:0987654321':
  - Rev 1: Created on 2024-06-01 10:00:00
  - Rev 2: Updated summary on 2024-06-02 12:00:00
  - Rev 3: Added participant on 2024-06-03 14:00:00
 
-> ict revert my-calendar/0987654321 2
-Reverted 'my-calendar/0987654321' to revision 2.
+> ict revert my-calendar:0987654321 2
+Reverted 'my-calendar:0987654321' to revision 2.
 ```
 
 Use the `undo` command to revert the most recent change.
 
 ```shell
-> ict undo my-calendar/0987654321
-Undid the most recent change to 'my-calendar/0987654321'.
+> ict undo my-calendar:0987654321
+Undid the most recent change to 'my-calendar:0987654321'.
 ```
 
 Each workspace has its own revision history, allowing users to track changes and restore previous versions 
