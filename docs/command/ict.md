@@ -27,23 +27,19 @@ Running the tool with no arguments displays a list of available collections in t
 
 ```shell
 > ict
-
 No collections. Use  'mkcol' to create a new collection.
 
 > ict mkcol birthdays
-
 Collection 'birthdays' created.
 ```
 
-Use the 'ls' command to list collections and their contents.
+Use the `ls` command to list collections and their contents.
 
 ```shell
 > ict ls birthdays
-
 No items found in collection 'birthdays'. Use 'new' or 'import' to add items.
 
 > ict new reminder birthdays -summary "Mom's Birthday" -due 2024-12-01
-
 Created reminder with UID '1234567890' in collection 'birthdays'.
 ```
 
@@ -60,6 +56,16 @@ Set status of 'birthdays:1234567890' to 'confirmed'.
 Added link to 'birthdays:1234567890'.
 ```
 
+List subcomponents of an object using its UID.
+
+```shell
+> ict ls birthdays:1234567890
+Found 3 sub-components in 'birthdays:1234567890':
+- Participant: Dad
+- Participant: Sister
+- Notification: https://example.com/birthday-info
+```
+
 Use filters to find objects based on metadata.
 
 ```shell
@@ -67,12 +73,28 @@ Use filters to find objects based on metadata.
 Found 1 item in collection 'birthdays':
 - UID: 1234567890, Summary: "Mom's Birthday", Due: 2024-12-01, Status: confirmed
 
-> ict ls my-todo-list -filter "parent=1234567890"
+> ict ls my-todo-list -filter "parent=birthdays:1234567890"
 Found 2 items in collection 'my-todo-list' linked to 'birthdays:1234567890':
 - UID: 9876543210, Summary: "Buy gift", Due: 2024-11-30
 - UID: 8765432109, Summary: "Plan party", Due: 2024-12-01
 ```
 
+Use the `print` command to display full details of an object in various formats.
+
+```shell
+> ict print birthdays:1234567890
+Mom's Birthday - December 1, 2024
+Status: confirmed
+Participants: Dad, Sister
+Link: https://example.com/birthday-info
+
+> ict print -format=markdown birthdays:1234567890
+# Mom's Birthday
+- **Due Date:** December 1, 2024
+- **Status:** confirmed
+- **Participants:** Dad, Sister
+- **Link:** [https://example.com/birthday-info](https://example.com/birthday-info)
+```
 
 Core commands include:
 
