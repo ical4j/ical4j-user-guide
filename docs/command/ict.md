@@ -6,6 +6,7 @@ A command-line interface (CLI) for working with iCalendar and vCard files.
 * [Overview](#overview)
 * [Collections](#collections)
 * [Strategies](#strategies)
+* [Editing](#editing)
 * [Metadata](#metadata)
 * [Import/Export](#importexport)
 * [Filters](#filters)
@@ -57,7 +58,7 @@ Set status of 'birthdays:1234567890' to 'confirmed'.
 Added link to 'birthdays:1234567890'.
 ```
 
-List subcomponents of an object using its UID.
+List subcomponents and customized recurrences of an object using its UID.
 
 ```shell
 > ict ls birthdays:1234567890
@@ -65,6 +66,8 @@ Found 3 sub-components in 'birthdays:1234567890':
 - Participant: Dad
 - Participant: Sister
 - Notification: https://example.com/birthday-info
+
+Found 0 custom occurrences for 'birthdays:1234567890'.
 ```
 
 Use filters to find objects based on metadata.
@@ -84,13 +87,13 @@ Use the `print` command to display full details of an object in various formats.
 
 ```shell
 > ict print birthdays:1234567890
-Mom's Birthday - December 1, 2024
+🎂 Mom's Birthday - December 1, 2024
 Status: confirmed
 Participants: Dad, Sister
 Link: https://example.com/birthday-info
 
 > ict print -format=markdown birthdays:1234567890
-# Mom's Birthday
+# 🎂 Mom's Birthday
 - **Due Date:** December 1, 2024
 - **Status:** confirmed
 - **Participants:** Dad, Sister
@@ -187,6 +190,27 @@ Created event with UID '0987654321' in collection 'my-calendar'.
 > ict new todo my-todo-list -summary "Finish Report" -due "2024-07-05"
 Created to-do item with UID '1122334455' in collection 'my-todo-list'.
 ```
+
+Use strategies to add subcomponents to existing objects.
+
+```shell
+> ict new participant my-calendar:0987654321 @joeb@example.com -required
+Added participant 'joeb' as required to 'my-calendar:0987654321'.
+
+> ict new notify my-calendar:0987654321 "email:30m"
+Added notification for 'my-calendar:0987654321' to email 30 minutes before start.
+```
+
+You can also customize subcomponents of specific occurrences of a recurring event using the recurrence ID.
+
+```shell
+> ict new notify birthdays:1234567890:20241201 "sms:1h"
+Added notification for occurrence on 2024-12-01 of 'birthdays:1234567890' to SMS 1 hour before start.
+```
+
+
+## Editing
+
 Further refinements can be made using `edit` to update the description using the configured editor.
 
 ```shell
@@ -194,29 +218,32 @@ Further refinements can be made using `edit` to update the description using the
 Edited event 'my-calendar:0987654321'.
 ```
 
+The `edit` command can also be used to customize specific occurrences of recurring events.
+
+```shell
+> ict edit my-calendar:0987654321:20240715 # opens the occurrence on 2024-07-15 in the default editor
+Edited occurrence on 2024-07-15 of event 'my-calendar:0987654321'.
+```
+
 
 ## Metadata
 The tool supports managing metadata for calendar and contact objects, including:
-* Participants
 * Status
 * Links
-* Resources
-* Locations
-* Notifications
 * Repeats
 * Revisions
 
-Update participants, attachments, notifications, etc. using the `add` command.
+Update attachments, comments, categories, etc. using the `add` command.
 
 ```shell
-> ict add participants my-calendar:0987654321 @joebloggs@example.com -required
-Added participant 'joebloggs' as required to 'my-calendar:0987654321'.
-
 > ict add attach my-calendar:0987654321 "/path/to/agenda.pdf"
 Added attachment to 'my-calendar:0987654321'.
 
-> ict add notify my-calendar:0987654321 "email:15m"
-Add notification for 'my-calendar:0987654321' to email 15 minutes before start.
+> ict add comment my-calendar:0987654321 "Discuss project updates"
+Added comment to 'my-calendar:0987654321'.
+
+> ict add categories my-calendar:0987654321 "Work" "Important"
+Added categories to 'my-calendar:0987654321'.
 ```
 
 Set status, conference links and other properties using the `set` command.
@@ -276,12 +303,12 @@ Deleted 2 overdue to-do items from collection 'my-todo-list'.
 As a convenience you can also filter by strategy type using a shorthand syntax.
 
 ```shell
-> ict ls my-todo-list:action
+> ict ls my-todo-list:actions
 Found 2 actions in collection 'my-todo-list':
 - UID: 2233445566, Summary: "Prepare slides", Due: 2024-06-30
 - UID: 3344556677, Summary: "Send invites", Due: 2024-06-29
 
-> ict ls my-calendar:appointment
+> ict ls my-calendar:appointments
 Found 2 appointments in collection 'my-calendar':
 - UID: 4455667788, Summary: "Doctor's Appointment", Start: 2024-07-04T15:00:00
 - UID: 5566778899, Summary: "Dentist Appointment", Start: 2024-07-05T10:00:00
