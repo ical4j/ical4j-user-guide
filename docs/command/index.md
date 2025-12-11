@@ -326,6 +326,17 @@ Found 3 confirmed events in collection 'my-calendar':
 - UID: 1122334455, Summary: "Client Presentation", Start: 2024-07-03T14:00:00
 ```
 
+You can also create named filters using the `configure` command.
+
+```shell
+> ict configure set filter "upcoming-events=status=confirmed;start>now"
+Set named filter 'upcoming-events' to 'status=confirmed;start>now'.
+> ict ls my-calendar -filter "upcoming-events"
+Found 2 upcoming confirmed events in collection 'my-calendar':
+- UID: 1234567890, Summary: "Project Kickoff", Start: 2024-07-02T09:00:00
+- UID: 1122334455, Summary: "Client Presentation", Start: 2024-07-03T14:00:00
+```
+
 
 As a convenience you can also filter by strategy type using a shorthand syntax.
 
@@ -340,7 +351,7 @@ Found 2 appointments in collection 'my-calendar':
 - UID: 4455667788, Summary: "Doctor's Appointment", Start: 2024-07-04T15:00:00
 - UID: 5566778899, Summary: "Dentist Appointment", Start: 2024-07-05T10:00:00
 
-> ict ls my-calendar:meeting:1234567890:optional
+> ict ls my-calendar:1234567890:participant -filter=optional
 Found 2 optional participants for 'my-calendar:1234567890':
 - UID: 6677889900, Summary: "Optional Attendee 1"
 - UID: 7788990011, Summary: "Optional Attendee 2"
@@ -384,14 +395,34 @@ Use the `undo` command to revert the most recent change.
 Undid the most recent change to 'my-calendar:0987654321'.
 ```
 
-Each workspace has its own revision history, allowing users to track changes and restore previous versions 
+Each workspace has its own revision history (technically, revisions for cards and calendars are separate though),
+allowing users to track changes and restore previous versions 
 of objects and collections as needed.
+
+Use the `configure` command to set remote repository settings for workspace synchronization.
+
+```shell
+> ict configure set remote.calendars "https://github.com/nodelogicau/calendars.git"
+Set remote repository to 'https://github.com/nodelogicau/calendars.git'.
+
+> ict configure set remote.addressbooks "https://github.com/nodelogicau/cards.git"
+Set remote repository to 'https://github.com/nodelogicau/cards.git'.
+```
+
+It is also possible to clone a remote repository into a new workspace.
+
+```shell
+> ict clone https://github.com/nodelogicau/calendars.git work-project-b
+Cloned remote repositories into new workspace 'work-project-b'.
+```
+
 
 Use the `sync` command to synchronize the current workspace with a remote repository.
 
 ```shell
 > ict sync
-Synchronized workspace 'work-project-a' with remote repository.
+Synchronized calendars in workspace 'work-project-a' with remote repository.
+Synchronized cards in workspace 'work-project-a' with remote repository.
 ```
 
 
@@ -400,9 +431,11 @@ The tool supports various settings that can be configured using the `configure` 
 * Active workspace
 * Username and email for revision tracking
 * Default content type for different strategies
+* Default editor for content types
 * Default color for different strategies and collection types
+* Default icon (emoji) for different strategies and collection types
 * Workspace synchronization settings for remote repositories
-* Default filter for listing and exporting objects
+* Default and named filters for listing and exporting objects
 * UID generation strategy
 
 ```shell

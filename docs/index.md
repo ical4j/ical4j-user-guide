@@ -45,6 +45,16 @@ are designed to facilitate interoperability between calendaring and scheduling s
 iCalendar provides a common data format used to store scheduling information such as events, appointments, to-do lists,
 etc. Most calendaring tools include some level of support for the iCalendar standard.
 
+## Why use iCalendar?
+
+The iCalendar format is a compact and expressive way to represent calendaring and scheduling information. It is widely
+supported by many calendaring applications and services, making it a great choice for exchanging calendar data 
+between different systems.
+
+iCalendar also has a proven history of backwards compatibility, with newer specifications building on top of existing
+ones to add new features. This makes iCalendar a good format for archiving calendar data over long periods of time.
+
+
 ## Active Projects
 
 The following table provides an overview of the currently active projects in iCal4j.
