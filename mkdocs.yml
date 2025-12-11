@@ -151,12 +151,8 @@ nav:
       - ToDo: serializer/jotn/todo.md
   - Command:
     - Overview: command/index.md
-    - Calendar: command/calendar.md
-    - Card: command/card.md
-    - Collection: command/collection.md
-    - Channel: command/channel.md
-    - Store: command/store.md
-    - iTIP: command/itip.md
+    - Agent: command/agent.md
+    - MCP: command/mcp.md
   - Streams:
     - Overview: streams/index.md
     - Workflow: streams/workflow.md
