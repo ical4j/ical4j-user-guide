@@ -208,6 +208,16 @@ You can also customize subcomponents of specific occurrences of a recurring even
 Added notification for occurrence on 2024-12-01 of 'birthdays:1234567890' to SMS 1 hour before start.
 ```
 
+By default, object UIDs are generated using a random UUID generator. You can customize the UID generation
+strategy using the `settings` command.
+
+```shell
+> ict configure set uid-strategy "sequential"
+Set UID generation strategy to 'sequential'.
+> ict new event my-calendar -summary "Project Kickoff" -dtstart "2024-07-02T09:00:00" -dtend "2024-07-02T10:00:00"
+Created event with UID '0987654322' in collection 'my-calendar'.
+```
+
 
 ## Editing
 
@@ -300,6 +310,20 @@ Found 3 confirmed events in collection 'my-calendar':
 Deleted 2 overdue to-do items from collection 'my-todo-list'.
 ```
 
+Setting a default filter for supporting commands can be done using the `settings` command.
+
+```shell
+> ict configure set default-filter "status=confirmed"
+Set default filter to 'status=confirmed'.
+
+> ict ls my-calendar
+Found 3 confirmed events in collection 'my-calendar':
+- UID: 0987654321, Summary: "Team Meeting", Start: 2024-07-01T10:00:00
+- UID: 1234567890, Summary: "Project Kickoff", Start: 2024-07-02T09:00:00
+- UID: 1122334455, Summary: "Client Presentation", Start: 2024-07-03T14:00:00
+```
+
+
 As a convenience you can also filter by strategy type using a shorthand syntax.
 
 ```shell
@@ -360,6 +384,14 @@ Undid the most recent change to 'my-calendar:0987654321'.
 Each workspace has its own revision history, allowing users to track changes and restore previous versions 
 of objects and collections as needed.
 
+Use the `sync` command to synchronize the current workspace with a remote repository.
+
+```shell
+> ict sync
+Synchronized workspace 'work-project-a' with remote repository.
+```
+
+
 ## Settings
 The tool supports various settings that can be configured using the `configure` command. Settings include:
 * Active workspace
@@ -367,6 +399,8 @@ The tool supports various settings that can be configured using the `configure` 
 * Default content type for different strategies
 * Default color for different strategies and collection types
 * Workspace synchronization settings for remote repositories
+* Default filter for listing and exporting objects
+* UID generation strategy
 
 ```shell
 > ict configure set username "John Doe"
