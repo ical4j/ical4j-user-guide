@@ -13,6 +13,7 @@ A command-line interface (CLI) for working with iCalendar and vCard files.
 * [Metadata](#metadata)
 * [Import/Export](#importexport)
 * [Filters](#filters)
+* [Sorting](#sorting)
 * [Workspaces](#workspaces)
 * [Revisions](#revisions)
 * [Settings](#settings)
@@ -355,6 +356,19 @@ Found 2 appointments in collection 'my-calendar':
 Found 2 optional participants for 'my-calendar:1234567890':
 - UID: 6677889900, Summary: "Optional Attendee 1"
 - UID: 7788990011, Summary: "Optional Attendee 2"
+```
+
+## Sorting
+When listing objects in a collection, you can specify sorting criteria using the `-sort` option.
+
+```shell
+> ict ls my-calendar -sort "dtstart:asc"
+Found 5 events in collection 'my-calendar' sorted by start date ascending:
+- UID: 0987654321, Summary: "Team Meeting", Start: 2024-07-01T10:00:00
+- UID: 1234567890, Summary: "Project Kickoff", Start: 2024-07-02T09:00:00
+- UID: 1122334455, Summary: "Client Presentation", Start: 2024-07-03T14:00:00
+- UID: 4455667788, Summary: "Doctor's Appointment", Start: 2024-07-04T15:00:00
+- UID: 5566778899, Summary: "Dentist Appointment", Start: 2024-07-05T10:00:00
 ```
 
 ## Workspaces
