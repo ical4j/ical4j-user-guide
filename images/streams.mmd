@@ -1,0 +1,44 @@
+---
+title: iCal4j Actions Framework
+---
+classDiagram
+    direction LR
+
+    class Record~T extends Serializable~
+    Record~T~: URI context
+    Record~T~: T source
+    Record~T~: RecordType type
+    Record~T~: Instant timestamp
+
+    class RecordType
+    <<enumeration>> RecordType
+    RecordType: Timer
+    RecordType: Creation
+    RecordType: Update
+    RecordType: Deletion
+
+    class RecordSubscriber~T extends Serializable~
+    RecordSubscriber~T extends Serializable~: Flow.Subscription subscription
+    RecordSubscriber~T extends Serializable~: Trigger~T~ handler
+
+    class Trigger~T extends Serializable~
+    <<interface>> Trigger~T extends Serializable~
+    Trigger~T extends Serializable~: onRecord(Record~T~ record)
+
+    class WorkflowProcessor~T extends Serializable~
+    WorkflowProcessor~T extends Serializable~: List~VToDo~ actions
+
+    class TaskGenerator~T extends Serializable~
+    <<interface>> TaskGenerator~T extends Serializable~
+    TaskGenerator~T extends Serializable~: generate(Record~T~ record) List~VToDo~
+
+    class RecurringTaskGenerator
+    RecurringTaskGenerator: VToDo action
+
+    class ConditionalTaskGenerator
+    ConditionalTaskGenerator: VToDo action
+
+    Trigger~T extends Serializable~ <|.. WorkflowProcessor~T extends Serializable~: Implements
+
+    TaskGenerator~T extends Serializable~ <|.. RecurringTaskGenerator: Implements
+    TaskGenerator~T extends Serializable~ <|.. ConditionalTaskGenerator: Implements
