@@ -24,7 +24,24 @@ TBD.
 
 ## Java API
 
-TBD.
+The Java API is built around two interfaces. An `ObjectStore` represents a backend that holds
+collections and is organised into one or more workspaces. An `ObjectCollection` represents a single
+collection of iCalendar or vCard objects, identified by their `UID`, that can be listed, fetched, added to
+and removed from. `CalendarCollection` and `CardCollection` refine the collection interface with
+calendar and card specific operations such as `merge()` and `export()`.
+
+Backends are implemented as separate modules that share the `ical4j-connector-api` dependency, so
+application code written against the interfaces works with any of them.
+
+| Backend                                  | Module                     | Store classes                              |
+|------------------------------------------|----------------------------|--------------------------------------------|
+| [Local filesystem](local.md)             | `ical4j-connector-api`     | `LocalCalendarStore`, `LocalCardStore`     |
+| [CalDAV / CardDAV](dav.md)               | `ical4j-connector-dav`     | `CalDavCalendarStore`, `CardDavStore`      |
+| [Google Calendar](google.md)             | `ical4j-connector-google`  | `GoogleCalendarStore`                      |
+| [Microsoft Graph (Outlook)](msgraph.md)  | `ical4j-connector-msgraph` | `MSGraphCalendarStore`                     |
+
+The hosted backends (Google Calendar and Microsoft Graph) take a pre-authenticated API client in their
+constructor and leave authentication to the caller. See the individual pages for setup and usage.
 
 ## Download
 

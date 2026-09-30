@@ -124,6 +124,8 @@ nav:
     - Overview: connector/index.md
     - Local: connector/local.md
     - DAV: connector/dav.md
+    - Google Calendar: connector/google.md
+    - Microsoft Graph: connector/msgraph.md
   - Integration:
     - Overview: integration/index.md
     - Email: integration/email.md

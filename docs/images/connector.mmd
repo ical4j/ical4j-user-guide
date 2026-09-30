@@ -39,6 +39,12 @@ classDiagram
     CardDavStore: URL rootUrl
     CardDavStore: PathResolver pathResolver
 
+    class GoogleCalendarStore
+    GoogleCalendarStore: Calendar client
+
+    class MSGraphCalendarStore
+    MSGraphCalendarStore: GraphServiceClient client
+
     class DavClientFactory
     DavClientFactory: DavClientConfiguration clientConfiguration
     DavClientFactory: CredentialsProvider credentialsProvider
@@ -102,6 +108,15 @@ classDiagram
     class CardDavCollection
     CardDavCollection: CardDavStore store
 
+    class GoogleCalendarCollection
+    GoogleCalendarCollection: GoogleCalendarStore store
+    GoogleCalendarCollection: String calendarId
+
+    class MSGraphCalendarCollection
+    MSGraphCalendarCollection: MSGraphCalendarStore store
+    MSGraphCalendarCollection: String calendarId
+    MSGraphCalendarCollection: String calendarGroupId
+
 %%    class AbstractObjectCollection~T~
 %%    <<abstract>> AbstractObjectCollection~T~
 
@@ -111,6 +126,9 @@ classDiagram
 
     CalendarStore~C extends CalendarCollection~ <|.. LocalCalendarStore
     CalendarStore~C extends CalendarCollection~ <|.. CalDavCalendarStore
+
+    ObjectStore~T, C extends ObjectCollection~ <|.. GoogleCalendarStore
+    ObjectStore~T, C extends ObjectCollection~ <|.. MSGraphCalendarStore
 
     CardStore~C extends CardCollection~ <|.. LocalCardStore
     CardStore~C extends CardCollection~ <|.. CardDavStore
@@ -124,6 +142,8 @@ classDiagram
 
     CalendarCollection <|.. LocalCalendarCollection
     CalendarCollection <|.. CalDavCalendarCollection
+    CalendarCollection <|.. GoogleCalendarCollection
+    CalendarCollection <|.. MSGraphCalendarCollection
 
     CardCollection <|.. LocalCardCollection
     CardCollection <|.. CardDavCollection
