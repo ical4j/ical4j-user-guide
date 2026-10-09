@@ -28,15 +28,12 @@ A convenient factory for the Outlook-compatible definitions is also provided, so
 net.fortuna.ical4j.timezone.registry=net.fortuna.ical4j.zoneinfo.outlook.OutlookTimeZoneRegistryFactory
 ```
 
-## Minimum requirements
+## Installation
 
-None.
+Releases are published to Maven Central as `org.mnode.ical4j:ical4j-zoneinfo-outlook`. See [Installation](installation.md)
+for the full list of iCal4j coordinates.
 
 ## Project Information
 
-* [Project Home](http://github.com/ical4j/ical4j-zoneinfo-outlook/)
-* [Javadocs](http://ical4j.github.io/docs/ical4j-zoneinfo-outlook/api/)
-
-## Download
-
-* [Releases](https://bintray.com/ical4j/maven/ical4j-zoneinfo-outlook)
+* [Project Home](https://github.com/ical4j/ical4j-zoneinfo-outlook/)
+* [Javadocs](https://javadoc.io/doc/org.mnode.ical4j/ical4j-zoneinfo-outlook)

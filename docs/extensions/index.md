@@ -5,11 +5,11 @@
 ## Overview
 
 iCal4j Extensions is a Java library that provides support for extension (and some non-standard) iCalendar properties
-and components. This includes support for [CalDAV](/extensions/caldav) properties, common Calendar User Agents (CUAs) such as
-[Microsoft Outlook](/extensions/outlook), and convenience implementations of components and properties not explicitly defined in the core
+and components. This includes support for [CalDAV](caldav.md) properties, common Calendar User Agents (CUAs) such as
+[Microsoft Outlook](outlook.md), and convenience implementations of components and properties not explicitly defined in the core
 specifications.
 
-This library also defines a collection of [strategies](/extensions/strategy), which are opinionated approaches to constructing iCalendar
+This library also defines a collection of [strategies](strategy.md), which are opinionated approaches to constructing iCalendar
 and vCard objects for common use-cases.
 
 ## Property Extensions
@@ -56,18 +56,15 @@ TimeZoneRegistry tzRegistry = TimeZoneRegistryFactory.getInstance().createRegist
 builder = new CalendarBuilder(parser, propertyFactoryRegistry, parameterFactoryRegistry, tzRegistry);
 ```
 
-## Minimum requirements
+## Installation
 
-iCal4j Extensions requires a minimum of Java 5 due to the use of features introduced in this version. If you need to run on an earlier version of Java, consider using [Retroweaver](http://retroweaver.sourceforge.net).
+Releases are published to Maven Central as `org.mnode.ical4j:ical4j-extensions`. See [Installation](../installation.md)
+for the full list of iCal4j coordinates.
 
 ## Project Information
 
-* [Project Home](http://github.com/ical4j/ical4j-extensions/)
-* [Javadocs](http://ical4j.github.io/docs/ical4j-extensions/api/)
-
-## Download
-
-* [Releases](https://bintray.com/ical4j/maven/ical4j-extensions)
+* [Project Home](https://github.com/ical4j/ical4j-extensions/)
+* [Javadocs](https://javadoc.io/doc/org.mnode.ical4j/ical4j-extensions)
 
 Traditionally any components, properties and parameters not defined by [RFC2445](http://www.ietf.org/rfc/rfc2445.txt) are classified as <em>non-standard</em> or <em>extension</em> objects. These objects must include the <strong>"X-"</strong> name prefix to be compliant with the specification.
 

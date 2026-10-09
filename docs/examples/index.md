@@ -7,4 +7,4 @@ This page provides examples that demonstrate how to use iCal4j effectively.
 * [Generating Output](./output.md)
 * [Calculating Recurrences](./recur.md)
 * [Filtering Components](./filter.md)
-* [VCard Model](./vcard.md)
+* [VCard Model](../vcard/examples.md)

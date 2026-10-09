@@ -1,7 +1,5 @@
 [iCalendar]: http://en.wikipedia.org/wiki/ICalendar
 
-[Bintray Releases]: https://bintray.com/ical4j/maven/ical4j
-
 [Java Legacy Date-Time Code]: https://docs.oracle.com/javase/tutorial/datetime/iso/legacy.html
 
 [RFC4791]: https://www.rfc-editor.org/rfc/rfc4791.html
@@ -61,18 +59,18 @@ The following table provides an overview of the currently active projects in iCa
 
    | Name                                        | Description                                                                                 | References                                                                                        |
 |:--------------------------------------------|---------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
-| [ical4j](examples)                          | Model and parsing support for iCalendar standards                                           | [RFC5545], [RFC5546], [RFC6868], [RFC7953], [RFC7986], [RFC7529], [RFC9073], [RFC9074], [RFC9253] |
-| [ical4j-zoneinfo-outlook](zoneinfo-outlook) | Alternate timezone definitions to improve support for MS Outlook                            | -                                                                                                 |
-   | [ical4j-vcard](vcard)                       | Model and parsing support for vCard standards                                               | [RFC6350], [RFC6473], [RFC6474], [RFC6868], [RFC6869]                                             |
-   | [ical4j-extensions](extensions)             | Model extensions for non-standard data objects                                              | -                                                                                                 |
-| [ical4j-connector](connector)               | Connectivity to persistent store implementations (e.g. CalDAV)                              | [RFC4791], [RFC6352]                                                                              |
-| [ical4j-integration](integration)           | Delivery of data objects via common transport channels (e.g Email)                          | [RFC6047]                                                                                         |
-   | [ical4j-serializer](serializer)             | Serialization of data objects to structured data formats (e.g xCal, jCal, JSCalendar, etc.) | [RFC6321], [RFC6351], [RFC7095], [RFC7265], [RFC8984]                                             |
-| [ical4j-command](command)                   | Command framework and CLI                                                                   | -                                                                                                 |
-| [ical4j-streams](streams)                   | Asynchronous stream processing                                                              | -                                                                                                 |
-| [ical4j-graph](graph)                       | Linked object traversal                                                                     | -                                                                                                 |
-   | [ical4j-template](template)                 | Templating support for data presentation                                                    | -                                                                                                 |
-| [tzurl](/tzurl)                             | Generation and hosting of timezone data in iCalendar format                                 | -                                                                                                 |
+| [ical4j](examples/index.md)                          | Model and parsing support for iCalendar standards                                           | [RFC5545], [RFC5546], [RFC6868], [RFC7953], [RFC7986], [RFC7529], [RFC9073], [RFC9074], [RFC9253] |
+| [ical4j-zoneinfo-outlook](zoneinfo-outlook.md) | Alternate timezone definitions to improve support for MS Outlook                            | -                                                                                                 |
+   | [ical4j-vcard](vcard/index.md)                       | Model and parsing support for vCard standards                                               | [RFC6350], [RFC6473], [RFC6474], [RFC6868], [RFC6869]                                             |
+   | [ical4j-extensions](extensions/index.md)             | Model extensions for non-standard data objects                                              | -                                                                                                 |
+| [ical4j-connector](connector/index.md)               | Connectivity to persistent store implementations (e.g. CalDAV)                              | [RFC4791], [RFC6352]                                                                              |
+| [ical4j-integration](integration/index.md)           | Delivery of data objects via common transport channels (e.g Email)                          | [RFC6047]                                                                                         |
+   | [ical4j-serializer](serializer/index.md)             | Serialization of data objects to structured data formats (e.g xCal, jCal, JSCalendar, etc.) | [RFC6321], [RFC6351], [RFC7095], [RFC7265], [RFC8984]                                             |
+| [ical4j-command](command/index.md)                   | Command framework and CLI                                                                   | -                                                                                                 |
+| [ical4j-streams](streams/index.md)                   | Asynchronous stream processing                                                              | -                                                                                                 |
+| [ical4j-graph](graph/index.md)                       | Linked object traversal                                                                     | -                                                                                                 |
+   | [ical4j-template](template/index.md)                 | Templating support for data presentation                                                    | -                                                                                                 |
+| [tzurl](tzurl.md)                             | Generation and hosting of timezone data in iCalendar format                                 | -                                                                                                 |
 
 
 ## Further Links

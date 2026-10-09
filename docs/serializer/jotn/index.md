@@ -61,3 +61,23 @@ properties as nested JSON objects with scalar notation used to describe paramete
   }
 }
 ```
+
+## Alarm
+
+TBD.
+
+## Available
+
+TBD.
+
+## Location
+
+TBD.
+
+## Participant
+
+TBD.
+
+## Resource
+
+TBD.

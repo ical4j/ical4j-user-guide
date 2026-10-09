@@ -2,27 +2,27 @@
 
 [![javadoc](https://javadoc.io/badge2/org.mnode.ical4j/ical4j-vcard/javadoc.svg)](https://javadoc.io/doc/org.mnode.ical4j/ical4j-vcard)
 
-iCal4j vCard is a Java library that provides support for the vCard specification as defined by [draft-ietf-vcarddav-vcardrev-06](http://www.ietf.org/internet-drafts/draft-ietf-vcarddav-vcardrev-06.txt).
+iCal4j vCard is a Java library that provides support for the vCard specification as defined by
+[RFC 6350](https://www.rfc-editor.org/rfc/rfc6350.html), along with related extensions
+([RFC 6473](https://www.rfc-editor.org/rfc/rfc6473.html), [RFC 6474](https://www.rfc-editor.org/rfc/rfc6474.html),
+[RFC 6868](https://datatracker.ietf.org/doc/html/rfc6868), [RFC 6869](https://www.rfc-editor.org/rfc/rfc6869.html)).
 
-## Minimum requirements
+The library is an extension of the core iCal4j library and shares the same foundations, including support for
+[validation](../validation.md) and [filtering](../filtering.md). See the [examples](examples.md) for building and
+parsing vCard objects.
 
-iCal4j vCard requires a minimum of Java 5 due to the use of features introduced in this version. If you need to run on an earlier version of Java, consider using [Retroweaver](http://retroweaver.sourceforge.net).
+## Installation
+
+Releases are published to Maven Central as `org.mnode.ical4j:ical4j-vcard`. See [Installation](../installation.md)
+for the full list of iCal4j coordinates.
 
 ## Project Information
 
-* [Project Home](http://github.com/ical4j/ical4j-vcard/)
-* [Javadocs](http://ical4j.github.io/docs/ical4j-vcard/api/)
-
-## Download
-
-* [Releases](https://bintray.com/ical4j/maven/ical4j-vcard)
+* [Project Home](https://github.com/ical4j/ical4j-vcard/)
+* [Javadocs](https://javadoc.io/doc/org.mnode.ical4j/ical4j-vcard)
 
 ## Alternative vCard implementations
 
-* [vCard4j](http://vcard4j.sourceforge.net/)
-* [mime-dir-j (inactive)](http://sourceforge.net/projects/mime-dir-j/)
-* [Card Me (inactive)](http://cardme.sourceforge.net/)
-
-## References
-
-* [VCardDAV.org](http://www.vcarddav.org/)
+* [ez-vcard](https://github.com/mangstadt/ez-vcard)
+* [vCard4j](http://vcard4j.sourceforge.net/) (inactive)
+* [Card Me](http://cardme.sourceforge.net/) (inactive)

@@ -1,0 +1,155 @@
+
+[31m │  ⚠  Warning from the Material for MkDocs team[0m
+[31m │[0m
+[31m │[0m  MkDocs 2.0, the underlying framework of Material for MkDocs,
+[31m │[0m  will introduce backward-incompatible changes, including:
+[31m │[0m
+[31m │  × [0mAll plugins will stop working – the plugin system has been removed
+[31m │  × [0mAll theme overrides will break – the theming system has been rewritten
+[31m │  × [0mNo migration path exists – existing projects cannot be upgraded
+[31m │  × [0mClosed contribution model – community members can't report bugs
+[31m │  × [0mCurrently unlicensed – unsuitable for production use
+[31m │[0m
+[31m │[0m  Our full analysis:
+[31m │[0m
+[31m │[0m  [4mhttps://squidfunk.github.io/mkdocs-material/blog/2026/02/18/mkdocs-2.0/[0m
+[0m
+WARNING -  Config value 'google_analytics': The configuration option google_analytics has been deprecated and will be removed in a future release of MkDocs. See the options available on your theme for an alternative.
+INFO    -  Cleaning site directory
+INFO    -  Building documentation to directory: /Users/benfortuna/IdeaProjects/ical4j-user-guide/site
+INFO    -  The following pages exist in the docs directory, but are not included in the "nav" configuration:
+  - external-resources.md
+  - faq.md
+  - freebusy.md
+  - maven.md
+  - query.md
+  - roadmap.md
+  - transformations.md
+  - command/calendar.md
+  - command/card.md
+  - command/channel.md
+  - command/collection.md
+  - command/itip.md
+  - command/store.md
+  - command/template.md
+  - extensions/concept.md
+  - extensions/strategy/group.md
+  - extensions/strategy/individual.md
+  - services/index.md
+  - template/thymeleaf.md
+  - template/agile/index.md
+  - template/agile/backlog.md
+  - template/agile/criteria.md
+  - template/agile/epic.md
+  - template/agile/retrospective.md
+  - template/agile/sprint.md
+  - template/agile/story.md
+  - template/budget/index.md
+  - template/budget/expense.md
+  - template/budget/funding.md
+  - template/budget/reimbursement.md
+  - template/catalog/index.md
+  - template/catalog/fulfilment.md
+  - template/catalog/offer.md
+  - template/catalog/order.md
+  - template/groupware/index.md
+  - template/groupware/action.md
+  - template/groupware/agenda.md
+  - template/groupware/appointment.md
+  - template/groupware/attendance.md
+  - template/groupware/meeting.md
+  - template/groupware/note.md
+  - template/project/index.md
+  - template/project/decision.md
+  - template/project/issue.md
+  - template/project/milestone.md
+  - template/project/objective.md
+  - template/project/project.md
+  - template/project/risk.md
+  - template/project/task.md
+  - template/project/timesheet.md
+  - template/wiki/index.md
+  - template/wiki/article.md
+  - template/wiki/definition.md
+  - template/wiki/faq.md
+  - template/wiki/topic.md
+  - template/workflow/index.md
+  - template/workflow/approval.md
+  - template/workflow/metric.md
+  - template/workflow/request.md
+  - template/workflow/roster.md
+WARNING -  A reference to 'extensions/link/alternate.md' is included in the 'nav' configuration, which is not found in the documentation files.
+WARNING -  A reference to 'extensions/link/author.md' is included in the 'nav' configuration, which is not found in the documentation files.
+WARNING -  A reference to 'extensions/link/bookmark.md' is included in the 'nav' configuration, which is not found in the documentation files.
+WARNING -  A reference to 'extensions/link/copyright.md' is included in the 'nav' configuration, which is not found in the documentation files.
+WARNING -  A reference to 'extensions/link/edit.md' is included in the 'nav' configuration, which is not found in the documentation files.
+WARNING -  A reference to 'extensions/link/external.md' is included in the 'nav' configuration, which is not found in the documentation files.
+WARNING -  A reference to 'extensions/link/help.md' is included in the 'nav' configuration, which is not found in the documentation files.
+WARNING -  A reference to 'extensions/link/hub.md' is included in the 'nav' configuration, which is not found in the documentation files.
+WARNING -  A reference to 'extensions/link/icon.md' is included in the 'nav' configuration, which is not found in the documentation files.
+WARNING -  A reference to 'extensions/link/license.md' is included in the 'nav' configuration, which is not found in the documentation files.
+WARNING -  A reference to 'extensions/link/next.md' is included in the 'nav' configuration, which is not found in the documentation files.
+WARNING -  A reference to 'extensions/link/prev.md' is included in the 'nav' configuration, which is not found in the documentation files.
+WARNING -  A reference to 'extensions/link/related.md' is included in the 'nav' configuration, which is not found in the documentation files.
+WARNING -  A reference to 'extensions/link/replies.md' is included in the 'nav' configuration, which is not found in the documentation files.
+WARNING -  A reference to 'extensions/link/self.md' is included in the 'nav' configuration, which is not found in the documentation files.
+WARNING -  A reference to 'extensions/link/status.md' is included in the 'nav' configuration, which is not found in the documentation files.
+WARNING -  A reference to 'extensions/link/webmention.md' is included in the 'nav' configuration, which is not found in the documentation files.
+INFO    -  Doc file 'index.md' contains an unrecognized relative link 'examples', it was left as is. Did you mean 'examples/index.md'?
+INFO    -  Doc file 'index.md' contains an unrecognized relative link 'zoneinfo-outlook', it was left as is. Did you mean 'zoneinfo-outlook.md'?
+INFO    -  Doc file 'index.md' contains an unrecognized relative link 'vcard', it was left as is. Did you mean 'vcard/index.md'?
+INFO    -  Doc file 'index.md' contains an unrecognized relative link 'extensions', it was left as is. Did you mean 'extensions/index.md'?
+INFO    -  Doc file 'index.md' contains an unrecognized relative link 'connector', it was left as is. Did you mean 'connector/index.md'?
+INFO    -  Doc file 'index.md' contains an unrecognized relative link 'integration', it was left as is. Did you mean 'integration/index.md'?
+INFO    -  Doc file 'index.md' contains an unrecognized relative link 'serializer', it was left as is. Did you mean 'serializer/index.md'?
+INFO    -  Doc file 'index.md' contains an unrecognized relative link 'command', it was left as is. Did you mean 'command/index.md'?
+INFO    -  Doc file 'index.md' contains an unrecognized relative link 'streams', it was left as is. Did you mean 'streams/index.md'?
+INFO    -  Doc file 'index.md' contains an unrecognized relative link 'graph', it was left as is. Did you mean 'graph/index.md'?
+INFO    -  Doc file 'index.md' contains an unrecognized relative link 'template', it was left as is. Did you mean 'template/index.md'?
+INFO    -  Doc file 'index.md' contains an absolute link '/tzurl', it was left as is. Did you mean 'tzurl.md'?
+INFO    -  Doc file 'getting-started.md' contains an absolute link '/examples/model', it was left as is. Did you mean 'examples/model.md'?
+INFO    -  Doc file 'getting-started.md' contains an absolute link '/validation', it was left as is. Did you mean 'validation.md'?
+INFO    -  Doc file 'getting-started.md' contains an absolute link '/examples/output', it was left as is. Did you mean 'examples/output.md'?
+INFO    -  Doc file 'getting-started.md' contains an absolute link '/examples', it was left as is. Did you mean 'examples/index.md'?
+INFO    -  Doc file 'getting-started.md' contains an absolute link '/parser', it was left as is. Did you mean 'parser.md'?
+INFO    -  Doc file 'getting-started.md' contains an absolute link '/filtering', it was left as is. Did you mean 'filtering.md'?
+INFO    -  Doc file 'getting-started.md' contains an absolute link '/indexing', it was left as is. Did you mean 'indexing.md'?
+INFO    -  Doc file 'getting-started.md' contains an absolute link '/examples/recur', it was left as is. Did you mean 'examples/recur.md'?
+INFO    -  Doc file 'getting-started.md' contains an absolute link '/recurrences', it was left as is. Did you mean 'recurrences.md'?
+INFO    -  Doc file 'getting-started.md' contains an absolute link '/extensions', it was left as is. Did you mean 'extensions/index.md'?
+INFO    -  Doc file 'getting-started.md' contains an absolute link '/extensions/caldav', it was left as is. Did you mean 'extensions/caldav.md'?
+INFO    -  Doc file 'getting-started.md' contains an absolute link '/vcard', it was left as is. Did you mean 'vcard/index.md'?
+INFO    -  Doc file 'getting-started.md' contains an absolute link '/timezones', it was left as is. Did you mean 'timezones.md'?
+INFO    -  Doc file 'getting-started.md' contains an absolute link '/zoneinfo-outlook', it was left as is. Did you mean 'zoneinfo-outlook.md'?
+INFO    -  Doc file 'getting-started.md' contains an absolute link '/template', it was left as is. Did you mean 'template/index.md'?
+INFO    -  Doc file 'getting-started.md' contains an absolute link '/command', it was left as is. Did you mean 'command/index.md'?
+INFO    -  Doc file 'getting-started.md' contains an absolute link '/connector', it was left as is. Did you mean 'connector/index.md'?
+INFO    -  Doc file 'getting-started.md' contains an absolute link '/connector/dav', it was left as is. Did you mean 'connector/dav.md'?
+INFO    -  Doc file 'getting-started.md' contains an absolute link '/connector/local', it was left as is. Did you mean 'connector/local.md'?
+INFO    -  Doc file 'getting-started.md' contains an absolute link '/integration', it was left as is. Did you mean 'integration/index.md'?
+INFO    -  Doc file 'getting-started.md' contains an absolute link '/integration/email', it was left as is. Did you mean 'integration/email.md'?
+INFO    -  Doc file 'getting-started.md' contains an absolute link '/serializer', it was left as is. Did you mean 'serializer/index.md'?
+INFO    -  Doc file 'getting-started.md' contains an absolute link '/serializer/jmap', it was left as is. Did you mean 'serializer/jmap.md'?
+INFO    -  Doc file 'getting-started.md' contains an absolute link '/serializer/jotn', it was left as is. Did you mean 'serializer/jotn/index.md'?
+INFO    -  Doc file 'getting-started.md' contains an absolute link '/streams', it was left as is. Did you mean 'streams/index.md'?
+INFO    -  Doc file 'timezones.md' contains an unrecognized relative link './tzurl', it was left as is. Did you mean 'tzurl.md'?
+WARNING -  Doc file 'examples/index.md' contains a link './vcard.md', but the target 'examples/vcard.md' is not found among documentation files.
+INFO    -  Doc file 'extensions/index.md' contains an absolute link '/extensions/caldav', it was left as is. Did you mean 'caldav.md'?
+INFO    -  Doc file 'extensions/index.md' contains an absolute link '/extensions/outlook', it was left as is. Did you mean 'outlook.md'?
+INFO    -  Doc file 'extensions/index.md' contains an absolute link '/extensions/strategy', it was left as is. Did you mean 'strategy/index.md'?
+INFO    -  Doc file 'extensions/strategy/event.md' contains an absolute link '/extensions/concept/event', it was left as is. Did you mean '../concept/event.md'?
+INFO    -  Doc file 'services/index.md' contains an absolute link '/validator.md', it was left as is.
+INFO    -  Doc file 'services/index.md' contains an absolute link '/serializer.md', it was left as is.
+INFO    -  Doc file 'services/index.md' contains an absolute link '/freebusy.md', it was left as is. Did you mean '../freebusy.md'?
+INFO    -  Doc file 'services/index.md' contains an absolute link '/connector.md', it was left as is.
+INFO    -  Doc file 'services/index.md' contains an absolute link '/integration.md', it was left as is.
+INFO    -  Doc file 'services/index.md' contains an absolute link '/query.md', it was left as is. Did you mean '../query.md'?
+INFO    -  Doc file 'services/index.md' contains an absolute link '/useragent.md', it was left as is.
+INFO    -  Doc file 'services/index.md' contains an absolute link '/validator.md', it was left as is.
+INFO    -  Doc file 'services/index.md' contains an absolute link '/serializer.md', it was left as is.
+INFO    -  Doc file 'services/index.md' contains an absolute link '/freebusy.md', it was left as is. Did you mean '../freebusy.md'?
+INFO    -  Doc file 'services/index.md' contains an absolute link '/query.md', it was left as is. Did you mean '../query.md'?
+INFO    -  Doc file 'services/index.md' contains an absolute link '/useragent.md', it was left as is.
+WARNING -  Doc file 'template/agile/retrospective.md' contains a link 'groupware.md#meeting', but the target 'template/agile/groupware.md' is not found among documentation files.
+WARNING -  Doc file 'template/agile/retrospective.md' contains a link 'groupware.md#agenda', but the target 'template/agile/groupware.md' is not found among documentation files.
+INFO    -  Documentation built in 1.07 seconds

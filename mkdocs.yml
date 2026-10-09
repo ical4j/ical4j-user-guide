@@ -10,9 +10,101 @@ theme:
     
 repo_url: https://github.com/ical4j/ical4j-user-guide
 repo_name: ical4j/ical4j-user-guide
-google_analytics:
-  - UA-402774-10
-  - auto
+strict: true
+validation:
+  nav:
+    omitted_files: warn
+    not_found: warn
+    absolute_links: relative_to_docs
+  links:
+    not_found: warn
+    anchors: warn
+    absolute_links: relative_to_docs
+    unrecognized_links: warn
+plugins:
+  - search
+  - redirects:
+      redirect_maps:
+        command/calendar.md: command/reference.md#calendar
+        command/card.md: command/reference.md#card
+        command/channel.md: command/reference.md#channel
+        command/collection.md: command/reference.md#collection
+        command/itip.md: command/reference.md#itip
+        command/store.md: command/reference.md#store
+        command/template.md: command/reference.md#template
+        extensions/concept/action.md: extensions/concept.md#action
+        extensions/concept/availability.md: extensions/concept.md#availability
+        extensions/concept/event.md: extensions/concept.md#event
+        extensions/concept/index.md: extensions/concept.md
+        extensions/concept/issue.md: extensions/concept.md#issue
+        extensions/concept/note.md: extensions/concept.md#note
+        extensions/concept/observance.md: extensions/concept.md#observance
+        extensions/concept/report.md: extensions/concept.md#report
+        extensions/concept/request.md: extensions/concept.md#request
+        extensions/strategy/action.md: extensions/strategy.md#action
+        extensions/strategy/availability.md: extensions/strategy.md#availability
+        extensions/strategy/entity.md: extensions/strategy.md#entity
+        extensions/strategy/event.md: extensions/strategy.md#event
+        extensions/strategy/group.md: extensions/strategy.md#group
+        extensions/strategy/index.md: extensions/strategy.md
+        extensions/strategy/individual.md: extensions/strategy.md#individual
+        extensions/strategy/issue.md: extensions/strategy.md#issue
+        extensions/strategy/note.md: extensions/strategy.md#note
+        extensions/strategy/observance.md: extensions/strategy.md#observance
+        extensions/strategy/report.md: extensions/strategy.md#report
+        extensions/strategy/request.md: extensions/strategy.md#request
+        external-resources.md: resources.md
+        freebusy.md: command/index.md
+        maven.md: installation.md
+        query.md: command/index.md
+        roadmap.md: index.md
+        serializer/jotn/alarm.md: serializer/jotn/index.md#alarm
+        serializer/jotn/available.md: serializer/jotn/index.md#available
+        serializer/jotn/location.md: serializer/jotn/index.md#location
+        serializer/jotn/participant.md: serializer/jotn/index.md#participant
+        serializer/jotn/resource.md: serializer/jotn/index.md#resource
+        services/index.md: command/index.md
+        template/agile/backlog.md: template/agile.md#backlog
+        template/agile/criteria.md: template/agile.md#acceptance-criteria
+        template/agile/epic.md: template/agile.md#epic
+        template/agile/index.md: template/agile.md
+        template/agile/retrospective.md: template/agile.md#retrospective
+        template/agile/sprint.md: template/agile.md#sprint
+        template/agile/story.md: template/agile.md#story
+        template/budget/expense.md: template/budget.md#expense
+        template/budget/funding.md: template/budget.md#funding
+        template/budget/index.md: template/budget.md
+        template/budget/reimbursement.md: template/budget.md#reimbursement
+        template/catalog/fulfilment.md: template/catalog.md#fulfilment
+        template/catalog/index.md: template/catalog.md
+        template/catalog/offer.md: template/catalog.md#offer
+        template/catalog/order.md: template/catalog.md#order
+        template/groupware/action.md: template/groupware.md#action
+        template/groupware/agenda.md: template/groupware.md#agenda
+        template/groupware/appointment.md: template/groupware.md#appointment
+        template/groupware/attendance.md: template/groupware.md#attendance
+        template/groupware/index.md: template/groupware.md
+        template/groupware/meeting.md: template/groupware.md#meeting
+        template/groupware/note.md: template/groupware.md#note
+        template/project/decision.md: template/project.md#decision
+        template/project/index.md: template/project.md
+        template/project/issue.md: template/project.md#issue
+        template/project/milestone.md: template/project.md#milestone
+        template/project/objective.md: template/project.md#objective
+        template/project/project.md: template/project.md#project
+        template/project/risk.md: template/project.md#risk
+        template/project/task.md: template/project.md#task
+        template/project/timesheet.md: template/project.md#timesheet
+        template/wiki/article.md: template/wiki.md#article
+        template/wiki/definition.md: template/wiki.md#definition
+        template/wiki/faq.md: template/wiki.md#faq
+        template/wiki/index.md: template/wiki.md
+        template/wiki/topic.md: template/wiki.md#topic
+        template/workflow/approval.md: template/workflow.md#approval
+        template/workflow/index.md: template/workflow.md
+        template/workflow/metric.md: template/workflow.md#metric
+        template/workflow/request.md: template/workflow.md#request
+        template/workflow/roster.md: template/workflow.md#roster
 extra:
   analytics:
     provider: google
@@ -37,89 +129,56 @@ markdown_extensions:
 nav:
   - Home:
     - Introduction: index.md
-    - Features:
-        - Parameters: parameters.md
-        - Properties: properties.md
-        - Components: components.md
-        - Validation: validation.md
-        - Compatibility: compatibility.md
-        - Date/Time Concepts: datetime.md
-        - Encoding: encoding.md
-        - Filtering: filtering.md
-        - Groovy: groovy.md
-        - Indexing: indexing.md
-        - Parsing: parser.md
-        - Recurrences: recurrences.md
-        - Timezones: timezones.md
-        - OSGi: osgi.md
-#   - Services:
-#     - Overview: services/index.md
     - Getting Started: getting-started.md
+    - Installation: installation.md
     - Configuration: configuring.md
-    - Examples:
-        - Overview: examples/index.md
-        - Parsing: examples/parsing.md
-        - Model: examples/model.md
-        - Output: examples/output.md
-        - Recurrences: examples/recur.md
-        - Filtering: examples/filter.md
-    - Android: android.md
-    - ZoneInfo Outlook: zoneinfo-outlook.md
-    - tzurl.org: tzurl.md
     - References:
         - RFC Compliance: rfcs.md
         - CUAs: cuas.md
         - Projects using iCal4j: projects.md
         - Resources: resources.md
-
+        - FAQ: faq.md
+  - iCalendar:
+    - Overview: examples/index.md
+    - Concepts:
+        - Date/Time Concepts: datetime.md
+        - Components: components.md
+        - Properties: properties.md
+        - Parameters: parameters.md
+    - Features:
+        - Parsing: parser.md
+        - Validation: validation.md
+        - Recurrences: recurrences.md
+        - Filtering: filtering.md
+        - Indexing: indexing.md
+        - Transformations: transformations.md
+        - Encoding: encoding.md
+        - Compatibility: compatibility.md
+    - Timezones:
+        - Timezones: timezones.md
+        - ZoneInfo Outlook: zoneinfo-outlook.md
+        - tzurl.org: tzurl.md
+    - Platforms:
+        - Android: android.md
+        - OSGi: osgi.md
+        - Groovy: groovy.md
+    - Examples:
+        - Parsing: examples/parsing.md
+        - Model: examples/model.md
+        - Output: examples/output.md
+        - Recurrences: examples/recur.md
+        - Filtering: examples/filter.md
   - vCard:
       - Overview: vcard/index.md
       - Examples: vcard/examples.md
   - Extensions:
       - Overview: extensions/index.md
       - CalDAV: extensions/caldav.md
-      - Concept:
-        - Overview: extensions/concept/index.md
-        - Event: extensions/concept/event.md
-        - Observance: extensions/concept/observance.md
-        - Action: extensions/concept/action.md
-        - Issue: extensions/concept/issue.md
-        - Request: extensions/concept/request.md
-        - Note: extensions/concept/note.md
-        - Report: extensions/concept/report.md
-        - Availability: extensions/concept/availability.md
-      - Link:
-        - Overview: extensions/link/index.md
-        - Alternate: extensions/link/alternate.md
-        - Author: extensions/link/author.md
-        - Bookmark: extensions/link/bookmark.md
-        - Copyright: extensions/link/copyright.md
-        - Edit: extensions/link/edit.md
-        - External: extensions/link/external.md
-        - Help: extensions/link/help.md
-        - Hub: extensions/link/hub.md
-        - Icon: extensions/link/icon.md
-        - License: extensions/link/license.md
-        - Next: extensions/link/next.md
-        - Prev: extensions/link/prev.md
-        - Related: extensions/link/related.md
-        - Replies: extensions/link/replies.md
-        - Self: extensions/link/self.md
-        - Status: extensions/link/status.md
-        - Webmention: extensions/link/webmention.md
-      - Participant: extensions/participant.md
       - Outlook: extensions/outlook.md
-      - Strategy:
-        - Overview: extensions/strategy/index.md
-        - Event: extensions/strategy/event.md
-        - Observance: extensions/strategy/observance.md
-        - Action: extensions/strategy/action.md
-        - Issue: extensions/strategy/issue.md
-        - Request: extensions/strategy/request.md
-        - Note: extensions/strategy/note.md
-        - Report: extensions/strategy/report.md
-        - Availability: extensions/strategy/availability.md
-        - Entity: extensions/strategy/entity.md
+      - Participant: extensions/participant.md
+      - Concept: extensions/concept.md
+      - Link: extensions/link/index.md
+      - Strategy: extensions/strategy.md
   - Connector:
     - Overview: connector/index.md
     - Local: connector/local.md
@@ -140,19 +199,15 @@ nav:
     - JMAP: serializer/jmap.md
     - JOTN:
       - Overview: serializer/jotn/index.md
-      - Alarm: serializer/jotn/alarm.md
-      - Availability: serializer/jotn/availability.md
-      - Available: serializer/jotn/available.md
       - Calendar: serializer/jotn/calendar.md
-      - Card: serializer/jotn/card.md
       - Event: serializer/jotn/event.md
-      - Journal: serializer/jotn/journal.md
-      - Location: serializer/jotn/location.md
-      - Participant: serializer/jotn/participant.md
-      - Resource: serializer/jotn/resource.md
       - ToDo: serializer/jotn/todo.md
+      - Journal: serializer/jotn/journal.md
+      - Availability: serializer/jotn/availability.md
+      - Card: serializer/jotn/card.md
   - Command:
     - Overview: command/index.md
+    - Reference: command/reference.md
     - Agent: command/agent.md
     - MCP: command/mcp.md
   - Streams:
@@ -163,4 +218,12 @@ nav:
   - Template:
       - Overview: template/index.md
       - Examples: template/examples.md
-
+      - Thymeleaf: template/thymeleaf.md
+      - Object Types:
+        - Groupware: template/groupware.md
+        - Project: template/project.md
+        - Agile: template/agile.md
+        - Budget: template/budget.md
+        - Catalog: template/catalog.md
+        - Wiki: template/wiki.md
+        - Workflow: template/workflow.md
