@@ -216,9 +216,9 @@ Calendar iCalendar = new Calendar().withProdId("-//MyCalendarApp v1.0//EN")
 
 //Outlook uses a custom property to display HTML called the X-ALT-DESC property
 
-ParameterList htmlParameters = new ParameterList();
+// ParameterList is immutable: add() returns a new list, so build it with the parameter included
 XParameter fmtTypeParameter = new XParameter("FMTTYPE", "text/html");
-htmlParameters.add(fmtTypeParameter);
+ParameterList htmlParameters = new ParameterList(List.of(fmtTypeParameter));
 
 DateTime startTime, endTime;
 try {
