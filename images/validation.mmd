@@ -1,0 +1,44 @@
+---
+title: iCal4j Validation
+---
+classDiagram
+    direction LR
+
+    class Validator~T~
+    <<interface>> Validator~T~
+    Validator~T~: validate(T target) ValidationResult
+
+    class AbstractValidator~T~
+    <<abstract>> AbstractValidator~T~
+    AbstractValidator~T~: List~AbstractValidationRuleSet~? super T~~ ruleSets
+
+    class PropertyValidator~T extends Property~
+
+    class ComponentValidator~T extends Component~
+
+    ValidationResult: Set~ValidationEntry~ entries
+
+    ValidationEntry: String message
+    ValidationEntry: Severity severity
+    ValidationEntry: String context
+
+    ValidationRule~T~: ValidationType type
+    ValidationRule~T~: String message
+    ValidationRule~T~: Predicate~T~ predicate
+
+    class AbstractValidationRuleSet~T~
+    <<abstract>> AbstractValidationRuleSet~T~
+    AbstractValidationRuleSet~T~: Set~ValidationRule~? super T~~ rules
+
+    class PropertyRuleSet~T extends Property~
+    class PropertyContainerRuleSet~T extends PropertyContainer~
+    class ComponentContainerRuleSet~ComponentContainer~
+
+    Validator~T~ <|.. AbstractValidator~T~: Implements
+
+    AbstractValidator~T~ <|-- PropertyValidator~T extends Property~: Extends
+    AbstractValidator~T~ <|-- ComponentValidator~T extends Component~: Extends
+
+    AbstractValidationRuleSet~T~ <|-- PropertyRuleSet~T extends Property~: Extends
+    AbstractValidationRuleSet~T~ <|-- PropertyContainerRuleSet~T extends PropertyContainer~: Extends
+    AbstractValidationRuleSet~T~ <|-- ComponentContainerRuleSet~ComponentContainer~: Extends

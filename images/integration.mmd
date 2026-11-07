@@ -1,0 +1,42 @@
+---
+title: iCal4j Integration
+---
+classDiagram
+    direction LR
+
+    class IngressChannel~T~
+    <<interface>> IngressChannel~T~
+    IngressChannel~T~: poll(Consumer~T~, long timeout) boolean
+    IngressChannel~T~: poll(Consumer~T~, long timeout, boolean autoExpunge) boolean
+    IngressChannel~T~: expunge(String uid) boolean
+
+    class EgressChannel~T~
+    <<interface>> EgressChannel~T~
+    EgressChannel~T~: send(Supplier~T~ supplier) boolean
+
+    class ChannelPublisher~T~
+    ChannelPublisher~T~: submit(T item) int
+
+    class LocalQueuePublisher~T~
+    LocalQueuePublisher~T~: Queue~T~ queue
+
+    class LocalQueueChannel~T~
+    LocalQueueChannel~T~: Queue~T~ queue
+
+    class JakartaMailSMTPChannel~P~
+%%    JakartaMailSMTPChannel~T~: submit(MimeMessage item) int
+
+    class JakartaMailPollingChannel
+    JakartaMailPollingChannel: Session session
+
+    class JakartaMailPublisher
+
+    IngressChannel~T~ <|.. LocalQueueChannel~T~: Implements
+    EgressChannel~T~ <|.. LocalQueueChannel~T~: Implements
+
+    EgressChannel~T~ <|.. JakartaMailSMTPChannel~P~: T->MimeMessage
+
+    IngressChannel~T~ <|.. JakartaMailPollingChannel: T->MimeMessage
+
+    ChannelPublisher~T~ <|-- LocalQueuePublisher~T~: Extends
+    ChannelPublisher~T~ <|-- JakartaMailPublisher: Extends
